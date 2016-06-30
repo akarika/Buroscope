@@ -1,0 +1,95 @@
+/* reset des marges */
+
+* {
+    padding: 0px;
+    /* marges internes*/
+    margin: 0px;
+    /* marges externes */
+    box-sizing: border-box;
+    /* permet de ne pas inclure les valeurs de padding et les bordures dans les dimensions des boites */
+}
+body{
+    font-family: arial, sans-serif;
+}
+nav, header , section, footer{
+        position: relative;/* dit aux enfant qu il héritent de sa position right: ative; */
+}
+nav {
+    
+    width: 100%; 
+    /* largeur toujours en pourcentage */
+    height: 60px;
+    /* longeur toujours en pixel */
+}
+
+header {
+    width: 100%;
+    /* largeur toujours en pourcentage */
+    height: 350px;
+    /* longeur toujours en pixel */
+    background: url("fond_bandeau.jpg") center center /cover;/*fond écran responsive*/
+}
+#zone1 {
+    background: blue;
+    width: 100%;
+    min-height: 500px;
+    
+}
+
+#zone2 {
+    background: pink;
+    width: 100%;
+    min-height: 500px;
+}
+
+footer {
+    background: black;
+    color: gray;
+    width: 100%;
+    min-height: 500px;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align:top;
+    padding: 10px 20px 5px;
+    line-height: 60px;
+    font-family: century gothic;
+}
+
+
+nav ul {    
+   text-align: center;
+    height: inherit;
+}
+
+li {
+    
+    height: inherit;
+}
+
+header >img {
+    width : 100px;
+    background : white;
+    padding: 10px;
+    border: 2px solid gray;
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    z-index: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+    transition: all 0.9s;
+    padding: 0px;
+}
+
+nav a:hover {
+    color: green;
+    
+}
+nav a:hover:before,nav a:hover:after{
+    content: "--";
+} 
