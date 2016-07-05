@@ -8,15 +8,21 @@
     /* permet de ne pas inclure les valeurs de padding et les bordures dans les dimensions des boites */
 }
 
-h1 {
+a{
+    color: gray;
     
 }
-
+a,input{
+    outline: none;
+}
 p {
     padding: 8px 8px;
     line-height: 18px
 }
-
+h2 {
+    padding: 1vw 0;
+    font-size: 1.15em;
+}
 /*************************************HEADER****************************************************/
 body {
     font-family: arial, sans-serif;
@@ -61,10 +67,7 @@ header {
 #menu li:last-child{
     background: url(../images/picto_3.png) no-repeat center top / 45px;
 }
-#menu h2 {
-    padding: 1vw 0;
-    font-size: 1.15em;
-}
+
 /*************************************NEWS****************************************************/
 #news{
     background: #e3e3e3;
@@ -116,4 +119,65 @@ header {
     text-align: center;
     background-color: #2ecc71;
     color: white;
+}
+#team {
+    text-align: center;/* balise inline pas les blocs qui s alignent*/
+    
+}
+#team em{
+    font-style: normal;
+    color: darkgray;
+}
+#team p{
+    line-height: 20px;
+    padding: 0 0 10px;
+}
+#team p span{
+    font-weight: bold;
+}
+#team>img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+#team figure img {
+    padding: 2px;
+    width: 35px;
+}
+
+a img {
+  text-decoration: none;
+    border: none;
+}
+
+#team figure a {
+    text-decoration: none;
+}
+
+
+img {
+    border: none;/*permet d oter les bordures auto auur des images cliquables IE*/
+}
+
+footer li {
+    display: inline-block;
+    vertical-align: top;/* OBLIGATOIRE AVEC INLINE BLOCK*/
+    
+    font-size: 0.85em;
+    color: gray;
+}
+
+nav ul {
+     text-align: center;
+}
+footer{
+    background: #e3e3e3;
+}
+footer li a{
+    text-decoration: none;
+    padding: 30px 15px;
+}
+footer li a:hover{
+    color:#23d370;
+    text-decoration: underline;
 }
