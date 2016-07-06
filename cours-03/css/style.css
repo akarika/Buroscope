@@ -3,12 +3,136 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 1em;
+    font-family: Myriad , sans-serif;
 }
-
-
+section, footer, header{
+        position: relative;/* dit aux enfant qu il héritent de sa position right: ative; */
+        padding: 1vw 10%;
+}
+a, input{
+    outline: none;
+}
 /*------------HEADER-------------*/
-
 header {
     background: #2b2b2b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu li ,#logo{
+    display: inline-flex;
+}
+#menu ul{
+    font-size: 1.5em;
+}
+#menu a{
+    text-decoration: none;
+}
+#logo h1{
+    color: #dbdbdb;
+    font-size: 0.80em;
+    padding: 10px;
+    font-weight: 200;
+}
+#menu a ,#menu span{
+    padding-left:  10px;
+    color:#f6f6f6;
+}
+/*-------------------------flexslider-------------------*/
+.flexslider{
+    background: url("../img/center.jpg") no-repeat top center / cover;
+    height: 450px;
+    border-bottom: 10px solid #2b2b2b;
+}
+.flexslider p{
+    color: white;
+    font-size: 3em;
+    text-align: right;
+    padding: 10vw 10% 0; 
+}
+.flexslider a{
+    text-decoration: none;
+    background: #d43f3f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+      right: -80vw;
+    top:5vw;
+    position: relative;
+}
+/*-----------------------SERVICES---------------------*/
+
+#services ul{
+    display :inline-flex;
+    justify-content:center;
+    
+}
+#services li{
+    text-align: center;
+
+}
+#services a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding:  100px 15px 20px;
+}
+#services li:first-child{
+    background: url("../img/icone1_poisson.png") no-repeat center top/80px ;
+    
+}
+#services li:nth-child(2){
+    background: url("../img/icone2_des.png") no-repeat center top/80px ;
+    
+}
+#services li:last-child{
+    background: url("../img/icone3_terre.png") no-repeat center top/80px ;
+    
+}
+/*-----------Blog--------------------*/
+/*#blog h2:before, #blog h2:after{
+    border-bottom: 1px solid black;
+    border-top: 3px solid black;
+    content:"";
+    height: 0.4vw;
     width: 100%;
+    margin-top: 0.5em;
+    position: absolute;
+}*/
+#blog {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+#blog article{
+    padding:20px 10px 20vw;
+}
+#blog article h2{
+    padding-top: 25px;
+}
+#blog span, #blog a{
+    text-decoration: none;
+    color: #b1afaf;
+    font-style: italic;
+}
+#blog span{
+    display: block;
+    padding-top: 20px;
+}
+#blog p:last-child{
+    padding-top: 20px;
+}
+#blog img{
+    width: 400px;
+    height: 200px;    
+}
+/*--------FOOTER-------------------*/
+footer{
+    background:#2b2b2b;
+    color: #8a8a8a;
+}
+footer section{
+    display:flex;
+    flex-direction: column;
 }
