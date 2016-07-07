@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -6,17 +7,20 @@
     font-family: Myriad, sans-serif;
 }
 
+
 section,
 footer,
 header {
     position: relative;
-    /* dit aux enfant qu il héritent de sa position right: ative; */
+     /*dit aux enfant qu il héritent de sa position right: ative;*/ 
     padding: 1vw 10%;
 }
 
 a,
 input {
     outline: none;
+    text-decoration: none;
+    border: none;
 }
 li,a{
     text-decoration: none;
@@ -117,20 +121,34 @@ header {
     background: url("../img/icone3_terre.png") no-repeat center top/80px;
 }
 
-
+ 
 /*-----------Blog--------------------*/
 
-
-/*#blog h2:before, #blog h2:after{
-    border-bottom: 1px solid black;
-    border-top: 3px solid black;
-    content:"";
-    height: 0.4vw;
-    width: 100%;
-    margin-top: 0.5em;
-    position: absolute;
-}*/
-
+#latest_blog{
+    text-align: center;
+    line-height: 0.5;
+}
+#latest_blog span{
+      display: inline-block;
+  position: relative; 
+}
+#latest_blog span:before, #latest_blog span:after{
+  content: " ";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 3px solid black;
+  top: 0;
+  width: 29.5vw;
+}
+#latest_blog span:before{
+    right: 100%;
+    margin-right: 15px;
+}
+#latest_blog span:after{
+    left: 100%;
+    margin-left: 15px;
+}
 #blog {
     display: flex;
     text-align: center;
@@ -138,7 +156,7 @@ header {
 }
 
 #blog article {
-    padding: 20px 10px 20vw;
+    padding: 20px 10px 5vw;
 }
 
 #blog article h2 {
@@ -165,16 +183,14 @@ header {
 /*--------FOOTER-------------------*/
 
 footer {
+    padding-top: 30px;
     background: #2b2b2b;
     color: #8a8a8a;
-    width: 100%;
 }
 footer aside {
     display: flex;
-    justify-content: space-between;
-}
-#newsletter{
-    width: 600px;
+    align-content: space-around;
+    justify-content: flex-start;
 }
 footer #sociaux {
     padding-top: 20px;
@@ -198,9 +214,16 @@ footer #sociaux {
     justify-content: space-around;
 }
 #plan_site ul{
-    width: 200px;
+    width: 10vw;
 }
 #plan_site li,#plan_site h2{
     padding-bottom: 10px;
     
+}
+#newsletter{
+    padding:inherit;
+}
+#copyright{
+    font-size: 0.70em;
+    text-align: center;
 }

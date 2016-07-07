@@ -7,16 +7,13 @@ for ($i=0; $i < sizeof($item) ; $i++) {
 }
 $menu .="</ul>\n";
 
-
-
-
-
-
-
-
-
-
-
+//on gére les clics sur la favoris(3 pages)
+// si on reçoit une variable qui s appelle "page
+if(isset_($_GET['page'])){
+    echo "BANZAI";
+}else{
+    echo "Bye";
+}
 
 
 //destiné en sortie pour index.html
