@@ -66,14 +66,8 @@
 
     <footer>
     <nav>
-        <ul>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Download</a></li>
-            <li><a href="">Press</a></li>
-            <li><a href="">Email</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Privacy Police</a></li>
-        </ul>
+      <?php if(isset($menu)){echo $menu;} ?>
+
     </nav>
     </footer>
 </body>
