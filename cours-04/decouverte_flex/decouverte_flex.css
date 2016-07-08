@@ -1,0 +1,179 @@
+
+/***structure générale*********************************************/
+*{
+        padding:0;
+margin:0;
+}
+body,html{
+width:100%;
+    background: #e1e1e1;
+
+box-sizing:border-box;
+}
+#conteneur{
+    width: 82.5%;
+    margin: auto;
+}
+
+#actus{
+display:flex;
+flex-wrap:wrap;
+flex-direction:column;
+height: 60vmax;
+align-content: center;
+    width: 82vmax;
+    background: url("ombre.png") no-repeat center bottom / 82vmax ;
+
+
+}
+#actus h2{
+    color: #fff;
+    font-size: 1.3em;
+}
+.actus:nth-child(1){
+width:50vmax;
+height:50vmax;
+}
+.actus:nth-child(2){
+width:25vmax;
+height:50vmax;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zone{
+width:100%;
+height:50%;
+display:flex;
+}
+
+.zone:nth-child(1){
+flex-direction:column;
+flex-wrap:wrap;
+align-content:flex-start;
+}
+.zone div{
+width:50%;
+height:100%;
+display:flex;
+flex-wrap:wrap;
+}
+
+/**PREMIERE SECTION****************************************/
+.art1{
+width:25%;
+height:50%;
+}
+.art1 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 96%;
+    height: 96%;
+}
+.art2{
+width:25%;
+height:50%;
+}
+.art2 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 96%;
+    height: 96%;
+}
+.art3{
+width:50%;
+height:100%;
+}
+.art3 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 98%;
+    height: 98%;
+}
+.art4{
+width:25%;
+height:100%;
+}
+.art4 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 96%;
+    height: 98%;
+}
+/**SECTION 2*****************************************/
+.art5{
+width:100%;
+height:50%;
+}
+.art5 div{
+background: #f24076;
+box-shadow: 0 1px 10px gray;
+width: 98%;
+height: 96%;
+}
+.art6{
+width:50%;
+height:50%;
+}
+.art7 div,.art6 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 96%;
+    height: 96%;
+}
+.art7{
+width:50%;
+height:50%;
+}
+
+/**SECTION 3***********************************************/
+.art8{
+width:100%;
+height:100%;
+}
+.art8 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 98%;
+    height: 98%;
+}
+/**SECTION 4*************************************************/
+.art9{
+    width: 100%;
+    height: 25%;
+}
+.art9 div,.art12 div, .art13 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 98%;
+    height: 96%;
+}
+.art10 div,.art11 div{
+background: #f24076;
+    box-shadow: 0 1px 10px gray;
+    width: 96%;
+    height: 96%;
+}
+.art10{
+    width: 50%;
+    height: 25%;
+}
+
+.art11{
+    width: 50%;
+    height: 25%;
+
+}
+.art12{
+    width: 100%;
+    height:25%;
+    
+}
+.art13{
+    width: 100%;
+    height:25%;
+}
+
+
+
+
