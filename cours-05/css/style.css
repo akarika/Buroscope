@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Helvetica';
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #aeadad;
+    font-family: 'novecento_sans_widedemibold';
+}
+
+@font-face {
+    font-family: 'novecento_sans_widedemibold';
+    src: url('Novecentosanswide-DemiBold-webfont.eot');
+    src: url('Novecentosanswide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Novecentosanswide-DemiBold-webfont.woff2') format('woff2'),
+    url('Novecentosanswide-DemiBold-webfont.woff') format('woff'),
+    url('Novecentosanswide-DemiBold-webfont.ttf') format('truetype'),
+    url('Novecentosanswide-DemiBold-webfont.svg#novecento_sans_widedemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Helvetica';
+    background: #efefef;
+    color: #aeadad;
+}
+
+h2 {
+    font-family: 'novecento_sans_widedemibold';
+    color: #8a8888;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background: #2ecc71;
+    padding: 10px;
+    color: white;
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+p {
+    color: #aeadad;
+}
+
+/*-----------------HEADER---------------------*/
+#social {
+    display: inline-block;
+    float: right;
+}
+
+#social li {
+    float: left;
+    margin-top: 30px;
+
+}
+
+#top-header h1 {
+    display: inline-block;
+}
+
+#primary-nav li {
+    display: inline-block;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+
+#primary-nav li a {
+    color: #737373;
+}
+
+#primary-nav a:hover, #primary-nav a:active {
+    color: #2ecc71;
+}
+
+#primary-nav ul {
+    margin-top: 15px;
+    padding: 30px 0 10px 0;
+    border-top: 1px solid gray;
+}
+
+/*-------------slider--------------------*/
+#slider {
+    background: url('../img/slider.png') no-repeat center/cover;
+    height: 750px;
+    position: relative;
+    text-align: center;
+
+}
+
+#slider p {
+    text-transform: uppercase;
+}
+
+#slider img {
+    display: block;
+    margin: auto;
+    padding-top: 125px;
+}
+
+#slider .container {
+    padding-top: 50px;
+    width: 720px;
+}
+
+#slider a {
+    margin-top: 25px;
+}
+
+/*------------VIDEO---------------*/
+#video {
+    height: 320px;
+    display: block;
+    margin-top: 25px;
+}
+
+#video video {
+    display: inline-block;
+    width: 380px;
+    height: 240px;
+}
+
+#video article {
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+#video h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#video .container {
+    padding: 25px;
+}
+
+/*--------------------WORKS---------------*/
+#works h2 {
+    font-size: 1.5em;
+    margin: 20px;
+
+}
+
+#works .container {
+    text-align: center;
+}
+
+#works h3 {
+    font-size: 1.2em;
+}
+
+#works ul {
+    margin-top: 50px;
+    display: block;
+    vertical-align: top;
+    margin-right: 50px;
+}
+
+#works li {
+    display: inline-block;
+    position: relative;
+    opacity: 0.5;
+}
+#works a{
+    padding-right: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#works li:hover a {
+    background: url("../img/link.png") no-repeat center center /50px;
+
+}
+#works li:hover {
+    opacity: 1;
+    transition: all  500ms linear;
+}
+.legend button {
+    border-style: none;
+    background: #efefef;
+    color: gray;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.legend button:last-child {
+    color: #2ecc71;
+}
+
+.legend div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 480px;
+}
+
+/*-------------FOOTER---------------*/
+footer {
+    height: 135px;
+    background: #322f2f;
+    margin-top: 50px;
+}
+
+.footer {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: 60px 0;
+}
+
+.footer h2 {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    float: left;
+}
+
+.footer .button {
+    float: right;
+    width: 250px;
+    margin-left: 400px;
+    margin-top: -25px;
+}
+
+.subfooter {
+    clear: both;
+    font-size: 0.8rem;
+}
+
+.subfooter {
+    height: 65px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+#secondary-nav ul {
+    float: right;
+}
+
+#secondary-nav li {
+    display: inline-block;
+}

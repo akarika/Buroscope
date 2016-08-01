@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*---------------------REGLES COMMUNES----------------------*/
+a{
+    text-decoration: none;
+}
+.container{
+width: 1000px;
+    margin: 0 auto;
+}
+.active{
+    color: #4999af
+}
+
+/*-----------HEADER--------------*/
+header{
+position: absolute;
+}
+header .container{
+    height: 120px;
+    display: block;
+    position: fixed;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#logo{
+   display: inline-block ;
+    vertical-align: bottom;
+    width: 40%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+#logo h1{
+    display: inline-block;
+    vertical-align:middle;
+}
+#logo img{
+    display: inline-block;
+    vertical-align:middle;
+    margin-left: 15px;
+}
+#menu{
+    float: right;
+}#menu-top{
+    margin: 20px 0 35px 250px;
+    background-color: rgba(70, 149, 170, 0.8);
+    height: 35px;
+     position: relative;
+    width: 300px;
+ }
+ #menu-top a{
+     color: white;
+    margin: 0 10px;
+ }
+ #menu-top ul{
+     position: absolute;
+     top:50%;
+     transform: translateY(-50%);
+ }
+#menu-top li{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+#menu-bottom li{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 50px;
+
+}
+#menu-bottom a{
+    color: #668333;
+}
+/*-----------BANNER---------------*/
+#banner {
+z-index: -1;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+#banner article{
+    position: absolute;
+    bottom: 100px;
+    left: 290px;
+    background-color: rgba(27, 127, 155, 0.8);
+    color: white;
+    padding: 10px;
+}
+#middle_section{
+    display: inline-block;
+    margin-top: 150px;
+    height: 567px;
+}
+.flaticon-back{
+    position: absolute;
+    margin-top: -350px;
+    left: 0px;
+}
+.flaticon-next{
+    position: absolute;
+    margin-top: -350px;
+    right: 0px;
+}
+.flaticon-next:before,.flaticon-back:before{
+
+    font-size: 2.5rem;
+    color: white;
+    background: #5b5c5b;
+    padding: 20px 5px;
+}
+
+/**-------------------CONTENT----------------*/
+#box li{
+    display: inline-block;
+    width: 30%;
+    margin-right: 30px;
+    position: relative;
+}
+
+#box {
+    margin: 20px 0;
+}
+#box a{
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    right: -20px;
+}
+#box span{
+    margin-left: 5px;
+}
+#box li:nth-child(1) a {
+    background-color: rgba(27, 127, 155, 0.7);
+    padding: 20px;
+}
+#box li:nth-child(2) a{
+background-color: rgba(102, 131, 51, 0.7);
+    padding: 20px;
+}
+#box li:nth-child(3) a{
+    background-color: rgba(241, 113, 94, 0.7);
+    padding: 20px;
+}
+#box h3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    color: white;
+}
+#upcomings {
+    display: inline-block;
+    box-sizing: border-box;
+width: 50%;
+}
+#upcomings h2{
+    color: rgb(27, 127, 155);
+}
+#upcomings li{
+    display: inline-block;
+}
+.date_1 li>span{
+    }
+#sevenoaks{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 49%;
+}
