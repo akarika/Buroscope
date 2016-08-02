@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="content-type" content="text/html" ;charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>form</title>
+</head>
+<body>
+<article>
+    <section id="intro"><h1>Create a free account</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolores quibusdam tempore voluptatum. Atque dolor
+            doloribus earum eius et ex</p></section>
+    <section id="personal_info">
+        <form action="#" method="get">
+            <fieldset id="perso_info">
+                <legend><h2><span>1</span>Personal information:</h2></legend>
+                <div ><label for="gender">Select a gender :</label>
+                    <input type="radio" name="gender" id="gender" value="H">Male
+                    <input type="radio" name="gender" id="gender" value="F">Female <br></div>
+                <div><label for="first_name">First name : <span>*</span> </label><br>
+                    <input type="text" name="first_name" id="first_name"><br></div>
+                <div><label for="last_name">Last name : <span>*</span> </label><br>
+                    <input type="text" name="last_name" id="last_name"><br></div>
+                <div><label for="city">City / Town :</label><br>
+                    <input type="text" name="city" id="city"><br></div>
+                <div><label for="country">Country :</label><br>
+                    <select name="country" id="country">
+                        <option value="USA">United States</option>
+                        <option value="FR" selected>France</option>
+                        <option value="DE">Deutschland</option>
+                        <option value="IT">Italia</option>
+                    </select></div>
+                <div><label for="birth">Date of birth: <span>*</span></label><br>
+                    <input type="date" name="birth" id="birth"></div>
+                <div><label for="age">Age 55:</label>
+                    <input type="range" value="55" max="140" min="0" id="age"><br></div>
+                <div><label for="compagny">Compagny:</label><br>
+                    <input type="text" name="compagny" id="compagny"><br></div>
+                <div><label for="pet">What is your pet?</label><br>
+                    <input type="checkbox" id="pet" value="Dog">Dog
+                    <input type="checkbox" id="pet" value="Cat">Cat
+                    <input type="checkbox" id="pet" value="Hamster">Hamster
+                </div>
+            </fieldset>
+            <fieldset id="account_info">
+                <legend><h2><span>2</span>Account information:</h2></legend>
+                <div>
+                    <label for="username">Choose an username: <span>*</span></label><br>
+                    <input type="text" id="username"><br>
+                    <p>Your username can only contain letter A-Z or numbers 0-9</p>
+                </div>
+                <div>
+                    <label for="email">E-mail address <span>*</span></label><br>
+                    <input type="email" id="email"><br>
+                    <p>We need to email you to confirm your account</p>
+                </div>
+                <div>
+                    <label for="password">Choose password:<span>*</span></label><br>
+                    <input type="password" id="password"><br>
+                    <p>Must be at least 8 characters long with no spaces</p>
+                </div>
+                <div>
+                    <label for="re-password">Re-enter password:<span>*</span></label><br>
+                    <input type="password" id="re-password"><br>
+                </div>
+            </fieldset>
+            <fieldset id="yourself">
+                <legend><h2> <span>3</span>A few words about yourself:</h2></legend>
+                <textarea name="few_words" id="" cols="70" rows="10"></textarea>
+            </fieldset>
+            <fieldset id="terms">
+                <legend><h2><span>4</span>Terms & Conditions:</h2></legend>
+                <input type="checkbox" name="terms">
+                <div id="terms">By Clicking this button, your agree to our <a href="#">Terms of Use</a>and
+                    <a href="#">Privacy Policy</a> </div><input id="account" type="button" value="Create my account">
+            </fieldset>
+        </form>
+    </section>
+</article>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+body{
+
+    font-size: 1rem;
+    background: #e1e1e1;
+}
+html{
+
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+#top_left{
+    position: relative;
+    display: inline-block;
+}
+.carre{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid saddlebrown;
+    display: inline-block;
+    font-size: 1rem;
+}
+ div{
+    margin: 1rem;
+     font-size: 0;
+}
+/*#top_right div{
+    margin: 1rem;
+}*/
+
+.l_carre{
+    width: 22rem;
+    height: 22rem;
+    border: 1px solid green;
+    display: inline-block;
+}
+.l_rectangle{
+    width: 10rem;
+    height: 22rem;
+    border: 1px solid yellowgreen;
+    display: inline-block;
+}
+.large_carre{
+    width: 22rem;
+    height: 10rem;
+    border: 1px solid darkgreen;
+    display: inline-block;
+}
+/*****BOX HAUT GAUCHE--------------------*/
+
+#top_left div:nth-child(2){
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    bottom: 0px ;
+}
+/*---------top right------------*/
+#top_right{
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+.align_carre{
+    display: block;
+    vertical-align: bottom;
+    margin: 0px;
+}
+
+article:nth-child(2){
+    display: block;
+}
+/*-----------bottom_article---------------*/
+#bottom_article{
+    display: inline-block;
+}
+
+#bottom_article .l_carre{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    border: 1px solid red;
+    left: 24rem;
+}
+#bottom_left{
+    display: inline-block;
+    position: relative;
+}
+#bottom_right {
+    position: relative;
+ display: inline-block;
+    border: 1px solid black;
+    bottom:-1rem;
+}
+/*#bottom_right .large_carre{*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*right: 0px;*/
+    /*top: 0px;*/
+/*}*/
+.large_carre2{
+    width: 22rem;
+    height: 10rem;
+    border: 1px solid darkgreen;
+    display: block;
+}
+.large_carre2:first-child{
+
+    border: 1px solid red;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 24rem;
+}
+.large_carre2:last-child{
+
+    border: 1px solid red;
+    display: block;
+    position: absolute;
+    left: 24rem;
+    top: -1rem;
+}
+/*---------couleur--------*/
+.pink{
+    background: #f24076;
+}
+.red{
+    background: #e40448;
+}
+.bordeaux {
+    background: #ad2c53;
+}
+.dark_red{
+    background: #98012f;
+}

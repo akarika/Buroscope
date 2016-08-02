@@ -214,6 +214,6 @@ width: 50%;
     }
 #sevenoaks{
     box-sizing: border-box;
-    display: inline-block;
-    width: 49%;
+    float: right;
+    width: 50%;
 }
