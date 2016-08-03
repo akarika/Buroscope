@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family:'alice', Arial, sans-serif ;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+@font-face {
+    font-family: 'alice';
+    src: url('bebasneue_regular-webfont.eot');
+    src: url('bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('bebasneue_regular-webfont.woff') format('woff'),
+    url('bebasneue_regular-webfont.ttf') format('truetype'),
+    url('bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+p,a {
+    font-family: 'Open Sans';
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 9rem;
+    color: white;
+    line-height: 6.5rem;
+}
+h2{
+    font-size: 4.8rem;
+    color: white;
+    font-weight: bold;
+
+}
+h3{
+    font-size: 3.6rem;
+    color: white;
+}
+.container{
+width: 940px;
+    margin: 0 auto;
+}
+.fl_align{
+line-height: 50%;
+}
+/*-----------HEADER------------*/
+.clearfix:before , .clearfix:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+#title{
+    background: url("../img/background_top.jpg") no-repeat top center/cover;
+    height: 50rem;
+}
+
+header h3{
+color: white;
+
+
+}
+#title{
+    padding: 12.5rem 0 0 6rem;
+}
+/*-NAV-*/
+
+nav{
+    background: #252222;
+    height: 10rem;
+} #nav_left{
+    float: left;
+    line-height: 100px;
+  }
+#nav_right{
+    line-height: 100px;
+    float: right;
+    height: 9rem;
+}
+#nav_right li {
+margin-right: 2.4rem;
+    font-size: 1.8rem;
+    display: inline-block;
+    vertical-align: bottom;
+}
+#nav_right li a{
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'alice', Arial, sans-serif;
+}
+
+#nav_right ul {
+    display: inline-block;
+    vertical-align: bottom;
+}
+#social {
+    margin-bottom: -0.35rem; *
+
+    margin-left: 7rem;
+}
+#social [class^="flaticon-"]:before, #social [class*=" flaticon-"]:before,
+#social  [class^="flaticon-"]:after, #social [class*=" flaticon-"]:after {
+    font-size: 3rem;
+ }
+/*-----------PORFOLIO-----------*/
+
+#portfolio{
+    background: #65ba99;
+    height: 184.5rem;
+}
+#portfolio .container{
+    padding-top: 8rem;
+}
+#portfolio_title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+#portfolio_title h4{
+      color: white;
+    font-size: 2.4rem;
+}
+#img img{
+    float: left;
+}
+.resize_men{
+    display: block;
+    width: 23.5rem;
+    height: 23.5rem;
+}
+.resize_large_img{
+    display: block;
+    width: 47rem;
+    height: 23.5rem;
+}
+
+
+
+
