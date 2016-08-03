@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans'');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -155,7 +155,7 @@ margin-right: 2.4rem;
 
 #portfolio{
     background: #65ba99;
-    height: 184.5rem;
+    padding-bottom: 10rem;
 }
 #portfolio .container{
     padding-top: 8rem;
@@ -181,7 +181,35 @@ margin-right: 2.4rem;
     width: 47rem;
     height: 23.5rem;
 }
+/*-----BANNER----*/
 
+#banner{
+    background: url("../img/femme.jpg") no-repeat center center/cover;
+    padding: 12rem 0rem;
+}
+#banner h3{
+    text-align: center;
+
+}
+#banner p{
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'alice', Arial, sans-serif;
+    text-align: right;
+    position: relative;
+    top: 3.5rem;
+    right: 13rem;
+}
+/*------NEWS------*/
+
+#news{
+    background: #cdcdcd;
+}
+#news h2{
+    color: black;
+    text-align: center;
+    padding: 7.5rem 0 6.5rem 0 ;
+}
 
 
 

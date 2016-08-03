@@ -19,9 +19,9 @@ box-sizing:border-box;
 display:flex;
 flex-wrap:wrap;
 flex-direction:column;
-height: 60vmax;
+height: 600px;
 align-content: center;
-    width: 82vmax;
+    width: 800px;
     background: url("ombre.png") no-repeat center bottom / 82vmax ;
 
 
