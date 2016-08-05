@@ -127,15 +127,17 @@ nav{
     height: 9rem;
 }
 #nav_right li {
-margin-right: 2.4rem;
+margin-right: 2rem;
     font-size: 1.8rem;
     display: inline-block;
     vertical-align: bottom;
 }
 #nav_right li a{
+    padding: 2rem 0.5rem;
     color: white;
     font-size: 1.8rem;
     font-family: 'alice', Arial, sans-serif;
+    /*padding: 1.2rem;*/
 }
 
 #nav_right ul {
@@ -143,9 +145,31 @@ margin-right: 2.4rem;
     vertical-align: bottom;
 }
 #social {
-    margin-bottom: -0.35rem; *
+    margin-bottom: 9.5rem;
+    position: relative;
+    margin-left: 4rem;
+}
+#navigation li{
+    overflow: hidden;
+}
+#navigation a:after{
+    content: " ";
+    display: block;
+    background-color:#59a386;
+    position: relative;
+    bottom: 2rem;
+    width: 100%;
+    height: 0.2rem;
+    opacity: 0;
+    opacity: 0;
+    transition: all 200ms linear ;
+    left: -10rem;
 
-    margin-left: 7rem;
+}
+#navigation a:hover:after{
+    width: 100%;
+    opacity: 1;
+    left: 0;
 }
 #social [class^="flaticon-"]:before, #social [class*=" flaticon-"]:before,
 #social  [class^="flaticon-"]:after, #social [class*=" flaticon-"]:after {
