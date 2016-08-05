@@ -156,6 +156,27 @@ margin-right: 2.4rem;
     position: relative;
     overflow: hidden;
 }
+.resize_large_img{
+    float: left;
+    width: 47rem;
+    height: 25.5rem;
+}
+.resize_large_2{
+    float: left;
+    width: 47rem;
+    height: 23.5rem;
+}
+.resize_404{
+    float: left;
+    width: 23.5rem;
+    height: 35rem;
+}
+.resize_men{
+    float: left;
+    width: 23.5rem;
+    height: 23.5rem;
+}
+
 .overlay{
     background-color: rgba(101, 186, 153, 0.5);
     position: absolute;
@@ -206,16 +227,8 @@ margin-right: 2.4rem;
       color: white;
     font-size: 2.4rem;
 }
-.resize_men{
-    display: block;
-    width: 23.5rem;
-    height: 23.5rem;
-}
-.resize_large_img{
-    float: left;
-    width: 47rem;
-    height: 23.5rem;
-}
+
+
 /*-----BANNER----*/
 
 #banner{
@@ -369,6 +382,7 @@ float: left;
 /*--------------BIO------------------*/
 #bio{
     background:#e2534b ;
+    padding-bottom: 10rem;
 }
 #bio h2{
     color: black;
@@ -377,7 +391,7 @@ float: left;
 }
 #bio_left{
     display: inline-block;
-    width: 46rem;
+    width: 46%;
     text-align: center;
 }
 #bio_left img{
@@ -393,7 +407,59 @@ float: left;
 }
 
 #bio_right{
+display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-left: 4rem;
+}
+#bio_right h3{
+    font-size: 1.8rem;
+    margin: 1rem 0 1.8rem ;
+}
+#bio_right p{
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-family: "Open Sans";
 
+}
+/*-----------FOOTER------------*/
+footer{
+    background: url("../img/pont.jpg" ) no-repeat center top /cover;
+    text-align: center;
+    padding: 6rem 0;
+}
+#contact h2{
+font-size: 4.8rem;
+    color: black;
+    padding-bottom: 6.5rem;
+}
+footer address{
+    color: white;
+
+}
+footer address p{
+    font-size: 4.8rem;
+    font-family: 'alice', Arial, sans-serif;
+}
+footer address a{
+    font-size: 6rem;
+    font-family: 'alice', Arial, sans-serif;
+    color: white;
+    border:0.5rem solid white ;
+    padding:1.7rem 25rem; ;
+}
+footer address strong {
+    display: block;
+    margin: 5rem 0;
+}
+footer address h3{
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+footer address p:last-of-type{
+    font-family: "Open Sans";
+    font-size: 1.4rem;
 }
 
 
