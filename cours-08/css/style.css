@@ -52,9 +52,9 @@ table {
 html {
     font-size: .625em; /* fallback IE8+ */
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    font-size: 62.5%;
 }
 body{
-    font-family: "Open sans", sans-serif;
     width: 32rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -99,7 +99,6 @@ body{
 nav{
     background:#373c3f ;
     height: 4rem;
-    position: relative;
 }
 nav span{
     float: right;
@@ -129,7 +128,7 @@ nav h2{
     clear: right;
 }
 #content_header p{
-    font-size: ;
+    font-size: 1.2rem;
     color: #86d2dd;
 }
 #content_header span {
@@ -139,15 +138,22 @@ nav h2{
 }
 /*---------------------SECTION SLIDE---------------*/
 #robin_left{
-height: 7.5rem;
+    text-align: center;
+    display: block;
     width: 25rem;
     background:#27212c;
     -webkit-box-shadow: 0px -2px 2px 0px rgba(80,70,88,1);
     -moz-box-shadow: 0px -2px 2px 0px rgba(80,70,88,1);
     box-shadow:0px -2px 2px 0px rgba(80,70,88,1);
     color:#766982 ;
-    line-height: 7.5rem;
+    font-size: 1rem;
 }
+#robin_left p{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
 #robin_right{
 float: right;
     height: 7.5rem;
@@ -158,8 +164,11 @@ float: right;
     box-shadow: 0px -2px 2px 0px rgba(240,96,228,1);
 }
 #robin_right span{
-    line-height: 7.5rem;
-    margin: 0rem 2.5rem;
+    position: relative;
+    text-align: center;
+    display: block;
+    top:50%;
+    transform: translateY(-50%);
     color:white;
 }
 #arrow{
@@ -171,8 +180,10 @@ float: right;
 }
 #arrow span{
 
+    position: relative;
     display: block;
-    line-height: 27.5rem;
+    top: 50%;
+    transform: translateY(-50%);
     color: white;
     margin: auto;
     width: 20px;
@@ -183,6 +194,9 @@ float: right;
     width: 32rem;
 }
 /*-----------FOOTER-------------*/
+#footer{
+    background: #ebebeb;
+}
 #footer h2{
     padding: 3.5rem 0 2rem 1.5rem;
     color: #088ca5;
@@ -195,5 +209,68 @@ float: right;
     line-height: 1.5rem;
     font-size: 1rem;
 }
+#footer br{
+    margin-bottom: 2rem;
+}
+@media screen and (min-width: 640px){
+    .container{
+        padding: 0 3.5rem 0 3.5rem;
+    }
+    body{
+        width: 64rem;
+    }
+nav {
+    height: 7.5rem;
+}
+    nav span{
+        padding: 2.4rem;
+        font-size: 2.4rem;
+    }
+    nav h2{
+        padding-left: 3.5rem;
+        line-height: 7.5rem;
+    }
+    #content_header {
+        height: 35rem;
+    }
+    #content_header h1{
+        font-size: 4rem;
+        padding: 12rem 0 3.5rem 0;
+    }
+    #content_header p{
+    font-size: 2rem;
+    }
+    #content_header span {
+        font-size: 2rem;
+        padding-right: 9rem;
+    }
+    /*---------------------SECTION SLIDE---------------*/
+    #robin_left{
+        height: 14.5rem;
+        width: 50rem;
+    }
+    #robin_right {
+        width: 14rem;
+        height: 14.5rem;
+    }
+    #robin_left p{
+        font-size: 2rem;
+    }
+    #robin_right span{
+        font-size: 1.5rem;
+    }
+    #slide img{
+        height: 55.5rem;
+        width: 64rem;
+    }
 
 
+    #footer h2{
+      padding: 7rem 0 6rem 5rem;
+        font-size: 3rem;
+    }
+    #footer p{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
