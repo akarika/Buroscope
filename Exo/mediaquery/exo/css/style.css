@@ -1,0 +1,135 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 90rem;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+   padding: 0 1rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/**** HEADER ****/
+header {
+    padding: 2rem 0;
+    width: calc(100% - 2rem);
+    border-bottom: 2px solid #dcdcdc;
+    box-sizing: content-box;
+    margin:0 auto 2rem;
+}
+
+.logo {
+    float: left;
+}
+
+.navigation {
+    float: right;
+}
+
+.menu {
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    line-height: normal;
+}
+
+.menu li{
+}
+
+.menu a {
+    font-size: 1.5rem;
+    color: #dcdcdc;
+    background-color: #000000;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #1883ba;
+}
+
+/**** BANNER ****/
+
+.banner {
+    padding: 0 1rem;
+}
+
+/**** SECTION ****/
+.section {
+    margin-bottom: 2rem;
+}
+
+/**** Section Type-A ****/
+
+.type-A .thumbnail {
+    width: 50%;
+    float: left;
+    padding: 0 1rem ;
+}
+
+.type-A .article {
+    width: 25%;
+    float: left;
+    padding: 0 1rem ;
+}
+
+/**** Section Type-B ****/
+
+.type-B .article {
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 1rem ;
+}
+
+/**** Section Type-C ****/
+
+.type-C .thumbnail {
+    width: calc(100% / 5);
+    float: left;
+    padding: 0 1rem ;
+}
+
+/**** Footer ****/
+footer {
+    background-color: #dcdcdc;
+    padding: 2rem 0;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer a{
+    color: #1883ba;
+    padding: 0 1rem;
+}
+
+footer p {
+    padding-left: 1rem;
+    margin-bottom: 0;
+}

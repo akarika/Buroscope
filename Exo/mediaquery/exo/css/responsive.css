@@ -1,0 +1,47 @@
+@media screen and (max-width: 800px){
+    .logo{
+        float: none;
+        display: block;
+   text-align: center;
+    }
+    .menu{
+        background: black;
+    }
+    .navigation{
+     float: none;
+    }
+
+    .type-A .thumbnail{
+        float: none;
+        display: block;
+        width: 100%;
+}
+    .type-A .article{
+
+        width: 50%;
+    }
+   .thumbnail:last-of-type{
+        display: none;
+    }
+   .type-C .thumbnail{
+       width: calc(100% / 4);
+   }
+}
+@media screen and (max-width: 420px ){
+.logo img{
+width: 100%;
+}
+    .banner-img{
+        display: none;
+    }
+    .type-B .article{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .type-C .thumbnail{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+}
