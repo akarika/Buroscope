@@ -54,13 +54,16 @@ html {
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
     font-size: 62.5%;
 }
-body{
+
+body {
     width: 32rem;
     font-family: 'Montserrat', sans-serif;
 }
-.container{
+
+.container {
     padding: 0 2rem 0 2rem;
 }
+
 /*********************ICON*************************/
 
 /*
@@ -79,7 +82,7 @@ body{
     font-style: normal;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family: "Flaticon";
         src: url("./Flaticon.svg#Flaticon") format("svg");
@@ -92,93 +95,110 @@ body{
     font-style: normal;
 }
 
-.flaticon-arrow-point-to-right:before { content: "\f100"; }
-.flaticon-menu:before { content: "\f101"; }
+.flaticon-arrow-point-to-right:before {
+    content: "\f100";
+}
+
+.flaticon-menu:before {
+    content: "\f101";
+}
 
 /*---------NAV-------*/
-nav{
-    background:#373c3f ;
+nav {
+    background: #373c3f;
     height: 4rem;
 }
-nav span{
+
+nav span {
     float: right;
     background: #202529;
     color: white;
     padding: 1rem;
 }
-nav h2{
+
+nav h2 {
     font-size: 2.4rem;
     color: white;
-    padding-left:  2rem;
+    padding-left: 2rem;
     line-height: 4rem;
 }
 
-#content_header{
+#content_header {
     height: 17.5rem;
-    background: rgb(25,180,198); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(25,180,198,1) 0%, rgba(7,138,164,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(25,180,198,1) 0%,rgba(7,138,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(25,180,198,1) 0%,rgba(7,138,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19b4c6', endColorstr='#078aa4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: rgb(25, 180, 198); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(25, 180, 198, 1) 0%, rgba(7, 138, 164, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(25, 180, 198, 1) 0%, rgba(7, 138, 164, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(25, 180, 198, 1) 0%, rgba(7, 138, 164, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#19b4c6', endColorstr='#078aa4', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
-#content_header h1{
+
+#content_header h1 {
     font-size: 2rem;
     color: white;
-    padding:5.5rem 0 1rem 0;
+    padding: 5.5rem 0 1rem 0;
     clear: right;
 }
-#content_header p{
+
+#content_header p {
     font-size: 1.2rem;
     color: #86d2dd;
 }
+
 #content_header span {
     color: white;
     float: right;
     font-size: 1rem;
 }
+
 /*---------------------SECTION SLIDE---------------*/
-#robin_left{
+
+#robin_left {
     text-align: center;
     display: block;
     width: 25rem;
-    background:#27212c;
-    -webkit-box-shadow: 0px -2px 2px 0px rgba(80,70,88,1);
-    -moz-box-shadow: 0px -2px 2px 0px rgba(80,70,88,1);
-    box-shadow:0px -2px 2px 0px rgba(80,70,88,1);
-    color:#766982 ;
+    height: 7.5rem;
+    background: #27212c;
+    -webkit-box-shadow: 0px -2px 2px 0px rgba(80, 70, 88, 1);
+    -moz-box-shadow: 0px -2px 2px 0px rgba(80, 70, 88, 1);
+    box-shadow: 0px -2px 2px 0px rgba(80, 70, 88, 1);
+    color: #766982;
     font-size: 1rem;
 }
-#robin_left p{
+
+#robin_left p {
     position: relative;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
-#robin_right{
-float: right;
+#robin_right {
+    float: right;
     height: 7.5rem;
     width: 7rem;
     background: #bc3183;
-    -webkit-box-shadow: 0px -2px 2px 0px rgba(240,96,228,1);
-    -moz-box-shadow: 0px -2px 2px 0px rgba(240,96,228,1);
-    box-shadow: 0px -2px 2px 0px rgba(240,96,228,1);
+    -webkit-box-shadow: 0px -2px 2px 0px rgba(240, 96, 228, 1);
+    -moz-box-shadow: 0px -2px 2px 0px rgba(240, 96, 228, 1);
+    box-shadow: 0px -2px 2px 0px rgba(240, 96, 228, 1);
 }
-#robin_right span{
+
+#robin_right span {
     position: relative;
     text-align: center;
     display: block;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
-    color:white;
+    color: white;
 }
-#arrow{
+
+#arrow {
     background: #5b0fa1;
     height: 27.5rem;
-    -webkit-box-shadow: 0 -2px 2px 0px rgba(154,26,222,1);
-    -moz-box-shadow: 0px -2px 2px 0px rgba(154,26,222,1);
-    box-shadow: 0px -2px 2px 0px rgba(154,26,222,1);
+    -webkit-box-shadow: 0 -2px 2px 0px rgba(154, 26, 222, 1);
+    -moz-box-shadow: 0px -2px 2px 0px rgba(154, 26, 222, 1);
+    box-shadow: 0px -2px 2px 0px rgba(154, 26, 222, 1);
 }
-#arrow span{
+
+#arrow span {
 
     position: relative;
     display: block;
@@ -189,87 +209,111 @@ float: right;
     width: 20px;
     font-size: 3rem;
 }
-#slide img{
+
+#slide img {
     height: 27.5rem;
     width: 32rem;
 }
+
 /*-----------FOOTER-------------*/
-#footer{
+#footer {
     background: #ebebeb;
 }
-#footer h2{
+
+#footer h2 {
     padding: 3.5rem 0 2rem 1.5rem;
     color: #088ca5;
     font-size: 2.4rem;
 }
-#footer p{
+
+#footer p {
     padding-left: 1.5rem;
     padding-right: 3rem;
     color: #515151;
     line-height: 1.5rem;
     font-size: 1rem;
 }
-#footer br{
+
+#footer br {
     margin-bottom: 2rem;
 }
-@media screen and (min-width: 640px){
-    .container{
-        padding: 0 3.5rem 0 3.5rem;
+
+/*-------DEVICE----640PX-----*/
+@media screen and (min-width: 640px) {
+    .container {
+        padding: 0 3.5rem 0 3.5rem; /**/
     }
-    body{
+
+    body {
         width: 64rem;
     }
-nav {
-    height: 7.5rem;
-}
-    nav span{
+
+    nav {
+        height: 7.5rem;
+    }
+
+    nav span {
         padding: 2.4rem;
         font-size: 2.4rem;
     }
-    nav h2{
+
+    nav h2 {
         padding-left: 3.5rem;
         line-height: 7.5rem;
     }
+
     #content_header {
         height: 35rem;
     }
-    #content_header h1{
+
+    #content_header h1 {
         font-size: 4rem;
         padding: 12rem 0 3.5rem 0;
     }
-    #content_header p{
-    font-size: 2rem;
+
+    #content_header p {
+        font-size: 2rem;
     }
+
     #content_header span {
         font-size: 2rem;
         padding-right: 9rem;
     }
+
     /*---------------------SECTION SLIDE---------------*/
-    #robin_left{
+    #robin {
         height: 14.5rem;
-        width: 50rem;
     }
+
+    #robin_left {
+        width: 50rem;
+        height: 14.5rem;
+    }
+
     #robin_right {
         width: 14rem;
         height: 14.5rem;
     }
-    #robin_left p{
+
+    #robin_left p {
         font-size: 2rem;
     }
-    #robin_right span{
+
+    #robin_right span {
         font-size: 1.5rem;
     }
-    #slide img{
+
+    #slide img {
         height: 55.5rem;
         width: 64rem;
     }
 
-
-    #footer h2{
-      padding: 7rem 0 6rem 5rem;
+    #footer h2 {
+        padding: 7rem 0 6rem 5rem;
         font-size: 3rem;
     }
-    #footer p{
+
+    #footer p {
         font-size: 1.5rem;
         line-height: 3rem;
     }
