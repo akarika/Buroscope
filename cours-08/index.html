@@ -8,7 +8,7 @@
     <title>Title</title>
 </head>
 <body>
-<header >
+<header id="top">
         <nav >
             <span class="flaticon-menu"></span>
             <h2>Navigation</h2>
@@ -47,6 +47,18 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur dolorem eligendi enim eum facilis, fuga fugit id ipsa laborum minus, molestiae, numquam odit omnis quasi quod quos similique tempore. Architecto consequatur ex excepturi nam nihil. Cupiditate dicta dignissimos earum fuga fugit laboriosam minima modi nostrum perferendis, sequi sunt tempora?</p>
         </div>
      </article>
+    <div id="smooth_scrool"><a href="#top" class="js-scrollTo flaticon-arrow-point-to-right"> </a></div>
 </section>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 1000; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
 </body>
 </html>

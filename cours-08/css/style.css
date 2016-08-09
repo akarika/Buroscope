@@ -222,6 +222,11 @@ float: right;
 #column p:nth-of-type(2){
     display: none;
 }
+#smooth_scrool a{
+    transform: rotate(-90deg);
+    position: relative;
+    bottom: 15rem;
+}
 
 @media screen and (min-width: 640px){
     .container{
@@ -328,9 +333,23 @@ nav {
         column-count: 2;
         font-size: 2rem;
         line-height: 4rem;
+        display: inl
     }
     #column p:nth-of-type(2){
         display: block;
+
+    }
+    #smooth_scrool {
+
+        font-size: 1.5rem;
+
+    }
+    #smooth_scrool a{
+        color: black;
+        margin-right: 2rem;
+        float: right;
+        font-size: 3rem;
+        padding-bottom: 5rem;
     }
     /*---------------------SECTION SLIDE---------------*/
     #robin_left{
@@ -365,9 +384,6 @@ nav {
         font-size: 3.2rem;
         display: block;
     }
-
-
-
 
 }
 @media screen and (min-width: 1024px){
