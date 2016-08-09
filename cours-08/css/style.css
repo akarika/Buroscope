@@ -349,7 +349,7 @@ nav {
         clear: both;
     }
     #footer h2{
-        padding: 7rem 0 3rem 5rem;
+        padding: 7rem 0 4rem 5rem;
         font-size: 3.2rem;
     }
     #footer span,    #footer h2+p{
@@ -361,8 +361,28 @@ nav {
         color: #515151;
     }
 
-
-
-
-
+}
+@media screen and (min-width: 1024px){
+    .container{
+        padding: 0 5rem 0 5rem;
+    }
+    body{
+        width: 102.4rem;
+    }
+    #content_header{
+        height: 57.5rem;
+    }
+    #content_header h1{
+        padding: 20rem 10rem 7rem 7rem;
+    }
+    #content_header p{
+        padding-left: 7rem;
+    }
+    #content_header span{
+        padding-right: 16rem;
+    }
+    #slide img, #arrow{
+        height:30rem;
+        width: calc(1024px/3);
+    }
 }
