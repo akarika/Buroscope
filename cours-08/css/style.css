@@ -61,6 +61,10 @@ body{
 .container{
     padding: 0 2rem 0 2rem;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 /*********************ICON*************************/
 
 /*
@@ -99,6 +103,9 @@ body{
 nav{
     background:#373c3f ;
     height: 4rem;
+}
+#nav{
+    display: none;
 }
 nav span{
     float: right;
@@ -149,9 +156,9 @@ nav h2{
     font-size: 1rem;
 }
 #robin_left p{
-    position: relative;
-    top:50%;
-    transform: translateY(-50%);
+    line-height: 7.5rem;
+    height: 7.5rem;
+
 }
 
 #robin_right{
@@ -202,12 +209,15 @@ float: right;
     color: #088ca5;
     font-size: 2.4rem;
 }
-#footer p{
+#footer h2+p {
     padding-left: 1.5rem;
     padding-right: 3rem;
     color: #515151;
     line-height: 1.5rem;
     font-size: 1rem;
+}
+#footer span{
+    display: none;
 }
 #footer br{
     margin-bottom: 2rem;
@@ -255,6 +265,7 @@ nav {
     }
     #robin_left p{
         font-size: 2rem;
+        line-height: 14.5rem;
     }
     #robin_right span{
         font-size: 1.5rem;
@@ -269,8 +280,89 @@ nav {
       padding: 7rem 0 6rem 5rem;
         font-size: 3rem;
     }
-    #footer p{
+    #footer h2>p{
         font-size: 1.5rem;
         line-height: 3rem;
     }
+}
+@media screen and (min-width: 980px){
+ .container{
+     padding: 0 5rem 0 5rem;
+ }
+    body{
+        width: 98rem;
+    }
+    nav {
+        height: 10rem;
+    }
+    nav a{
+        margin-right: 2rem;
+    }
+    nav h2{
+        display: none;
+    }
+    #nav , #nav li{
+        line-height: 10rem;
+        display: inline-block;
+        font-size: 2rem;
+    }
+    nav span{
+       display: none;
+    }
+    #content_header {
+        height: 55rem;
+    }
+    #content_header h1{
+        font-size: 6rem;
+        padding-top: 20rem;
+        padding-bottom: 6rem;
+    }
+    #content_header span{
+        padding-right: 19rem;
+    }
+    /*---------------------SECTION SLIDE---------------*/
+    #robin_left{
+        height: 23.5rem;
+        width: 76.5rem;
+    }
+    #robin_left p{
+        font-size: 3rem;
+        line-height: 23.5rem;
+    }
+    #robin_right{
+        width: 22rem;
+        height: 23.5rem;
+    }
+    #robin_right span{
+        font-size: 2.5rem;
+    }
+    #arrow , #slide img{
+        float: left;
+        width: calc(980px/3);
+        height: 28rem;
+        -webkit-box-shadow: 0 0px 0px 0px rgba(154,26,222,1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(154,26,222,1);
+        box-shadow: 0px 0px 0px 0px rgba(154,26,222,1);
+    }
+    /*-----------FOOTER-------------*/
+    #footer{
+        clear: both;
+    }
+    #footer h2{
+        padding: 7rem 0 3rem 5rem;
+        font-size: 3.2rem;
+    }
+    #footer span,    #footer h2+p{
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 2rem;
+        line-height: 4rem;
+        color: #515151;
+    }
+
+
+
+
+
 }
