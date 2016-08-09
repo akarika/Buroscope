@@ -290,6 +290,7 @@ nav {
      padding: 0 5rem 0 5rem;
  }
     body{
+        margin: auto;
         width: 98rem;
     }
     nav {
@@ -368,6 +369,7 @@ nav {
     }
     body{
         width: 102.4rem;
+        margin: auto;
     }
     #content_header{
         height: 57.5rem;
