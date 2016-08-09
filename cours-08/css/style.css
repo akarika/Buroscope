@@ -111,7 +111,7 @@ nav span{
     float: right;
     background: #202529;
     color: white;
-    padding: 1rem;
+    padding: 1.45rem;
 }
 nav h2{
     font-size: 2.4rem;
@@ -203,25 +203,26 @@ float: right;
 /*-----------FOOTER-------------*/
 #footer{
     background: #ebebeb;
+    padding-bottom: 3rem;
 }
 #footer h2{
     padding: 3.5rem 0 2rem 1.5rem;
     color: #088ca5;
     font-size: 2.4rem;
 }
-#footer h2+p {
-    padding-left: 1.5rem;
-    padding-right: 3rem;
+#column {
+    font-size: 1.5rem;
     color: #515151;
-    line-height: 1.5rem;
-    font-size: 1rem;
 }
-#footer span{
+#column p{
+    padding-right: 5rem;
+    padding-top: 2rem;
+    line-height: 3rem;
+}
+#column p:nth-of-type(2){
     display: none;
 }
-#footer br{
-    margin-bottom: 2rem;
-}
+
 @media screen and (min-width: 640px){
     .container{
         padding: 0 3.5rem 0 3.5rem;
@@ -321,6 +322,16 @@ nav {
     #content_header span{
         padding-right: 19rem;
     }
+    #column{
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    #column p:nth-of-type(2){
+        display: block;
+    }
     /*---------------------SECTION SLIDE---------------*/
     #robin_left{
         height: 23.5rem;
@@ -352,15 +363,11 @@ nav {
     #footer h2{
         padding: 7rem 0 4rem 5rem;
         font-size: 3.2rem;
+        display: block;
     }
-    #footer span,    #footer h2+p{
-        width: 45%;
-        display: inline-block;
-        vertical-align: top;
-        font-size: 2rem;
-        line-height: 4rem;
-        color: #515151;
-    }
+
+
+
 
 }
 @media screen and (min-width: 1024px){
@@ -387,4 +394,5 @@ nav {
         height:30rem;
         width: calc(1024px/3);
     }
+
 }
