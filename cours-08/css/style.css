@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    font-family: "Droid", sans-serif;
 }
 
 ol, ul {
@@ -47,368 +46,103 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    list
 }
 
 html {
     font-size: .625em; /* fallback IE8+ */
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-    font-size: 62.5%;
 }
-body{
-    width: 32rem;
-    font-family: 'Montserrat', sans-serif;
-}
-.container{
-    padding: 0 2rem 0 2rem;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-/*********************ICON*************************/
-
-/*
-  Flaticon icon font: Flaticon
-  Creation date: 08/08/2016 14:28
-  */
 
 @font-face {
-    font-family: "Flaticon";
-    src: url("../css/Flaticon.eot");
-    src: url("../css/Flaticon.eot?#iefix") format("embedded-opentype"),
-    url("../css/Flaticon.woff") format("woff"),
-    url("../css/Flaticon.ttf") format("truetype"),
-    url("../css/Flaticon.svg#Flaticon") format("svg");
-    font-weight: normal;
+    font-family: "Droid";
+    src: url("../font/DroidSans-Bold.eot");
+url("../font/DroidSans-Bold.woff") format("woff"),
+url("../font/DroidSans-Bold.truetype") format("truetype"),
+url("../font/DroidSans-Bold.svg") format("svg"), font-weight: normal;
     font-style: normal;
 }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: "Flaticon";
-        src: url("./Flaticon.svg#Flaticon") format("svg");
-    }
+.container{
+padding: 0 8%;
 }
-
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-family: Flaticon;
-    font-style: normal;
+a{
+    text-decoration: none;
 }
-
-.flaticon-arrow-point-to-right:before { content: "\f100"; }
-.flaticon-menu:before { content: "\f101"; }
-
-/*---------NAV-------*/
-nav{
-    background:#373c3f ;
-    height: 4rem;
+/*---------------------HEADER---------------------*/
+header{
+    background: #2a2e33;
 }
-#nav{
-    display: none;
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav span{
-    float: right;
-    background: #202529;
-    color: white;
-    padding: 1.45rem;
+#header_left{
+    display: flex;
+    align-items: center;
 }
-nav h2{
-    font-size: 2.4rem;
-    color: white;
-    padding-left:  2rem;
-    line-height: 4rem;
-}
-
-#content_header{
-    height: 17.5rem;
-    background: rgb(25,180,198); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(25,180,198,1) 0%, rgba(7,138,164,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(25,180,198,1) 0%,rgba(7,138,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(25,180,198,1) 0%,rgba(7,138,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19b4c6', endColorstr='#078aa4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-#content_header h1{
-    font-size: 2rem;
-    color: white;
-    padding:5.5rem 0 1rem 0;
-    clear: right;
-}
-#content_header p{
-    font-size: 1.2rem;
-    color: #86d2dd;
-}
-#content_header span {
-    color: white;
-    float: right;
-    font-size: 1rem;
-}
-/*---------------------SECTION SLIDE---------------*/
-#robin_left{
-    text-align: center;
-    display: block;
-    width: 25rem;
-    background:#27212c;
-    -webkit-box-shadow: 0px -2px 2px 0px rgba(80,70,88,1);
-    -moz-box-shadow: 0px -2px 2px 0px rgba(80,70,88,1);
-    box-shadow:0px -2px 2px 0px rgba(80,70,88,1);
-    color:#766982 ;
-    font-size: 1rem;
-}
-#robin_left p{
-    line-height: 7.5rem;
-    height: 7.5rem;
-
-}
-
-#robin_right{
-float: right;
-    height: 7.5rem;
-    width: 7rem;
-    background: #bc3183;
-    -webkit-box-shadow: 0px -2px 2px 0px rgba(240,96,228,1);
-    -moz-box-shadow: 0px -2px 2px 0px rgba(240,96,228,1);
-    box-shadow: 0px -2px 2px 0px rgba(240,96,228,1);
-}
-#robin_right span{
-    position: relative;
-    text-align: center;
-    display: block;
-    top:50%;
-    transform: translateY(-50%);
-    color:white;
-}
-#arrow{
-    background: #5b0fa1;
-    height: 27.5rem;
-    -webkit-box-shadow: 0 -2px 2px 0px rgba(154,26,222,1);
-    -moz-box-shadow: 0px -2px 2px 0px rgba(154,26,222,1);
-    box-shadow: 0px -2px 2px 0px rgba(154,26,222,1);
-}
-#arrow span{
-
-    position: relative;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    margin: auto;
-    width: 20px;
+#header_left h2{
     font-size: 3rem;
+    color: white;
+    padding: 3.5rem 0;
+    margin-right: 1rem;
 }
-#slide img{
-    height: 27.5rem;
-    width: 32rem;
+#header_left h2 span {
+    font-size: 3rem;
+    color: #ffd700;
 }
-/*-----------FOOTER-------------*/
-#footer{
-    background: #ebebeb;
-    padding-bottom: 3rem;
+#header_left h2~span{
+    color: #55585c;
+    font-size: 1.4rem;
 }
-#footer h2{
-    padding: 3.5rem 0 2rem 1.5rem;
-    color: #088ca5;
-    font-size: 2.4rem;
+nav{
+    display: flex;
 }
-#column {
-    font-size: 1.5rem;
-    color: #515151;
+nav a{
+    font-size: 1.3rem;
+    color: white;
+    padding: 3.7rem 2.25rem;
 }
-#column p{
-    padding-right: 5rem;
-    padding-top: 2rem;
-    line-height: 3rem;
+/*-------------HELLO-----------*/
+#hello{
+    display: flex;
+    justify-content: center;
+    background: #00ccff;
+    text-align: center;
 }
-#column p:nth-of-type(2){
-    display: none;
+#hello p{
+    font-size: 3rem;
+    padding: 8.5rem 0 3rem 0;
+    color: white;
 }
-#smooth_scrool a{
-    transform: rotate(-90deg);
-    position: relative;
-    bottom: 15rem;
+#hello hr{
+border: 1px dashed white;
+    width: 46rem;
 }
-
-@media screen and (min-width: 640px){
-    .container{
-        padding: 0 3.5rem 0 3.5rem;
-    }
-    body{
-        width: 64rem;
-    }
-nav {
-    height: 7.5rem;
+#hello h1{
+    font-size: 6rem;
+    color: white;
+    padding: 3rem  3rem;
 }
-    nav span{
-        padding: 2.4rem;
-        font-size: 2.4rem;
-    }
-    nav h2{
-        padding-left: 3.5rem;
-        line-height: 7.5rem;
-    }
-    #content_header {
-        height: 35rem;
-    }
-    #content_header h1{
-        font-size: 4rem;
-        padding: 12rem 0 3.5rem 0;
-    }
-    #content_header p{
-    font-size: 2rem;
-    }
-    #content_header span {
-        font-size: 2rem;
-        padding-right: 9rem;
-    }
-    /*---------------------SECTION SLIDE---------------*/
-    #robin_left{
-        height: 14.5rem;
-        width: 50rem;
-    }
-    #robin_right {
-        width: 14rem;
-        height: 14.5rem;
-    }
-    #robin_left p{
-        font-size: 2rem;
-        line-height: 14.5rem;
-    }
-    #robin_right span{
-        font-size: 1.5rem;
-    }
-    #slide img{
-        height: 55.5rem;
-        width: 64rem;
-    }
-
-
-    #footer h2{
-      padding: 7rem 0 6rem 5rem;
-        font-size: 3rem;
-    }
-    #footer h2>p{
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
+#hello hr:nth-of-type(2){
+    width: 34rem;
+    border: 1px dashed white;
 }
-@media screen and (min-width: 980px){
- .container{
-     padding: 0 5rem 0 5rem;
- }
-    body{
-        margin: auto;
-        width: 98rem;
-    }
-    nav {
-        height: 10rem;
-    }
-    nav a{
-        margin-right: 2rem;
-    }
-    nav h2{
-        display: none;
-    }
-    #nav , #nav li{
-        line-height: 10rem;
-        display: inline-block;
-        font-size: 2rem;
-    }
-    nav span{
-       display: none;
-    }
-    #content_header {
-        height: 55rem;
-    }
-    #content_header h1{
-        font-size: 6rem;
-        padding-top: 20rem;
-        padding-bottom: 6rem;
-    }
-    #content_header span{
-        padding-right: 19rem;
-    }
-    #column{
-        -webkit-column-count: 2; /* Chrome, Safari, Opera */
-        -moz-column-count: 2; /* Firefox */
-        column-count: 2;
-        font-size: 2rem;
-        line-height: 4rem;
-        display: inl
-    }
-    #column p:nth-of-type(2){
-        display: block;
-
-    }
-    #smooth_scrool {
-
-        font-size: 1.5rem;
-
-    }
-    #smooth_scrool a{
-        color: black;
-        margin-right: 2rem;
-        float: right;
-        font-size: 3rem;
-        padding-bottom: 5rem;
-    }
-    /*---------------------SECTION SLIDE---------------*/
-    #robin_left{
-        height: 23.5rem;
-        width: 76.5rem;
-    }
-    #robin_left p{
-        font-size: 3rem;
-        line-height: 23.5rem;
-    }
-    #robin_right{
-        width: 22rem;
-        height: 23.5rem;
-    }
-    #robin_right span{
-        font-size: 2.5rem;
-    }
-    #arrow , #slide img{
-        float: left;
-        width: calc(980px/3);
-        height: 28rem;
-        -webkit-box-shadow: 0 0px 0px 0px rgba(154,26,222,1);
-        -moz-box-shadow: 0px 0px 0px 0px rgba(154,26,222,1);
-        box-shadow: 0px 0px 0px 0px rgba(154,26,222,1);
-    }
-    /*-----------FOOTER-------------*/
-    #footer{
-        clear: both;
-    }
-    #footer h2{
-        padding: 7rem 0 4rem 5rem;
-        font-size: 3.2rem;
-        display: block;
-    }
-
+#reservation{
+    background: #2a2e33;
+    height: 10rem;
+    width: 102rem;
+    padding: 2rem 1.8rem;
 }
-@media screen and (min-width: 1024px){
-    .container{
-        padding: 0 5rem 0 5rem;
-    }
-    body{
-        width: 102.4rem;
-        margin: auto;
-    }
-    #content_header{
-        height: 57.5rem;
-    }
-    #content_header h1{
-        padding: 20rem 10rem 7rem 7rem;
-    }
-    #content_header p{
-        padding-left: 7rem;
-    }
-    #content_header span{
-        padding-right: 16rem;
-    }
-    #slide img, #arrow{
-        height:30rem;
-        width: calc(1024px/3);
-    }
+#reservation form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#reservation label{
+    font-size: 1.4rem;
+    color: #555029;
+}
+#reservation[input]{
 
 }

@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 08/08/2016 14:28
+    Creation date: 10/08/2016 14:34
     */
 
     @font-face {
@@ -36,8 +36,22 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-arrow-point-to-right:before { content: "\f100"; }
-.flaticon-menu:before { content: "\f101"; }
+    .flaticon-calendar:before { content: "\f100"; }
+.flaticon-coffee:before { content: "\f101"; }
+.flaticon-down-arrow:before { content: "\f102"; }
+.flaticon-fan:before { content: "\f103"; }
+.flaticon-hair-dryer:before { content: "\f104"; }
+.flaticon-ironing-board:before { content: "\f105"; }
+.flaticon-menu-bar:before { content: "\f106"; }
+.flaticon-television:before { content: "\f107"; }
+.flaticon-wifi:before { content: "\f108"; }
     
-    $font-Flaticon-arrow-point-to-right: "\f100";
-    $font-Flaticon-menu: "\f101";
+    $font-Flaticon-calendar: "\f100";
+    $font-Flaticon-coffee: "\f101";
+    $font-Flaticon-down-arrow: "\f102";
+    $font-Flaticon-fan: "\f103";
+    $font-Flaticon-hair-dryer: "\f104";
+    $font-Flaticon-ironing-board: "\f105";
+    $font-Flaticon-menu-bar: "\f106";
+    $font-Flaticon-television: "\f107";
+    $font-Flaticon-wifi: "\f108";
