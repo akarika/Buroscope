@@ -27,6 +27,8 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: "Droid", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 ol, ul {
@@ -46,7 +48,6 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    list
 }
 
 html {
@@ -112,7 +113,7 @@ nav a{
 }
 #hello p{
     font-size: 3rem;
-    padding: 8.5rem 0 3rem 0;
+    padding: 8.5rem 0 8rem 0;
     color: white;
 }
 #hello hr{
@@ -132,17 +133,25 @@ border: 1px dashed white;
     background: #2a2e33;
     height: 10rem;
     width: 102rem;
-    padding: 2rem 1.8rem;
+    align-self: center;
+    position: relative;
+    bottom: 5rem;
 }
 #reservation form{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
 }
 #reservation label{
     font-size: 1.4rem;
     color: #555029;
 }
-#reservation[input]{
-
+#reservation input[type] ,  #reservation input[submit] {
+    padding: 0.3rem 0.1rem
+}
+#reservation select[name]{
+    padding: 0.65rem ;
 }
