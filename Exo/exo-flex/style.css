@@ -53,5 +53,35 @@ html {
 }
 /*--------FLEX----------*/
 .nav-flex{
-    display: flex;
+    float: left;
+    display:inline-flex;
+    height: 40rem;
+    flex-direction:row ;
+flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content:center ;
+    background: red;
 }
+
+.nav-flex li{
+    background: black;
+}
+.nav-flex a{
+    font-size: 2rem;
+    display: block;
+    padding: 2rem;
+    color: grey;
+    border: 1px dashed white;
+}
+.un{
+    flex-shrink: 0;
+    width: 15rem;
+}
+.deux{
+
+    flex-shrink: 3;
+}
+
+
+
