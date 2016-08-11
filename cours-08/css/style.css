@@ -1,3 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@font-face {
+    font-family:"Ardecode";
+    src: url("../font/ARDECODE.eot");
+    src: url('../font/ARDECODE.eot?#iefix') format('embedded-opentype'),
+url("../font/ARDECODE.woff") format("woff"),
+url("../font/ARDECODE.ttf") format("truetype"),
+url("../font/ARDECODE.svg") format("svg");
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Quicksand";
+    src: url("../font/QuicksandLight-Regular.eot");
+    src: url('../font/QuicksandLight-Regular.eot?#iefix') format('embedded-opentype'),
+    url("../font/QuicksandLight-Regular.woff") format("woff"),
+    url("../font/QuicksandLight-Regular.ttf") format("truetype"),
+    url("../font/QuicksandLight-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style:normal;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,9 +48,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    font-family: "Droid", sans-serif;
     display: flex;
     flex-direction: column;
+
 }
 
 ol, ul {
@@ -55,14 +77,7 @@ html {
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
 }
 
-@font-face {
-    font-family: "Droid";
-    src: url("../font/DroidSans-Bold.eot");
-url("../font/DroidSans-Bold.woff") format("woff"),
-url("../font/DroidSans-Bold.truetype") format("truetype"),
-url("../font/DroidSans-Bold.svg") format("svg"), font-weight: normal;
-    font-style: normal;
-}
+
 .container{
 padding: 0 8%;
 }
@@ -72,6 +87,7 @@ a{
 /*---------------------HEADER---------------------*/
 header{
     background: #2a2e33;
+    font-family: 'Droid Sans', sans-serif;;
 }
 header .container{
     display: flex;
@@ -95,21 +111,44 @@ header .container{
 #header_left h2~span{
     color: #55585c;
     font-size: 1.4rem;
+    font-style: italic;
 }
 nav{
     display: flex;
+
 }
 nav a{
     font-size: 1.3rem;
     color: white;
-    padding: 3.7rem 2.25rem;
+    padding: 4.35rem 2.25rem;
+    position: relative;
 }
+nav a:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 0.5rem;
+    background: yellow;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+nav a:hover:before{
+    opacity: 1;
+}
+nav a:hover{
+    background: #1e2329;
+}
+
 /*-------------HELLO-----------*/
 #hello{
     display: flex;
     justify-content: center;
     background: #00ccff;
     text-align: center;
+    font-family: "Quicksand";
 }
 #hello p{
     font-size: 3rem;
@@ -129,6 +168,10 @@ border: 1px dashed white;
     width: 34rem;
     border: 1px dashed white;
 }
+#hello span, #hello h1{
+  font-weight: 700;
+}
+/*-----------------RESERVATION-------------*/
 #reservation{
     background: #2a2e33;
     height: 10rem;
@@ -136,7 +179,11 @@ border: 1px dashed white;
     align-self: center;
     position: relative;
     bottom: 5rem;
+    -webkit-box-shadow: 0px 6px 13px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 13px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 13px 3px rgba(0,0,0,0.75);
 }
+
 #reservation form{
     display: flex;
     justify-content:space-around;
@@ -147,11 +194,201 @@ border: 1px dashed white;
 }
 #reservation label{
     font-size: 1.4rem;
-    color: #555029;
+    color: #ffd700;
 }
-#reservation input[type] ,  #reservation input[submit] {
-    padding: 0.3rem 0.1rem
+#reservation input[type] {
+    border: none;
+    border-radius: 5px;
+    padding: 1.5rem 1rem
+}
+#reservation input[type^="submit"]{
+    padding: 1.75rem;
+}
+#reservation label{
+    display: inline-block;
+    padding-bottom: 0.5rem;
 }
 #reservation select[name]{
-    padding: 0.65rem ;
+    border: none;
+    border-radius: 5px;
+    padding: 1.75rem 0.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
+#submit {
+    border: none;
+    background:#ffd700 ;
+    margin-top: 2rem;
+    padding: 0.25rem 0;
+    font-weight: bold;
+}
+
+
+
+/*------------SLIDER------------*/
+
+#slider h2{
+    font-family: "Ardecode";
+    font-size: 6rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#slider p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #52565a;
+    padding-bottom: 5rem;
+}
+#carrousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5rem;
+
+}
+#carrousel img{
+    border-radius: 100%;
+    height: 20rem;
+    width: 20rem;
+    background: white;
+    border: 3px solid black;
+}
+#carrousel span{
+    font-size: 4rem;
+}
+#carrousel span:nth-of-type(1){
+    transform: rotate(90deg);
+}
+#carrousel span:nth-of-type(2){
+    transform: rotate(-90deg);
+}
+/*-----------OUR ROOM-------------*/
+#our_room{
+text-align: center;
+    font-family:"Quicksand" ;
+    background:gainsboro;
+    padding-bottom: 5rem;
+}
+#our_room article{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#our_room img{
+    width: 38rem;
+    height: 16rem;
+    background:#2a2e33 ;
+}
+#our_room h3{
+font-size: 2.4rem;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+#our_room p{
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
+}
+#our_room span{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+#our_room h2{
+    font-family: "Ardecode";
+    font-size: 6rem;
+    text-align: center;
+   padding: 5rem 0 4rem 0;
+}
+#our_room div{
+width: 38rem;
+    margin: 1rem;
+}
+
+/*--------LOCATION ----------*/
+
+#location {
+    background: #e7cb2c;
+    font-family: "Quicksand";
+    color: white;
+
+}
+#location h2{
+    padding: 6rem 0 4rem;
+    font-size: 4.8rem;
+    font-weight: bold;
+    clear: left;
+
+}
+#location p{
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+   font-style: italic;
+}
+#location .container{
+    display: flex;
+}
+#location img{
+    float: right;
+padding-left: 15rem;
+}
+/*-------------FOOTER----------*/
+footer {
+    background: #333333;
+    font-family: "Quicksand";
+    color: white;
+    text-align: justify;
+    padding-bottom: 5rem;
+
+}
+footer h3{
+    font-size: 1.8rem;
+    padding: 2.5rem 0 2rem;
+    font-weight: bold;
+}
+footer p, footer article {
+    font-size: 1.2rem;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+footer .container > article{
+
+}
+#latest_news span{
+    color: #ffd700;
+
+}
+#latest_news article{
+    padding-bottom: 1rem;
+}
+footer article, #latest_news, footer form{
+    flex-basis: 22rem;
+}
+footer article:nth-of-type(2){
+    flex-basis: 40rem;
+}
+footer article:last-of-type a, footer form input[type^="submit"]{
+    font-weight: bold;
+    float: left;
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+    background: #e7cb2c;
+    border-radius: 10px;
+    position: relative;
+    top:1rem;
+    border:none;
+
+}
+footer label{
+    font-size:1.2rem ;
+}
+#user, #pass{
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black ;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.2rem;
+}
+
+
+
