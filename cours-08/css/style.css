@@ -115,12 +115,33 @@ header .container{
 }
 nav{
     display: flex;
+
 }
 nav a{
     font-size: 1.3rem;
     color: white;
-    padding: 3.7rem 2.25rem;
+    padding: 4.35rem 2.25rem;
+    position: relative;
 }
+nav a:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 0.5rem;
+    background: yellow;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+nav a:hover:before{
+    opacity: 1;
+}
+nav a:hover{
+    background: #1e2329;
+}
+
 /*-------------HELLO-----------*/
 #hello{
     display: flex;

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="icon/flaticon.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 <body>
 <header>
@@ -60,12 +62,9 @@
     <h2>Book A Package</h2>
     <p>Sed euismod sem id consequat rutrum. Ut convallis lorem a orci mollis, eu vulputate libero aliquet. Praesent egestas nisi sed purus tincidunt faucibus. Aliquam lobortis orci lacus, sed faucibus augue dapibus vitae. Ut vitae mi sapien. Phasellus a eros justo. Curabitur odio massa, tincidunt nec nibh sit amet</p>
 
-    <div id="carrousel" class="container">
-        <span class="flaticon-down-arrow"></span>
-        <img >
-        <img >
-        <img >
-        <span class="flaticon-down-arrow"></span>
+    <div id="carrousel" class="container autoplay">
+
+        <img src="http://loremflickr.com/200/200" /><img src="http://loremflickr.com/200/200" /><img src="http://loremflickr.com/200/200" /><img src="http://loremflickr.com/200/200" /><img src="http://loremflickr.com/200/200" /><img src="http://loremflickr.com/200/200" />
     </div>
 </section>
 <section id="our_room">
@@ -156,5 +155,20 @@
     </form>
 </div>
 </footer>
+
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+
+</script>
 </body>
 </html>
