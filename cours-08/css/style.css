@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Droid";
+    src: url("../font/DroidSans-Bold.eot");
+    src: url('../font/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+url("../font/DroidSans-Bold.woff") format("woff"),
+url("../font/DroidSans-Bold.truetype") format("truetype"),
+url("../font/DroidSans-Bold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ardecode";
+    src: url("../font/ARDECODE.eot");
+    src: url('../font/ARDECODE.eot?#iefix') format('embedded-opentype'),
+url("../font/ARDECODE.woff") format("woff"),
+url("../font/ARDECODE.truetype") format("truetype"),
+url("../font/ARDECODE.svg") format("svg");
+    font-weight: normal;
+    font-style:normal;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,7 +67,6 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    list
 }
 
 html {
@@ -54,14 +74,7 @@ html {
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
 }
 
-@font-face {
-    font-family: "Droid";
-    src: url("../font/DroidSans-Bold.eot");
-url("../font/DroidSans-Bold.woff") format("woff"),
-url("../font/DroidSans-Bold.truetype") format("truetype"),
-url("../font/DroidSans-Bold.svg") format("svg"), font-weight: normal;
-    font-style: normal;
-}
+
 .container{
 padding: 0 8%;
 }
@@ -143,6 +156,22 @@ border: 1px dashed white;
     font-size: 1.4rem;
     color: #555029;
 }
-#reservation[input]{
+#reservation input[type], #reservation select[name]{
+border-radius: 5px;
+}
 
+
+/*------------SLIDER------------*/
+
+#slider h2{
+    font-family: "Ardecode";
+    font-size: 6rem;
+    text-align: center;
+    padding: 12rem 0 2rem;
+}
+#slider p{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #52565a;
+    padding-bottom: 5rem;
 }
