@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <link rel="stylesheet" href="icon/font/_flaticon.scss">
+    <link rel="stylesheet" href="icon/flaticon.css">
 </head>
 <body>
 <header>
@@ -24,7 +24,7 @@
 </header>
 <section id="hello">
     <div class="container">
-        <p>Hello, You've Reached</p>
+        <p><span>Hello,</span> You've Reached</p>
         <hr>
         <h1>HOTEL DELUXE</h1>
         <hr>
@@ -39,11 +39,11 @@
         <form action="#" >
             <div>
                 <label for="arrival">Arrival</label><br>
-                <input type="date" min="2016-0-10" name="arrival" id="arrival">
+                <input type="date" min="2016-0-10" name="arrival" id="arrival" class="flaticon-calendar">
             </div>
             <div>
                 <label for="departure">Departure</label><br>
-                <input type="date" min="2016-0-10" name="departure" id="departure">
+                <input type="date" min="2016-0-10" name="departure" id="departure" class="flaticon-calendar">
             </div>
             <div>        <label >Room Type</label><br>
                 <select name="room_type">
@@ -53,45 +53,94 @@
                     <option value="Premium Double Room">Prenium Double Room</option>
                     <option value="Royale Suit">Royale Suit</option>
                 </select></div>
-            <div><input type="submit" value="View Prices"></div>
+            <div ><input id="submit" type="submit" value="View Prices"></div>
         </form>
 </section>
 <section id="slider" class="container">
     <h2>Book A Package</h2>
     <p>Sed euismod sem id consequat rutrum. Ut convallis lorem a orci mollis, eu vulputate libero aliquet. Praesent egestas nisi sed purus tincidunt faucibus. Aliquam lobortis orci lacus, sed faucibus augue dapibus vitae. Ut vitae mi sapien. Phasellus a eros justo. Curabitur odio massa, tincidunt nec nibh sit amet</p>
-    <div id="carrousel"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+
+    <div id="carrousel" class="container">
+        <span class="flaticon-down-arrow"></span>
+        <img >
+        <img >
+        <img >
+        <span class="flaticon-down-arrow"></span>
+    </div>
 </section>
 <section id="our_room">
-    <article>
-        <div><img src="" alt=""><h3>Standard Double Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p></div>
-        <div><img src="" alt=""><h3>Supperior Double Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p></div>
-        <div><img src="" alt=""><h3>Family Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p></div>
-    </article>    <article>
-        <div><img src="" alt=""><h3>Standard Single Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p></div>
-        <div><img src="" alt=""><h3>Supperior Single Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p></div>
-        <div><img src="" alt=""><h3>VIP Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p></div>
+    <h2>Our Room Types</h2>
+    <article class="container">
+        <div><img src="" alt=""><h3>Standard Double Room</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>
+            <span class="flaticon-fan "></span>
+            <span class="flaticon-hair-dryer"></span>
+            <span class="flaticon-ironing-board"></span>
+        <span class="flaticon-television"></span>
+        <span class="flaticon-wifi"></span>
+        <span class="flaticon-coffee"></span></div>
+        <div><img src="" alt=""><h3>Supperior Double Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>            <span class="flaticon-fan "></span>
+            <span class="flaticon-hair-dryer"></span>
+            <span class="flaticon-ironing-board"></span>
+            <span class="flaticon-television"></span>
+            <span class="flaticon-wifi"></span>
+            <span class="flaticon-coffee"></span></div>
+        <div><img src="" alt=""><h3>Family Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>            <span class="flaticon-fan "></span>
+            <span class="flaticon-hair-dryer"></span>
+            <span class="flaticon-ironing-board"></span>
+            <span class="flaticon-television"></span>
+            <span class="flaticon-wifi"></span>
+            <span class="flaticon-coffee"></span></div>
+
+            <div><img src="" alt=""><h3>Standard Single Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>            <span class="flaticon-fan "></span>
+            <span class="flaticon-hair-dryer"></span>
+            <span class="flaticon-ironing-board"></span>
+        <span class="flaticon-television"></span>
+        <span class="flaticon-wifi"></span>
+        <span class="flaticon-coffee"></span></div>
+        <div><img src="" alt=""><h3>Supperior Single Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>            <span class="flaticon-fan "></span>
+            <span class="flaticon-hair-dryer"></span>
+            <span class="flaticon-ironing-board"></span>
+        <span class="flaticon-television"></span>
+        <span class="flaticon-wifi"></span>
+        <span class="flaticon-coffee"></span></div>
+        <div><img src="" alt=""><h3>VIP Room</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>            <span class="flaticon-fan "></span>
+            <span class="flaticon-hair-dryer"></span>
+            <span class="flaticon-ironing-board"></span>
+        <span class="flaticon-television"></span>
+        <span class="flaticon-wifi"></span>
+        <span class="flaticon-coffee"></span></div>
     </article>
 
 </section>
 <section id="location">
-    <img src="" alt="">
-    <h2>143 City Located Hotels World Wide</h2>
+    <div class="container">
+
+        <div>      <h2>143 City Located Hotels World Wide</h2>
+            <p>“Hospitality, Quality & Good Locations. We only provide you with the best hotels” - John Doe</p>
+        </div>
+        <img src="img/homme.png" alt="">
+    </div>
 </section>
-<footer>
+<footer> <div class="container">
     <article>
         <h3>ABOUT THIS HOTEL</h3>
         <p>Suspendisse erat mi, tincidunt sit amet massa quis, commodo fermentum diam. Sed nec dui nec nunc tempor interdum.
         </p><br><p> Ut vulputate augue urna, ut porta dolor imperdiet a. Vestibulum nec leo eu magna aliquam ornare.</p>
     </article>
-    <div id="latest_news">
-        <h3>LASTEST NEWS</h3>
-        <article>rand Hotel joins DeluxeHotels <span>15 AUG </span></article>
-        <article>Happy Christmas To Everyone
-        <span>15 AUG</span></article>
-        <article>Best Places To Visit 2014 <span>15 AUG</span></article>
-        <article>Various Offers <span>15 AUG</span></article></div>
+
+        <div id="latest_news">
+            <h3>LASTEST NEWS</h3>
+            <article><p>Grand Hotel joins DeluxeHotels </p><span>15 AUG </span></article>
+            <article>Happy Christmas To Everyone <br>
+                <span>15 AUG</span></article>
+            <article>Best Places To Visit 2014 <br><span>15 AUG</span></article>
+            <article>Various Offers <br><span>15 AUG</span></article>
+        </div>
+
+
     <article>
-        <h3>JOIN DELUXEHOTELS</h3>
+        <h3>JOIN DELUXE HOTELS</h3>
         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vestibulum blandit egestas. Nam id lectus vel orci luctus consectetur eget id elit. In tortor odio, pellentesque eu arcu sit amet, lacinia euismod nisi. Aliquam sodales tristique mauris ac fermentum. Donec vel varius ipsum. Pellentesque vitae mollis massa. </p>
         <br><p>
         There is no costs or whatsoever so sign up today!</p>
@@ -103,7 +152,9 @@
         <input type="text" id="user">
         <label for="pass">Password</label>
         <input type="password" id="pass">
+        <input type="submit" value="LOGIN">
     </form>
+</div>
 </footer>
 </body>
 </html>
