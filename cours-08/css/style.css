@@ -75,6 +75,26 @@ table {
 html {
     font-size: .625em; /* fallback IE8+ */
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+<<<<<<< HEAD
+    font-size: 62.5%;
+}
+
+body {
+    width: 32rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 0 2rem 0 2rem;
+}
+
+/*********************ICON*************************/
+
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 08/08/2016 14:28
+  */
+=======
 }
 
 
@@ -115,6 +135,7 @@ header .container{
 }
 nav{
     display: flex;
+>>>>>>> flex
 
 }
 nav a{
@@ -142,6 +163,13 @@ nav a:hover{
     background: #1e2329;
 }
 
+<<<<<<< HEAD
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("./Flaticon.svg#Flaticon") format("svg");
+    }
+=======
 /*-------------HELLO-----------*/
 #hello{
     display: flex;
@@ -182,6 +210,7 @@ border: 1px dashed white;
     -webkit-box-shadow: 0px 6px 13px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 6px 13px 3px rgba(0,0,0,0.75);
     box-shadow: 0px 6px 13px 3px rgba(0,0,0,0.75);
+>>>>>>> flex
 }
 
 #reservation form{
@@ -223,6 +252,34 @@ border: 1px dashed white;
     font-weight: bold;
 }
 
+<<<<<<< HEAD
+.flaticon-arrow-point-to-right:before {
+    content: "\f100";
+}
+
+.flaticon-menu:before {
+    content: "\f101";
+}
+
+/*---------NAV-------*/
+nav {
+    background: #373c3f;
+    height: 4rem;
+}
+
+nav span {
+    float: right;
+    background: #202529;
+    color: white;
+    padding: 1rem;
+}
+
+nav h2 {
+    font-size: 2.4rem;
+    color: white;
+    padding-left: 2rem;
+    line-height: 4rem;
+=======
 
 
 /*------------SLIDER------------*/
@@ -310,6 +367,7 @@ width: 38rem;
     font-family: "Quicksand";
     color: white;
 
+>>>>>>> flex
 }
 #location h2{
     padding: 6rem 0 4rem;
@@ -317,6 +375,25 @@ width: 38rem;
     font-weight: bold;
     clear: left;
 
+<<<<<<< HEAD
+#content_header {
+    height: 17.5rem;
+    background: rgb(25, 180, 198); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(25, 180, 198, 1) 0%, rgba(7, 138, 164, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(25, 180, 198, 1) 0%, rgba(7, 138, 164, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(25, 180, 198, 1) 0%, rgba(7, 138, 164, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#19b4c6', endColorstr='#078aa4', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+#content_header h1 {
+    font-size: 2rem;
+    color: white;
+    padding: 5.5rem 0 1rem 0;
+    clear: right;
+}
+
+#content_header p {
+=======
 }
 #location p{
     font-size: 1.8rem;
@@ -345,18 +422,78 @@ footer h3{
     font-weight: bold;
 }
 footer p, footer article {
+>>>>>>> flex
     font-size: 1.2rem;
 }
+<<<<<<< HEAD
+
+#content_header span {
+    color: white;
+    float: right;
+    font-size: 1rem;
+}
+
+/*---------------------SECTION SLIDE---------------*/
+
+#robin_left {
+    text-align: center;
+    display: block;
+    width: 25rem;
+    height: 7.5rem;
+    background: #27212c;
+    -webkit-box-shadow: 0px -2px 2px 0px rgba(80, 70, 88, 1);
+    -moz-box-shadow: 0px -2px 2px 0px rgba(80, 70, 88, 1);
+    box-shadow: 0px -2px 2px 0px rgba(80, 70, 88, 1);
+    color: #766982;
+    font-size: 1rem;
+}
+
+#robin_left p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+=======
 footer .container{
     display: flex;
     justify-content: space-between;
 }
 footer .container > article{
 
+>>>>>>> flex
 }
 #latest_news span{
     color: #ffd700;
 
+<<<<<<< HEAD
+#robin_right {
+    float: right;
+    height: 7.5rem;
+    width: 7rem;
+    background: #bc3183;
+    -webkit-box-shadow: 0px -2px 2px 0px rgba(240, 96, 228, 1);
+    -moz-box-shadow: 0px -2px 2px 0px rgba(240, 96, 228, 1);
+    box-shadow: 0px -2px 2px 0px rgba(240, 96, 228, 1);
+}
+
+#robin_right span {
+    position: relative;
+    text-align: center;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+#arrow {
+    background: #5b0fa1;
+    height: 27.5rem;
+    -webkit-box-shadow: 0 -2px 2px 0px rgba(154, 26, 222, 1);
+    -moz-box-shadow: 0px -2px 2px 0px rgba(154, 26, 222, 1);
+    box-shadow: 0px -2px 2px 0px rgba(154, 26, 222, 1);
+}
+
+#arrow span {
+=======
 }
 #latest_news article{
     padding-bottom: 1rem;
@@ -377,8 +514,120 @@ footer article:last-of-type a, footer form input[type^="submit"]{
     position: relative;
     top:1rem;
     border:none;
+>>>>>>> flex
 
 }
+<<<<<<< HEAD
+
+#slide img {
+    height: 27.5rem;
+    width: 32rem;
+}
+
+/*-----------FOOTER-------------*/
+#footer {
+    background: #ebebeb;
+}
+
+#footer h2 {
+    padding: 3.5rem 0 2rem 1.5rem;
+    color: #088ca5;
+    font-size: 2.4rem;
+}
+
+#footer p {
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+    color: #515151;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+#footer br {
+    margin-bottom: 2rem;
+}
+
+/*-------DEVICE----640PX-----*/
+@media screen and (min-width: 640px) {
+    .container {
+        padding: 0 3.5rem 0 3.5rem; /**/
+    }
+
+    body {
+        width: 64rem;
+    }
+
+    nav {
+        height: 7.5rem;
+    }
+
+    nav span {
+        padding: 2.4rem;
+        font-size: 2.4rem;
+    }
+
+    nav h2 {
+        padding-left: 3.5rem;
+        line-height: 7.5rem;
+    }
+
+    #content_header {
+        height: 35rem;
+    }
+
+    #content_header h1 {
+        font-size: 4rem;
+        padding: 12rem 0 3.5rem 0;
+    }
+
+    #content_header p {
+        font-size: 2rem;
+    }
+
+    #content_header span {
+        font-size: 2rem;
+        padding-right: 9rem;
+    }
+
+    /*---------------------SECTION SLIDE---------------*/
+    #robin {
+        height: 14.5rem;
+    }
+
+    #robin_left {
+        width: 50rem;
+        height: 14.5rem;
+    }
+
+    #robin_right {
+        width: 14rem;
+        height: 14.5rem;
+    }
+
+    #robin_left p {
+        font-size: 2rem;
+    }
+
+    #robin_right span {
+        font-size: 1.5rem;
+    }
+
+    #slide img {
+        height: 55.5rem;
+        width: 64rem;
+    }
+
+    #footer h2 {
+        padding: 7rem 0 6rem 5rem;
+        font-size: 3rem;
+    }
+
+    #footer p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+=======
 footer label{
     font-size:1.2rem ;
 }
@@ -392,3 +641,4 @@ footer label{
 
 
 
+>>>>>>> flex
