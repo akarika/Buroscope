@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html{
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+
+}
+html, body{
+    height: 100%;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.button{
+color: #FFFFFF;
+    background: aqua;
+    font-size: 3rem;
+    display: block;
+    padding: 2rem 4rem;
+    transition: all 400ms ease-in-out ;
+    outline: none;
+    position: relative;
+    
+    
+}
+.button:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: blueviolet;
+    transition: all 400ms ease-in-out 400ms;
+     
+    
+}
+.button:hover:after{
+width: 100%;
+
+
+}
+.button:hover, .button:focus{
+    background: #2E2E2E;
+    color: aquamarine;
+    padding: 6rem;
+    border-radius:20%;
+    /*transform: rotate(90deg);*/
+   transform: rotateX(45deg);
+    
+}
+
+/*  goutte   */   
+.goutte{
+    width: 10rem;
+    height: 10rem;
+    background: #222222;
+    color: #FFF;
+    border: 1px solid red;
+    transition: 1000ms;
+}
+.goutte:hover, .goutte span:hover{
+    border-radius: 0 50% 50% 50%;
+    transform:translateY(10rem) rotate(45deg);
+    transform-origin: center center;
+}
+.goutte:hover span{
+    display: inline-block;
+    position: relative;
+    top:2rem;
+transform: rotate(-45deg);
+}
