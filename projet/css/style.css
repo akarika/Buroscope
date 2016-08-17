@@ -1,0 +1,170 @@
+@import 'https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+h2,h3,h4{
+    font-family: 'Oswald', sans-serif;
+}
+body {
+    line-height: 1;
+    font-family: 'Share Tech', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* media 320    */
+    h1 {
+    font-family: 'Denk One', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+body, html{
+    line-height: 1;
+    height: 100%;
+    width: 32rem;
+}
+/*---EFFET MENU HAMBURGER--*/
+
+.header{
+    position: static;
+    left: 0;
+    right: 0;
+    height: 6.6rem;
+    line-height: 6.6rem;
+    color: #FFF;
+    background-color: #252f34;
+    border-bottom: 2px solid #de1118;
+}
+.header_logo{
+    padding: 0 2.5rem;
+    float: left;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #de1118;
+}
+.container {
+    margin: 0 2rem;
+    clear: both;
+}
+    .site_content{
+        position: absolute;
+        /*overflow-y: scroll;*/
+        top:6.6rem;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        padding-top: 0;
+        overflow-scrolling: touch;
+    }
+    .site-pusher{
+        height: 100%;
+        transition-duration: 0.3s;
+        transform: translateX(0px);
+    }
+
+    .header_icon{
+        display: block;
+        height: 6rem;
+        width: 5rem;
+        position: relative;
+        float: left;
+        cursor: pointer;
+    }
+    .header_icon:after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1.6rem;
+        top:2rem;
+        left: 1rem;
+        height: 0;
+        box-shadow: 0 10px 0 2px white, 0 16px 0 2px white, 0 22px 0 2px white;
+    }
+    .menu{
+        position: absolute;
+        left: 0;
+        top:0;
+        bottom: 0;
+        width: 25rem;
+        background-color: #222e34;
+        transform: translateX(-25rem);
+        float: left;
+    }
+    .menu a{
+        display: block;
+        height: 4rem;
+        text-align: center;
+        line-height: 4rem;
+        border-bottom: 1px solid #f3f3f3;
+        padding: 0 1rem;
+    }
+    .with_sidebar .site-pusher {
+        transform: translateX(25rem);
+    }
+    .site-pusher,.site-container{
+        height: 100%;
+    }
+    .site-container{
+        overflow: hidden;
+    }
+    /*----HEADER--*/
+h1 span{
+    color: #de1118;
+    transform: ;
+}
+    header img{
+        width: 4rem;
+        height: 4rem;
+        padding-top: 1rem;
+    }
