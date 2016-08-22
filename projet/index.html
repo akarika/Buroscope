@@ -1,60 +1,205 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta http-equiv="content-type" content="text/html" ; charset="UTF-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Title</title>
+    <title>Title</title>
 </head>
+
 <body>
-<div class="site-container">
+    <nav id="menu" class="menu">
+        <a href="https://github.com/mango/slideout" target="_blank">
+            <header class="menu-header">
+                <span class="menu-header-title">View on Github</span>
+            </header>
+        </a>
 
-<div class="site-pusher">
-    <header class="header">
-        <a href="#" class="header_icon" id="header_icon"></a>
-        <a href="#" class="header_logo"><h1>Muay <img src="img/logo.png" alt="Notre force"><span>Thaï</span></h1></a>
-
-        <nav class="menu">
-            <a href="#">item1</a>
-            <a href="#">item2</a>
-            <a href="#">item3</a>
-            <a href="#">item4</a>
-        </nav>
-    </header>
-    <div class="site_content">
-        <section class="histoire container">
-            <h2>L'Histoire</h2>
-            <figure>
-                <img src="img/Prachao%20Sua%20.jpg" alt="Roi Sanpet VIII">
-                <figcaption>Sanpet VIII</figcaption>
-            </figure>
-
-
-            <div class="tooltip">
-                <input type="checkbox" value="selected" id="someID-2" class="tooltip-input">
-                <p>Le Muay Thai, appelé aussi Boxe Thaïlandaise ou Thai Boxing .</p>
-                <label for="someID-2" class="tooltip-label">Voire+</label>
-                <div role="tooltip" id="tooltipID" class="tooltip-content">
-                    <p> Sport de combat originaire de Thaïlande. Le Muay Thai est tiré des pratiques martiales ancestrales du Muay Boran (Boxe Traditionnelle). Le Muay Thai, serait vieux de deux mille ans selon les représentations des thaïlandais. Mais les chercheurs qui se sont investis dans une recherche historique sur le Muay thaï ont rencontrés bien des difficultés pour percer le secret des origines de l’art du combat. En effet, la plupart des archives ont été perdues pour toujours en 1767 quand les armées birmanes ont étendu le siège à la capitale du Siam d’alors, Ayutthaya. </p>
-                </div> <!--/.tooltip-content-->
-            </div><!--/.tooltip-->
+        <section class="menu-section">
+            <h3 class="menu-section-title">Docs</h3>
+            <ul class="menu-section-list">
+                <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+                <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+                <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+                <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+            </ul>
         </section>
+
+        <section class="menu-section">
+            <h3 class="menu-section-title">Slideout</h3>
+            <ul class="menu-section-list">
+                <li><a href="https://github.com/mango/slideout" target="_blank">Fork it</a></li>
+                <li><a href="https://github.com/mango/slideout/issues/new" target="_blank">Create an issue</a></li>
+                <li><a href="https://github.com/mango/slideout/releases/">Download</a></li>
+            </ul>
+        </section>
+
+        <section class="menu-section">
+            <h3 class="menu-section-title">Mango</h3>
+            <ul class="menu-section-list">
+                <li><a href="https://getmango.com" target="_blank">About Mango</a></li>
+                <li><a href="https://twitter.com/getmango" target="_blank">Follow Us</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <header class="header-hamburger fixed">
+        <button class="btn-hamburger js-slideout-toggle"></button>
+    </header>
+
+
+    <main id="main" class="panel">
+        <header class="panel-header">
+            <h1 class="title">Slideout.js</h1>
+            <h2 class="subtitle">A touch slideout navigation menu for your mobile web apps.</h2>
+            <div class="panel-actions">
+                <a href="https://github.com/mango/slideout/releases/" class="btn btn-download">Download</a>
+                <a href="https://github.com/mango/slideout" target="_blank" class="btn btn-fork">Fork it</a>
+            </div>
+        </header>
+
+        <div class="panel-demo iphone">
+            <img data-aload="assets/poster.png">
+        </div>
+
+        <section class="box">
+            <h2 class="box-title">Features</h2>
+            <div class="box-content">
+                <ul>
+                    <li>Dependency-free.</li>
+                    <li>Simple markup.</li>
+                    <li>Native scrolling.</li>
+                    <li>Easy customization.</li>
+                    <li>CSS transforms &amp; transitions.</li>
+                    <li>Just 4 Kb!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="box">
+            <h2 class="box-title">Installation</h2>
+            <div class="box-content">
+                <pre>
+$ npm install slideout
+
+$ bower install https://github.com/mango/slideout.git
+
+$ component install mango/slideout</pre>
+            </div>
+        </section>
+
+        <section class="box">
+            <h2 class="box-title">Usage</h2>
+            <div class="box-content">
+                <p>1. First of all, you'll need to have a menu ("#menu") and a main content ("#panel") into your body.</p>
+                <pre><code class="language-markup">
+&lt;nav id=&quot;menu&quot;&gt;
+&lt;header&gt;
+  &lt;h2&gt;Menu&lt;/h2&gt;
+&lt;/header&gt;
+&lt;/nav&gt;
+
+&lt;main id=&quot;panel&quot;&gt;
+&lt;header&gt;
+  &lt;h2&gt;Panel&lt;/h2&gt;
+&lt;/header&gt;
+&lt;/main&gt;</code></pre>
+
+                <p>2. Add the Slideout.js styles (index.css) in your web application.</p>
+                <pre><code class="language-css">
+body {
+width: 100%;
+height: 100%;
+}
+
+.slideout-menu {
+position: fixed;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+z-index: 0;
+width: 256px;
+overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+display: none;
+}
+
+.slideout-panel {
+position: relative;
+z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+display: block;
+}</code></pre>
+
+                <p>3. Then you just include Slideout.js and create a new instace with some options:</p>
+
+                <pre><code class="language-markup">
+&lt;script src=&quot;dist/slideout.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+var slideout = new Slideout({
+  'panel': document.getElementById('panel'),
+  'menu': document.getElementById('menu'),
+  'padding': 256,
+  'tolerance': 70
+});
+&lt;/script&gt;</code></pre>
+            </div>
+        </section>
+
+        <footer class="panel-footer">
+            <p>with <span class="heart">❤</span> by <a href="https://getmango.com/en" target="_blank">Mango</a></p>
+        </footer>
+    </main>
+    <div class="site-container">
+
+        <div class="site-pusher">
+            <header class="header">
+                <a href="#" class="header_icon" id="header_icon"></a>
+                <a href="#" class="header_logo"><h1>Muay <img src="img/logo.png" alt="Notre force"><span>Thaï</span></h1></a>
+
+                <nav class="menu">
+                    <a href="#">item1</a>
+                    <a href="#">item2</a>
+                    <a href="#">item3</a>
+                    <a href="#">item4</a>
+                </nav>
+            </header>
+            <div class="site_content">
+                <section class="histoire container">
+                    <h2>L'Histoire</h2>
+                    <figure>
+                        <img src="img/Prachao%20Sua%20.jpg" alt="Roi Sanpet VIII">
+                        <figcaption>Sanpet VIII</figcaption>
+                    </figure>
+
+
+                    <div class="tooltip">
+                        <input type="checkbox" value="selected" id="someID-2" class="tooltip-input">
+                        <p>Le Muay Thai, appelé aussi Boxe Thaïlandaise ou Thai Boxing .</p>
+                        <label for="someID-2" class="tooltip-label">Voire+</label>
+                        <div role="tooltip" id="tooltipID" class="tooltip-content">
+                            <p> Sport de combat originaire de Thaïlande. Le Muay Thai est tiré des pratiques martiales ancestrales du Muay Boran (Boxe Traditionnelle). Le Muay Thai, serait vieux de deux mille ans selon les représentations des thaïlandais. Mais les chercheurs qui se sont investis dans une recherche historique sur le Muay thaï ont rencontrés bien des difficultés pour percer le secret des origines de l’art du combat. En effet, la plupart des archives ont été perdues pour toujours en 1767 quand les armées birmanes ont étendu le siège à la capitale du Siam d’alors, Ayutthaya. </p>
+                        </div>
+                        <!--/.tooltip-content-->
+                    </div>
+                    <!--/.tooltip-->
+                </section>
+            </div>
+            <div class="site-cache" id="site-cache"></div>
+        </div>
     </div>
-    <div class="site-cache" id="site-cache"></div>
-</div>
-</div>
-<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(function () {
-        $('#header_icon').click(function(e){
-            e.preventDefault();
-            $('body').toggleClass('with_sidebar');
-        });
-        $('#site-cache').click(function(e) {
-            $('body').removeClass('with_sidebar');
-        })
-    });
-</script>
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
 </body>
+
 </html>

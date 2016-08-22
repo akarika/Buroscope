@@ -1,17 +1,85 @@
 @import 'https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech';
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,29 +88,44 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
-h2,h3,h4{
+h2,
+h3,
+h4 {
     font-family: 'Oswald', sans-serif;
 }
+
 body {
-    line-height: 1;
     font-family: 'Share Tech', sans-serif;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -53,171 +136,96 @@ table {
 }
 
 html {
-    font-size: .625em; /* fallback IE8+ */
-    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-
+    font-size: .625em;
+    /* fallback IE8+ */
+    font-size: calc(1em * .625);
+    /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    font-size: 62.5%;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
+
+
 /* media 320    */
-    h1 {
+
+h1 {
     font-family: 'Denk One', sans-serif;
     font-size: 3rem;
     color: white;
 }
-body, html{
-    line-height: 1;
+
+body,
+html {
     height: 100%;
-    width: 32rem;
 }
-p{
+
+body {
+    width: 32rem;
+    line-height: 1;
+}
+
+p {
     font-size: 1.5rem;
 }
+
+
 /*---EFFET MENU HAMBURGER--*/
 
-.header{
-    position: static;
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.slideout-menu {
+    position: fixed;
     left: 0;
+    top: 0;
+    bottom: 0;
     right: 0;
-    height: 6.6rem;
-    line-height: 6.6rem;
-    color: #FFF;
-    border-top:2px solid #de1118; ;
-    border-bottom: 2px solid #de1118;
-    background: rgba(32,45,51,1);
-    background: -moz-linear-gradient(-45deg, rgba(32,45,51,1) 0%, rgba(64,84,92,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(32,45,51,1)), color-stop(100%, rgba(64,84,92,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(32,45,51,1) 0%, rgba(64,84,92,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(32,45,51,1) 0%, rgba(64,84,92,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(32,45,51,1) 0%, rgba(64,84,92,1) 100%);
-    background: linear-gradient(135deg, rgba(32,45,51,1) 0%, rgba(64,84,92,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202d33', endColorstr='#40545c', GradientType=1 );
-}
-.header_logo{
-    padding: 0 2.5rem;
-    float: left;
-    font-weight: bold;
-}
-
-.menu a:hover{
-    color: #de1118;
-}
-.container {
-    margin: 0 2rem;
-    clear: both;
-}
-    .site_content{
-        position: absolute;
-        overflow-y: scroll;
-        top:6.6rem;
-        right: 0px;
-        left: 0px;
-        bottom: 0px;
-        padding-top: 0;
-        overflow-scrolling: touch;
-    }
-    .site-pusher{
-        height: 100%;
-        transition-duration: 0.3s;
-        transform: translateX(0px);
-    }
-
-    .header_icon{
-        display: block;
-        height: 6rem;
-        width: 5rem;
-        position: relative;
-        float: left;
-        cursor: pointer;
-    }
-    .header_icon:after{
-        content: '';
-        position: absolute;
-        display: block;
-        width: 1.6rem;
-        top:2rem;
-        left: 1rem;
-        height: 0;
-        box-shadow: 0 10px 0 2px white, 0 16px 0 2px white, 0 22px 0 2px white;
-    }
-    .menu{
-        position: absolute;
-        left: 0;
-        top:0;
-        bottom: 0;
-        width: 25rem;
-        background-color: #222e34;
-        transform: translateX(-25rem);
-        float: left;
-    }
-    .menu a{
-        display: block;
-        height: 4rem;
-        text-align: center;
-        line-height: 4rem;
-        border-bottom: 1px solid #f3f3f3;
-        padding: 0 1rem;
-    }
-    .with_sidebar .site-pusher {
-        transform: translateX(25rem);
-    }
-    .site-pusher,.site-container{
-        height: 100%;
-    }
-    .site-container{
-        overflow: hidden;
-    }
-    /*----HEADER--*/
-h1 span{
-    color: #de1118;
-}
-    header img{
-        width: 4rem;
-        height: 4rem;
-        padding-top: 1rem;
-    }
-/*----HISTOIRE---*/
-.histoire {
-    display: flex;
-    flex-direction: column;
-}
-.histoire h2{
-    padding: 1rem 0;
-    font-size: 2rem;
-
-}
-.histoire img{
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-}
-/*tooltip*/
-.tooltip-label {
-    font-size: 1em;
-    background: lightblue;
-    padding: 0.1em 40%;
-    cursor: pointer;
-    margin: 0.3rem 0;
-}
-.tooltip-input {
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     display: none;
-
-} /*Hide input element*/
-
-.tooltip-content {
-margin: 0.5rem;
 }
-.tooltip-input:not(checked) ~ .tooltip-content {
-    display: none;
 
+.slideout-panel {
+    position: relative;
+    z-index: 1;
 }
-.tooltip-input:checked ~ .tooltip-content {
-    display: inline-block;
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
 }
-.tooltip{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+.fixed {
+    backface-visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    transition: transform 300ms ease;
+}
+
+.fixed-open {
+    transform: translate3d(256px, 0px, 0px);
+}
+
+.btn-hamburger {
+    position: static;
+    height: 40px;
+    width: 40px;
+}
+
+.header-hamburger {
+    background-color: red;
+    width: 100%;
+    height: 50px;
 }
