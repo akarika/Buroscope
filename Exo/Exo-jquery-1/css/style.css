@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+/*nav     */
+ ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    position: relative;
+}
+li a{
+    display: inline-block;
+    padding: 1rem;
+}
+li:hover{
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+}
+
+.sous-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.sous-menu li {
+    display: block;
+}
+header{
+    text-align: center;
+}
+header img{
+    width: 20%;
+    height: 20%;
+    opacity: 0.4s;
+    transition: all 0.4s;
+}
+header img.active{
+
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 0.5s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg) scale(2); } }
+
+
+.btn{
+    margin-top: 100px;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background-color: #000;
+    cursor: pointer;
+}
+.infobox{
+    display: block;
+    padding: 1.5rem;
+    width: 30vh;
+    height: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    top:-100vh;
+    left: 40%;
+    text-align: center;
+    position: fixed;
+}
+.infobox img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.close{
+    position: absolute;
+    right: 0px;
+    font-size: 2rem;
+    color: chocolate;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.view{
+    top:10vh;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.multiscroll.css">
+    <script src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery.multiscroll.min.js"></script>
+    <!--FANCY-->
+    <link rel="stylesheet" href="fancy/helpers/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="fancy/helpers/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="fancy/jquery.fancybox.css" type="text/css">
+    <script src="fancy/jquery.fancybox.js" type="text/javascript"></script>
+    <script type="text/javascript" src="fancy/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="fancy/jquery.fancybox.pack.js"></script>
+    <script src="fancy/helpers/jquery.fancybox-media.js"></script>
+    <script src="fancy/helpers/jquery.fancybox-thumbs.js"></script>
+    <script></script>
+    <title>Exo-jquery</title>
+</head>
+
+<body>
+    <ul id="myMenu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+    </ul>
+    <div id="multiscroll">
+        <div class="ms-left">
+            <div class="ms-section">
+                <a href="img/1_b.jpg" class="fancybox-thumb" rel="fancybox"> <img src="img/1_s.jpg" alt=""></a>
+            </div>
+            <div class="ms-section">
+                <a href="img/3_b.jpg" class="fancybox-thumb" rel="fancybox" rel="fancybox-thumb"> <img src="img/3_s.jpg" alt=""></a>
+            </div>
+            <div class="ms-section">
+                <a href="img/5_b.jpg" class="fancybox-thumb" rel="fancybox" rel="fancybox-thumb"> <img src="img/5_s.jpg" alt="">></a>
+            </div>
+            <div class="ms-section">Some section</div>
+        </div>
+        <div class="ms-right">
+            <div class="ms-section">
+                <a href="img/2_b.jpg" class="fancybox-thumb" rel="fancybox" rel="fancybox-thumb"> <img src="img/2_s.jpg" alt=""></a>
+            </div>
+            <div class="ms-section">
+                <a href="img/4_b.jpg" class="fancybox-thumb" rel="fancybox" rel="fancybox-thumb"> <img src="img/4_s.jpg" alt=""></a>
+            </div>
+            <div class="ms-section">
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm1.staticflickr.com/288/19353466834_6be3600330_b.jpg" title="Making a summer # 3 :) ((Nikon woman))"> <img src="http://farm1.staticflickr.com/288/19353466834_6be3600330_m.jpg" alt="" /> </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg" title="Sgwd Ddwli Uchaf, Brecon Waterfalls (technodean2000)"> <img src="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_m.jpg" alt="" /> </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" title="Golden Manarola (Sanjeev Deo)"> <img src="http://farm6.staticflickr.com/5444/17679973232_568353a624_m.jpg" alt="" /> </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)"> <img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" /> </a>
+            </div>
+            <div class="ms-section">
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)"> <img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" /> </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))"> <img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" /> </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)"> <img src="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_m.jpg" alt="" /> </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7308/15783866983_27160395b9_b.jpg" title="Rodeo Dusk (_JonathanMitchellPhotography_)"> <img src="http://farm8.staticflickr.com/7308/15783866983_27160395b9_m.jpg" alt="" /> </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox-thumb").fancybox({
+                prevEffect: 'none'
+                , nextEffect: 'none'
+                , helpers: {
+                    title: {
+                        type: 'outside'
+                    }
+                    , thumbs: {
+                        width: 50
+                        , height: 50
+                    }
+                }
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none'
+                , nextEffect: 'none'
+                , closeBtn: false
+                , helpers: {
+                    title: {
+                        type: 'inside'
+                    }
+                    , buttons: {}
+                }
+            });
+            $('#multiscroll').multiscroll({
+                verticalCentered: true
+                , scrollingSpeed: 700
+                , easing: 'easeInQuart'
+                , menu: true
+                , sectionsColor: []
+                , navigation: true
+                , navigationPosition: 'right'
+                , navigationColor: '#000'
+                , navigationTooltips: []
+                , loopBottom: false
+                , loopTop: false
+                , css3: true
+                , paddingTop: 0
+                , paddingBottom: 0
+                , normalScrollElements: null
+                , keyboardScrolling: true
+                , touchSensitivity: 5, // Custom selectors
+                sectionSelector: '.ms-section'
+                , leftSelector: '.ms-left'
+                , rightSelector: '.ms-right'
+                , sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'], //events
+                onLeave: function (index, nextIndex, direction) {}
+                , afterLoad: function (anchorLink, index) {}
+                , afterRender: function () {}
+                , afterResize: function () {}
+                , anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage']
+                , menu: '#myMenu'
+            , });
+        });
+    </script>
+</body>
+
+</html>

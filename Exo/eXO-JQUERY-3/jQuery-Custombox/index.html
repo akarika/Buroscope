@@ -1,0 +1,53 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Title -->
+    <title></title>
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custombox.css">
+    <!-- Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/custombox.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.element').on('click', function (e) {
+                Custombox.open({
+                    target: $(this).attr('data-target') /*Je cible CET l'élement qui a comme attribut l'ID modal */ 
+                    , effect: $(this).children('.txt-info').attr('data-effet') /*L effet se fait sur son ENFANT qui a la classe txt-info et l attr data-effet  qui posséde le nom de l'effet*/
+                });
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav> </nav>
+    <header> <img src="img/slider/porte.jpg" /> </header>
+    <main>
+        <div class="info item element" data-target="#modal">
+            <div class="head-info"> <img src=" img/info/c87dc0a108c7bdda6c05f2b4f44fe2549b60539651d06fa64ac1ed438bef3739.jpg " /> </div>
+            <div class="txt-info" data-effet="fadein" id="modal"> Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae. </div>
+        </div>
+        <div class="info item element" data-target="#modal">
+            <div class="head-info "> <img src="img/info/jp_ankylosaurus-jw.jpg" /> </div>
+            <div class="txt-info" data-effet="slip"> Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae. </div>
+        </div>
+        <div class="info item element" data-target="#modal">
+            <div class="head-info "> <img src=" img/info/ded5bedc-f474-474b-9f8e-86652f31b1ad.jpg " /> </div>
+            <div class="txt-info" data-effet="push"> Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae. </div>
+        </div>
+    </main>
+    <script src="js/custombox.js"></script>
+    <script src="js/legacy.js"></script>
+</body>
+
+</html>
