@@ -22,10 +22,10 @@
             <li> <a href="#bienEtre">bienEtre</a></li>
         </ul>
     </nav>
+    <header class="fixed">
+        <button class="toggle-button">☰</button>
+        <h1>Muay <img src="img/logo.png" alt="Notre force"><span>Thaï</span></h1> </header>
     <div id="panel">
-        <header>
-            <button class="toggle-button">☰</button>
-            <h1>Muay <img src="img/logo.png" alt="Notre force"><span>Thaï</span></h1> </header>
         <section class="container" id="histoire">
             <h2>L'Histoire</h2>
             <div class="article " id="commencement">
@@ -89,12 +89,11 @@
                     <br>
                     <input type="text" id="message">
                     <br>
-                    <input type="submit" value="Envoyer">
-                </fieldset>
+                    <input type="submit" value="Envoyer"> </fieldset>
             </form>
         </footer>
     </div>
-    <script src="js/slideout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.9/slideout.min.js"></script>
     <script>
         var slideout = new Slideout({
             'panel': document.getElementById('panel')
@@ -102,9 +101,14 @@
             , 'padding': 256
             , 'tolerance': 70
         });
-        // Toggle button
         document.querySelector('.toggle-button').addEventListener('click', function () {
             slideout.toggle();
+        });
+        slideout.on('beforeopen', function () {
+            document.querySelector('.fixed').classList.add('fixed-open');
+        });
+        slideout.on('beforeclose', function () {
+            document.querySelector('.fixed').classList.remove('fixed-open');
         });
     </script>
 </body>
