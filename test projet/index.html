@@ -27,7 +27,13 @@
         </ul>
     </nav>
     <header class="fixed">
-        <button class="toggle-button ">☰</button>
+        <button class="toggle-button ">
+            <div id="nav-container">
+                <div class="toggle-icon"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
+                <!-- /toggle-icon -->
+            </div>
+            <!-- /nav-container -->
+        </button>
         <h1>Muay <img src="img/logo.png" alt="Notre force"><span>Thaï</span></h1> </header>
     <div id="panel">
         <section class="container" id="histoire">
@@ -41,7 +47,10 @@
                     <p>Le Muay Thai, appelé aussi Boxe Thaïlandaise ou Thai Boxing .</p>
                     <p> Sport de combat originaire de Thaïlande. Le Muay Thai est tiré des pratiques martiales ancestrales du <strong>Muay Boran </strong>(Boxe Traditionnelle). </p>
                     <button class="bt_more">Voir plus</button>
-                    <p class="text_slide invisible">Le Muay Thai, serait vieux de <strong>deux mille ans </strong>selon les représentations des thaïlandais. </p>
+                    <div class="open_slide invisible">
+                        <p> Le Muay Thai, serait vieux de <strong>deux mille ans </strong>selon les représentations des thaïlandais.</p>
+                        <button class="bt_more">Fermer</button>
+                    </div>
             </div>
             </article>
             <div class="article" id="waiKhru">
@@ -105,12 +114,12 @@
         $(document).ready(function () {
             $('.bt_more').click(function () {
                 if ($(this).hasClass("open")) {
-                    $(this).text('Voir plus').removeClass('open');
+                    $('.bt_more').text('Voir plus').removeClass('open');
                 }
                 else {
-                    $(this).addClass('open').text('Voir moins');
+                    $('.bt_more').addClass('open').text('Voir moins');
                 }
-                $('.text_slide').slideToggle('fast');
+                $('.open_slide').slideToggle('fast');
             });
         });
         var slideout = new Slideout({
@@ -127,6 +136,9 @@
         });
         slideout.on('beforeclose', function () {
             $('.fixed').removeClass('fixed-open');
+        });
+        $(".toggle-icon").click(function () {
+            $('#nav-container').toggleClass("pushed");
         });
     </script>
 </body>
