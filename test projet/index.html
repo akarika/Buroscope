@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Muay Thaï</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#commencement">Le commencement</a></li>
+            <li><a href="#waiKhru">waiKhru </a></li>
+            <li><a href="#regles">regles</a></li>
+            <li><a href="#materiel">materiel</a></li>
+            <li> <a href="#bienEtre">bienEtre</a></li>
+        </ul>
+    </nav>
+    <header class="fixed">
+        <button class="toggle-button">☰</button>
+        <h1>Muay <img src="img/logo.png" alt="Notre force"><span>Thaï</span></h1> </header>
+    <div id="panel">
+        <section class="container" id="histoire">
+            <h2>L'Histoire</h2>
+            <div class="article " id="commencement">
+                <h3>le commencement... </h3>
+                <figure> <img src="img/PrachaoSua.jpg" alt="Roi Sanpet VIII">
+                    <figcaption>Sanpet VIII</figcaption>
+                </figure>
+                <article class="tooltip flex_colum_start">
+                    <p>Le Muay Thai, appelé aussi Boxe Thaïlandaise ou Thai Boxing .</p>
+                    <p> Sport de combat originaire de Thaïlande. Le Muay Thai est tiré des pratiques martiales ancestrales du <strong>Muay Boran </strong>(Boxe Traditionnelle). Le Muay Thai, serait vieux de <strong>deux mille ans </strong>selon les représentations des thaïlandais. </p>
+            </div>
+            </article>
+            <div class="article" id="waiKhru">
+                <h3>Wai Khru </h3>
+                <figure> <img src="img/wai-khru.jpg" alt="Cérémonie">
+                    <figcaption>Le rituel</figcaption>
+                </figure>
+                <article class="tooltip flex_colum_start">
+                    <p>Le Wai Khru est une sorte de remerciement à l'organisateur de la compétition ou, comme par le passé, une façon de rendre hommage au Roi..</p>
+                    <p> Il symbolise aussi la reconnaissance du boxeur envers le professeur qui l'a formé. Il est également un moyen de concentration avant le combat. Si nous étudions les racines de la culture Thaïlandaise, nous découvrirons que le Wai Khru n'est pas seulement un moyen de remerciement à son professeur, mais également à tous les maîtres et enseignants depuis la nuit des temps. </p>
+                </article>
+            </div>
+            <div class="article" id="regles">
+                <h3>Les régles</h3>
+                <figure> <img src="img/regles.jpg" alt="Le ring la ou tout ce joue">
+                    <figcaption>Le ring</figcaption>
+                    <p>Le ring, qui mesure entre 5 et 7 mètres de côté, doit être entouré de 3 rangés de cordes minimum. Le plancher sera doublé d’un matériau moelleux et élastique, de 4 cm d’épaisseur, et recouvert de toile.</p>
+                    <p>Les boxeurs (nak-muays) se présenteront dans une tenue appropriée au combat, se composant d’un short et d’un suspensoir pour la coquille. Ils doivent combattre torse nu et pieds nus, mais sont autorisés à porter des chevillères. Ils peuvent nouer un ruban appelé « prajeet » autour d’un ou des deux bras.</p>
+                </figure>
+            </div>
+            <div class="article" id="materiel">
+                <h3>Le matériel</h3>
+                <figure> <img src="img/materiel.jpg" alt="Des gants , protections">
+                    <figcaption>Obligatoire pour tout nak-muays</figcaption>
+                    <p>Selon les anciennes coutumes, les Thaïlandais des campagnes étaient vêtus de seulement d'un pantalon en coton court, ample, descendant jusqu'au genoux le GUNG GAENG KAA GUAY et d'un PAA KAO MAA une sorte de pagne de 1m à 1m50 couvert généralement de motifs à carreaux enroulé et noué autour de la taille. </p>
+                    <p>Ces deux vêtements ne couvraient que la partie inférieur du corps, et étaient aussi bien utilisés dans le quotidien comme serviette, couvre tête, ceinture….que lors des combats. </p>
+                </figure>
+            </div>
+            <div class="article" id="bienEtre">
+                <h3>Bien être</h3>
+                <figure> <img src="img/bienFait.jpg" alt="Cinq bienfait de cette discipline">
+                    <figcaption>Garder la forme</figcaption>
+                    <p>Les bienfaits de cette discipline</p>
+                    <p>1. Lutter contre le stress</p>
+                    <p>2. Améporer le système cardio-vasculaire</p>
+                    <p>Renforcer de la ceinture abdominale et des fessiers.</p>
+                    <p>3. Augmenter la force musculaire des jambes</p>
+                    <p>4. La mobilité des hanches</p>
+                </figure>
+            </div>
+        </section>
+        <footer>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contacter moi</legend>
+                    <label for="mail" required>Email</label>
+                    <br>
+                    <input type="email" id="mail">
+                    <br>
+                    <label for="message" required>Message</label>
+                    <br>
+                    <input type="text" id="message">
+                    <br>
+                    <input type="submit" value="Envoyer"> </fieldset>
+            </form>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.9/slideout.min.js"></script>
+    <script>
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel')
+            , 'menu': document.getElementById('menu')
+            , 'padding': 256
+            , 'tolerance': 70
+        });
+        document.querySelector('.toggle-button').addEventListener('click', function () {
+            slideout.toggle();
+        });
+        slideout.on('beforeopen', function () {
+            document.querySelector('.fixed').classList.add('fixed-open');
+        });
+        slideout.on('beforeclose', function () {
+            document.querySelector('.fixed').classList.remove('fixed-open');
+        });
+    </script>
+</body>
+
+</html>
