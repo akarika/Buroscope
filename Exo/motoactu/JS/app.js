@@ -20,7 +20,7 @@ $(document).ready(function () {
         var w_height = ($(window).height()) * 0.5
             , pos = $(window).scrollTop()
             , bottom_screen = w_height + pos;
-        $('a').each(function () {
+        $('nav a').each(function () {
             var target = $($(this).attr('href')).offset().top;
             if (target < bottom_screen && target > (pos - w_height)) {
                 $(this).css({
@@ -29,7 +29,7 @@ $(document).ready(function () {
             }
             else {
                 $(this).css({
-                    'background-color': 'grey'
+                    'background-color': 'transparent'
                 , })
             }
         });
