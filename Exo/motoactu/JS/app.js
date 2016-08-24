@@ -17,19 +17,21 @@ $(document).ready(function () {
         return false;
     });
     $(window).scroll(function () {
-        var w_height = ($(window).height()) * 0.90
+        var w_height = ($(window).height()) * 0.5
             , pos = $(window).scrollTop()
             , bottom_screen = w_height + pos;
-        var w_width = $(window).width()
-            , $document = $('body').height;
-        $('article').each(function () {
-            var target = $(this).offset().top;
-            if (target < bottom_screen) {
-                $(this).fadeIn();
+        $('nav a').each(function () {
+            var target = $($(this).attr('href')).offset().top;
+            if (target < bottom_screen && target > (pos - w_height)) {
+                $(this).css({
+                    'background-color': 'red'
+                , })
             }
             else {
-                $(this).fadeOut();
+                $(this).css({
+                    'background-color': 'transparent'
+                , })
             }
-        })
+        });
     });
 });
