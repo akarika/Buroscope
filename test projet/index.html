@@ -109,7 +109,7 @@
         </footer>
     </div>
     <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.9/slideout.min.js"></script>
+    <script src="js/slideout.js"></script>
     <script>
         $(document).ready(function () {
             $('.bt_more').click(function () {
@@ -121,24 +121,24 @@
                 }
                 $('.open_slide').slideToggle('fast');
             });
-        });
-        var slideout = new Slideout({
-            'panel': document.getElementById('panel')
-            , 'menu': document.getElementById('menu')
-            , 'padding': 256
-            , 'tolerance': 70
-        });
-        $('.toggle-button').click(function () {
-            slideout.toggle();
-        });
-        slideout.on('beforeopen', function () {
-            $('.fixed').addClass('fixed-open');
-        });
-        slideout.on('beforeclose', function () {
-            $('.fixed').removeClass('fixed-open');
-        });
-        $(".toggle-icon").click(function () {
-            $('#nav-container').toggleClass("pushed");
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel')
+                , 'menu': document.getElementById('menu')
+                , 'padding': 256
+                , 'tolerance': 70
+            });
+            $('.toggle-button').click(function () {
+                slideout.toggle();
+            });
+            slideout.on('beforeopen', function () {
+                $('.fixed').addClass('fixed-open');
+            });
+            slideout.on('beforeclose', function () {
+                $('.fixed').removeClass('fixed-open');
+            });
+            $(".toggle-icon").click(function () {
+                $('#nav-container').toggleClass("pushed");
+            });
         });
     </script>
 </body>
