@@ -153,6 +153,7 @@
         font-family: 'Denk One', sans-serif;
         font-size: 3rem;
         color: white;
+        padding-left: 5rem;
     }
     
     p {
@@ -182,13 +183,10 @@
         -ms-flex-align: start;
         align-items: flex-start;
     }
-    /*effet slide*/
+    /*------effet slide---------*/
     
     #panel {
         box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
-        border-radius: 1.5rem;
-        position: relative;
-        right: 1.5rem;
     }
     
     .slideout-menu {
@@ -225,7 +223,8 @@
         color: white;
         border: none;
         cursor: pointer;
-        padding-left: 5rem;
+        padding-left: 1rem;
+        outline: none;
     }
     
     .fixed {
@@ -246,7 +245,7 @@
     }
     
     #nav-container {
-        position: absolute;
+        /*position: absolute;*/
         font-size: 0.8rem;
     }
     /*toggle-icon*/
@@ -254,10 +253,10 @@
     .toggle-icon {
         display: block;
         position: relative;
-        width: 100%;
-        margin: -2.2em auto 0 0.2em;
-        -webkit-transition: margin 600ms;
-        transition: margin 600ms;
+        /*width: 100%;
+        margin: -2.2em auto 0 0.2em;*/
+        -webkit-transition: margin 300ms;
+        transition: margin 300ms;
         cursor: pointer;
     }
     
@@ -274,13 +273,13 @@
         transition-property: margin, border-right-color, box-shadow, -webkit-transform;
         transition-property: transform, margin, border-right-color, box-shadow;
         transition-property: transform, margin, border-right-color, box-shadow, -webkit-transform;
-        -webkit-transition-duration: 600ms;
-        transition-duration: 600ms;
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
     }
     
     .toggle-icon .bar:nth-of-type(1) {
-        -webkit-transition: opacity 300ms;
-        transition: opacity 300ms;
+        -webkit-transition: opacity 150ms;
+        transition: opacity 150ms;
     }
     
     .toggle-icon .bar:nth-of-type(2) {
@@ -308,7 +307,7 @@
         -webkit-transform: rotate(-42deg);
         transform: rotate(-42deg);
     }
-    /*-----header-----*/
+    /*-----------header------------*/
     
     header {
         display: -moz-flex;
@@ -324,14 +323,8 @@
         border-bottom: 0.2rem solid #de1118;
         background: #364050 url("../img/bg01.png");
         height: 5rem;
-        border-top-left-radius: 1rem;
-        position: relative;
-        right: 1.5rem;
     }
-    
-    h1 {
-        padding-left: 7rem;
-    }
+
     
     h1 span {
         color: #de1118;
@@ -340,20 +333,26 @@
     header img {
         height: 3rem;
     }
-    /*-----HISTOIRE----*/
+    /*-----------HISTOIRE----------*/
     
     #histoire {
-        padding-top: 10rem;
+        padding-top: 8rem;
         background-color: #fff;
         background-image: url("../img/bg02.png");
     }
     
-    h2 {
+    #panel h2 {
         font-size: 2.3rem;
         padding-bottom: 1rem;
         color: black;
         -ms-flex-item-align: start;
         align-self: flex-start;
+    }
+    
+    #menu h2 {
+        font-size: 2.3rem;
+        text-align: center;
+        padding: 1rem;
     }
     
     nav a {
@@ -381,6 +380,7 @@
     nav>ul>li {
         border-bottom: 1px solid #364050;
         padding: 1rem;
+        box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
     }
     
     .article h3 {
@@ -433,7 +433,7 @@
         line-height: 3rem;
         text-align: left;
     }
-    /*------FOOTER-----*/
+    /*------------FOOTER-----*/
     
     footer {
         background: #364050 url("../img/bg01.png");
