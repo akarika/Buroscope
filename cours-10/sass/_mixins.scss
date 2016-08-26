@@ -1,0 +1,28 @@
+@mixin flexB($type:flex, $just:center, $align:center, $direc:row) {
+    @include display-flex($type);
+    @include justify-content($just);
+    @include align-items($align);
+    @include flex-direction($direc);
+}
+
+@mixin head_bagr(){
+  background: $grey_backgrd;
+  opacity: 0.85;
+}
+
+@mixin font($size:1.5rem,$weight:400) {
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin section_h2(){
+  font-size: 3rem;
+  font-weight: lighter;
+}
+@mixin beforeH2($color,$bottom) {
+  position: absolute;
+  bottom: $bottom;
+  background: $color;
+    content: " ";
+    height:0.2rem;
+    width: 4.5rem;
+}

@@ -1,0 +1,233 @@
+/* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_global.scss */
+html {
+  font-size: .625em;
+  /* fallback IE8+ */
+  font-size: calc(1em * .625);
+  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+/* line 8, ../sass/_global.scss */
+body {
+  font-size: 1.5rem;
+  color: #FFF;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* line 14, ../sass/_global.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 19, ../sass/_global.scss */
+.container {
+  margin: 0 15%;
+}
+
+/* line 1, ../sass/_header.scss */
+#header_top {
+  background: #515f68;
+  opacity: 0.85;
+  background: url("../img/header_top.jpg") no-repeat center center/cover;
+  height: 80rem;
+}
+/* line 6, ../sass/_header.scss */
+#header_top .container {
+  height: 15rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+/* line 12, ../sass/_header.scss */
+#header_top h1 {
+  font-size: 3rem;
+}
+/* line 15, ../sass/_header.scss */
+#header_top a {
+  font-size: 2rem;
+}
+/* line 18, ../sass/_header.scss */
+#header_top a ~ a {
+  padding-left: 4.5rem;
+}
+/* line 21, ../sass/_header.scss */
+#header_top h2 {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 4.2rem;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  padding: 1rem 2rem;
+}
+/* line 29, ../sass/_header.scss */
+#header_top h2:first-of-type {
+  margin: 2rem 25%;
+  background: #515f68;
+  opacity: 0.85;
+}
+/* line 32, ../sass/_header.scss */
+#header_top h2:last-of-type {
+  margin: 2rem 25%;
+  background: #515f68;
+  opacity: 0.85;
+}
+
+/* line 38, ../sass/_header.scss */
+.background-nav {
+  background: #515f68;
+  opacity: 0.85;
+}
+
+/* line 1, ../sass/_services.scss */
+#services {
+  background-color: #4bcaff;
+  padding-bottom: 8rem;
+}
+/* line 4, ../sass/_services.scss */
+#services h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  position: relative;
+  padding: 8rem 0 4rem;
+}
+/* line 8, ../sass/_services.scss */
+#services h2:before {
+  position: absolute;
+  bottom: 3rem;
+  background: white;
+  content: " ";
+  height: 0.2rem;
+  width: 4.5rem;
+}
+/* line 12, ../sass/_services.scss */
+#services h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+/* line 17, ../sass/_services.scss */
+#all_services {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+/* line 19, ../sass/_services.scss */
+#all_services article:not(:last-of-type) {
+  padding-right: 3.5rem;
+}
+
+/* line 1, ../sass/_portfolio.scss */
+#portfolio {
+  color: #515f67;
+}
+/* line 3, ../sass/_portfolio.scss */
+#portfolio .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding: 8rem 0 5rem;
+}
+/* line 7, ../sass/_portfolio.scss */
+#portfolio h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  position: relative;
+}
+/* line 11, ../sass/_portfolio.scss */
+#portfolio h2:before {
+  position: absolute;
+  bottom: -1rem;
+  background: #515f67;
+  content: " ";
+  height: 0.2rem;
+  width: 4.5rem;
+}
+/* line 14, ../sass/_portfolio.scss */
+#portfolio a ~ a {
+  padding-left: 4.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

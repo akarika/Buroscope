@@ -1,0 +1,17 @@
+#portfolio{
+color: #515f67;
+  .container{
+    @include flexB($just:space-between);
+    padding: 8rem 0 5rem;
+  }
+  h2 {
+      @include section_h2();
+      position: relative;
+
+      &:before {
+    @include beforeH2($color:#515f67,$bottom:-1rem);
+      }
+}a~a{
+  padding-left: 4.5rem;
+}
+}

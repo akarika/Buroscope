@@ -1,0 +1,22 @@
+#services {
+    background-color: #4bcaff;
+    padding-bottom: 8rem;
+    h2 {
+        @include section_h2();
+        position: relative;
+        padding: 8rem 0 4rem;
+        &:before {
+      @include beforeH2($color:white,$bottom:3rem);
+        }
+    }
+    h3 {
+        @include font($size:2.4rem, $weight:600);
+        padding: 2rem 0;
+    }
+}
+#all_services {
+    @include flexB($just:space-between);
+    article:not(:last-of-type) {
+        padding-right: 3.5rem;
+    }
+}
