@@ -73,7 +73,7 @@
                 <button class="bt_more">Voir plus </button>
                 <div class="open_slide invisible">
                     <p>Les boxeurs (nak-muays) se présenteront dans une tenue appropriée au combat, se composant d'un short et d'un suspensoir pour la coquille. Ils doivent combattre torse nu et pieds nus, mais sont autorisés à porter des chevillières. Ils peuvent nouer un ruban appelé « prajeet » autour d'un ou des deux bras. La coiffure sacrée appelée « mongkon » est permise durant les phases préliminaires et rituelles mais doit être retirée avant le début du combat.</p>
-                    <p>Les matchs officiels comptent cinq reprises de trois minutes avec deux minutes de repos entre chaque round en Thaïlande (voire quelquefois 1 minute 30 de repos en Europe). Mais en France cela dépend de la « classe » dans laquelle le pratiquant nak-muay évolue. Les « classes » vont de « D » à classe « A » pour les seniors (vingt ans et plus).</p>
+                    <p>Les matchs officiels comptent cinq reprises de trois minutes avec deux minutes de repos entre chaque round en Thaïlande (voire quelquefois 1 minute 30 de repos en Europe).</p>
                     <button class="bt_more">Fermer</button>
                 </div>
             </div>
@@ -122,18 +122,17 @@
             $('.bt_more').click(function () {
                 if ($(this).hasClass("open")) {
                     $('.bt_more').text('Voir plus').removeClass('open');
-                }
-                else {
+                } else {
                     $('.bt_more').addClass('open').text('Voir moins');
                 }
                 $('.open_slide').slideToggle('fast');
             });
             /*slideout*/
             var slideout = new Slideout({
-                'panel': document.getElementById('panel')
-                , 'menu': document.getElementById('menu')
-                , 'padding': 256
-                , 'tolerance': 70
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 256,
+                'tolerance': 70
             });
             $('.toggle-button').click(function () {
                 slideout.toggle();
@@ -156,21 +155,20 @@
             });
             /*Position del anavigation dans nav*/
             $(window).scroll(function () {
-                var w_height = ($(window).height()) * 0.5
-                    , pos = $(window).scrollTop()
-                    , bottom_screen = w_height + pos;
+                var w_height = ($(window).height()) * 0.5,
+                    pos = $(window).scrollTop(),
+                    bottom_screen = w_height + pos;
                 $('nav a').each(function () {
                     var target = $($(this).attr('href')).offset().top;
                     if (target < bottom_screen && target > (pos - w_height)) {
                         $(this).css({
-                            'border-bottom': '1px solid red'
-                        , })
-                    }
-                    else {
+                            'border-bottom': '1px solid red',
+                        })
+                    } else {
                         $(this).css({
-                            'background-color': 'transparent'
-                            , 'border': 'none'
-                        , })
+                            'background-color': 'transparent',
+                            'border': 'none',
+                        })
                     }
                 });
             });
