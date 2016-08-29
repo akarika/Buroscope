@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and(min-width: 768px) {
 
   header {
@@ -63,4 +64,31 @@
       font-size: 2rem;
     }
   }
+=======
+@media screen and(min-width: 768px) and(max-width: 1023px) {
+  header {
+    padding: 2rem;
+    img {
+      height: 3.5rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+      padding-left: 8rem;
+    }
+  }
+  #histoire {
+    padding-top: 15rem;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .article figure{
+    flex-basis: 50%;
+    }
+  .flex_colum_start{
+    display: block;
+    flex-basis: 50%;
+  }
+>>>>>>> a4c225272bc9bc09e07bbca9e372e36cb6e4ba87
 }

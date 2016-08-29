@@ -533,6 +533,7 @@ footer input {
   display: none;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   /* line 3, ../sass/_deviceTablet.scss */
   header {
@@ -572,15 +573,49 @@ footer input {
     font-size: 3rem;
   }
   /* line 31, ../sass/_deviceTablet.scss */
+=======
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 2, ../sass/_deviceTablet.scss */
+  header {
+    padding: 2rem;
+  }
+  /* line 4, ../sass/_deviceTablet.scss */
+  header img {
+    height: 3.5rem;
+  }
+  /* line 7, ../sass/_deviceTablet.scss */
+  header h1 {
+    font-size: 3.5rem;
+    padding-left: 8rem;
+  }
+
+  /* line 12, ../sass/_deviceTablet.scss */
+  #histoire {
+    padding-top: 15rem;
+  }
+
+  /* line 15, ../sass/_deviceTablet.scss */
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* line 19, ../sass/_deviceTablet.scss */
+>>>>>>> a4c225272bc9bc09e07bbca9e372e36cb6e4ba87
   .article figure {
     flex-basis: 50%;
   }
 
+<<<<<<< HEAD
   /* line 35, ../sass/_deviceTablet.scss */
+=======
+  /* line 22, ../sass/_deviceTablet.scss */
+>>>>>>> a4c225272bc9bc09e07bbca9e372e36cb6e4ba87
   .flex_colum_start {
     display: block;
     flex-basis: 50%;
   }
+<<<<<<< HEAD
 
   /* line 39, ../sass/_deviceTablet.scss */
   footer {
@@ -669,6 +704,8 @@ footer input {
     margin: 0;
     padding: 0;
   }
+=======
+>>>>>>> a4c225272bc9bc09e07bbca9e372e36cb6e4ba87
 }
 
 /*# sourceMappingURL=style.css.map */

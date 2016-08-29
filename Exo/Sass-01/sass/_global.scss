@@ -1,0 +1,22 @@
+body {
+    background: $primary-background;
+    @include display-flex();
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: $font-family;
+    color: $primary-color;
+}
+
+p {
+    @include column-count(1000);
+    .hight {
+        color: #ffffff;
+        font-size: 2rem;
+        font-family: $font;
+    }
+    span {
+        @include font($color: yellow);
+    }
+}
