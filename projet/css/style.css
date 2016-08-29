@@ -533,7 +533,7 @@ footer input {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   /* line 3, ../sass/_deviceTablet.scss */
   header {
     padding: 2rem;
@@ -615,6 +615,12 @@ footer input {
   /* line 62, ../sass/_deviceTablet.scss */
   #menu ul:nth-of-type(2) a {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 3, ../sass/_desktop.scss */
+  header {
+    display: none;
   }
 }
 
