@@ -11,16 +11,29 @@
   }
   #histoire {
     padding-top: 15rem;
+    figure {
+      margin-right: 2rem;
+    }
   }
   .content {
     display: flex;
     justify-content: space-between;
   }
-  .article figure{
+  .article figure {
     flex-basis: 50%;
-    }
-  .flex_colum_start{
+  }
+  .flex_colum_start {
     display: block;
     flex-basis: 50%;
   }
+  footer {
+    display: block;
+    input {
+      width: 95%;
+    }label{
+           font-size: 2.2rem;
+         }
+  }legend{
+       font-size: 3.2rem;
+     }
 }

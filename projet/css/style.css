@@ -552,22 +552,44 @@ footer input {
   #histoire {
     padding-top: 15rem;
   }
+  /* line 14, ../sass/_deviceTablet.scss */
+  #histoire figure {
+    margin-right: 2rem;
+  }
 
-  /* line 15, ../sass/_deviceTablet.scss */
+  /* line 18, ../sass/_deviceTablet.scss */
   .content {
     display: flex;
     justify-content: space-between;
   }
 
-  /* line 19, ../sass/_deviceTablet.scss */
+  /* line 22, ../sass/_deviceTablet.scss */
   .article figure {
     flex-basis: 50%;
   }
 
-  /* line 22, ../sass/_deviceTablet.scss */
+  /* line 25, ../sass/_deviceTablet.scss */
   .flex_colum_start {
     display: block;
     flex-basis: 50%;
+  }
+
+  /* line 29, ../sass/_deviceTablet.scss */
+  footer {
+    display: block;
+  }
+  /* line 31, ../sass/_deviceTablet.scss */
+  footer input {
+    width: 95%;
+  }
+  /* line 33, ../sass/_deviceTablet.scss */
+  footer label {
+    font-size: 2.2rem;
+  }
+
+  /* line 36, ../sass/_deviceTablet.scss */
+  legend {
+    font-size: 3.2rem;
   }
 }
 
