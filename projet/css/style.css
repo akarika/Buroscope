@@ -1,4 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech';
+/*Regles communes*/
+@import "https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech";
+/* line 4, ../sass/_styleBase.scss */
 html,
 body,
 div,
@@ -80,14 +82,15 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+/* line 93, ../sass/_styleBase.scss */
 article,
 aside,
 details,
@@ -99,279 +102,435 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
+/* line 107, ../sass/_styleBase.scss */
 h2,
 h3,
 h4 {
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
-body {
-    font-family: 'Share Tech', sans-serif;
+/* line 113, ../sass/_styleBase.scss */
+body,
+form {
+  line-height: 1;
+  font-family: 'Share Tech', sans-serif;
 }
 
-ol,
+/* line 119, ../sass/_styleBase.scss */
 ul {
-    list-style: none;
+  list-style: none;
 }
 
+/* line 123, ../sass/_styleBase.scss */
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
+/* line 128, ../sass/_styleBase.scss */
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
+/* line 136, ../sass/_styleBase.scss */
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
+/* line 141, ../sass/_styleBase.scss */
 html {
-    font-size: .625em;
-    /* fallback IE8+ */
-    font-size: calc(1em * .625);
-    /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-    font-size: 62.5%;
+  font-size: .625em;
+  font-size: calc(1em * .625);
 }
 
+/* line 146, ../sass/_styleBase.scss */
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+  outline-style: none;
 }
 
-
-/* media 320    */
-
+/* line 152, ../sass/_styleBase.scss */
 h1 {
-    font-family: 'Denk One', sans-serif;
-    font-size: 3rem;
-    color: white;
+  font-family: 'Denk One', sans-serif;
+  font-size: 3rem;
+  color: white;
+  padding-left: 5rem;
 }
 
-body,
-html {
-    height: 100%;
-}
-
-body {
-    width: 32rem;
-    line-height: 1;
-}
-
+/* line 159, ../sass/_styleBase.scss */
 p {
-    font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 
-<<<<<<< HEAD=======p {
-    font-size: 1.5rem;
-}
-
-
-/*---EFFET MENU HAMBURGER--*/
-
+/* line 163, ../sass/_styleBase.scss */
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+  background-image: url("../img/bg02.png");
 }
 
+/* line 170, ../sass/_styleBase.scss */
+.container {
+  padding: 0 3rem;
+}
+
+/* line 174, ../sass/_styleBase.scss */
+.flex_colum_start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/*------effet slide---------*/
+/* line 188, ../sass/_styleBase.scss */
+#panel {
+  box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 192, ../sass/_styleBase.scss */
 .slideout-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-    width: 256px;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 25.6rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
 }
 
+/* line 205, ../sass/_styleBase.scss */
 .slideout-panel {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+  will-change: transform;
 }
 
+/* line 211, ../sass/_styleBase.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
-    overflow: hidden;
+  overflow: hidden;
 }
 
+/* line 217, ../sass/_styleBase.scss */
 .slideout-open .slideout-menu {
-    display: block;
+  display: block;
 }
 
+/* line 221, ../sass/_styleBase.scss */
+.toggle-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-left: 1rem;
+  outline: none;
+}
+
+/* line 230, ../sass/_styleBase.scss */
 .fixed {
-    backface-visibility: hidden;
-    position: fixed;
-    z-index: 2;
-    transition: transform 300ms ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: fixed;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  width: 100%;
 }
 
+/* line 242, ../sass/_styleBase.scss */
 .fixed-open {
-    transform: translate3d(256px, 0px, 0px);
+  -webkit-transform: translate3d(256px, 0px, 0px);
+  transform: translate3d(256px, 0px, 0px);
 }
 
-.btn-hamburger {
-    position: static;
-    height: 40px;
-    width: 40px;
+/* line 247, ../sass/_styleBase.scss */
+#nav-container {
+  /*position: absolute;*/
+  font-size: 0.8rem;
 }
 
-.header-hamburger {
-    background-color: red;
-    width: 100%;
-    height: 50px;
+/*toggle-icon*/
+/* line 253, ../sass/_styleBase.scss */
+.toggle-icon {
+  display: block;
+  position: relative;
+  /*width: 100%;
+  margin: -2.2em auto 0 0.2em;*/
+  -webkit-transition: margin 300ms;
+  transition: margin 300ms;
+  cursor: pointer;
 }
 
-=======height: 6.6rem;
-line-height: 6.6rem;
-color: #FFF;
-border-top:2px solid #de1118;
-;
-border-bottom: 2px solid #de1118;
-background: rgba(32, 45, 51, 1);
-background: -moz-linear-gradient(-45deg, rgba(32, 45, 51, 1) 0%, rgba(64, 84, 92, 1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(32, 45, 51, 1)), color-stop(100%, rgba(64, 84, 92, 1)));
-background: -webkit-linear-gradient(-45deg, rgba(32, 45, 51, 1) 0%, rgba(64, 84, 92, 1) 100%);
-background: -o-linear-gradient(-45deg, rgba(32, 45, 51, 1) 0%, rgba(64, 84, 92, 1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(32, 45, 51, 1) 0%, rgba(64, 84, 92, 1) 100%);
-background: linear-gradient(135deg, rgba(32, 45, 51, 1) 0%, rgba(64, 84, 92, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202d33', endColorstr='#40545c', GradientType=1);
-
-}
-.header_logo {
-    padding: 0 2.5rem;
-    float: left;
-    font-weight: bold;
-}
-.menu a:hover {
-    color: #de1118;
-}
-.container {
-    margin: 0 2rem;
-    clear: both;
-}
-.site_content {
-    position: absolute;
-    overflow-y: scroll;
-    top: 6.6rem;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    padding-top: 0;
-    overflow-scrolling: touch;
-}
-.site-pusher {
-    height: 100%;
-    transition-duration: 0.3s;
-    transform: translateX(0px);
-}
-.header_icon {
-    display: block;
-    height: 6rem;
-    width: 5rem;
-    position: relative;
-    float: left;
-    cursor: pointer;
-}
-.header_icon:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 1.6rem;
-    top: 2rem;
-    left: 1rem;
-    height: 0;
-    box-shadow: 0 10px 0 2px white, 0 16px 0 2px white, 0 22px 0 2px white;
-}
-.menu {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 25rem;
-    background-color: #222e34;
-    transform: translateX(-25rem);
-    float: left;
-}
-.menu a {
-    display: block;
-    height: 4rem;
-    text-align: center;
-    line-height: 4rem;
-    border-bottom: 1px solid #f3f3f3;
-    padding: 0 1rem;
-}
-.with_sidebar .site-pusher {
-    transform: translateX(25rem);
-}
-.site-pusher,
-.site-container {
-    height: 100%;
-}
-.site-container {
-    overflow: hidden;
+/* line 263, ../sass/_styleBase.scss */
+.toggle-icon .bar {
+  display: block;
+  width: 3.8em;
+  height: 0.2em;
+  margin: 0.9em;
+  border-right: 2.8em solid #fff;
+  border-left: 0.6em solid #d6d6d6;
+  box-sizing: border-box;
+  -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+  -webkit-transition-property: margin, border-right-color, box-shadow, -webkit-transform;
+  transition-property: margin, border-right-color, box-shadow, -webkit-transform;
+  transition-property: transform, margin, border-right-color, box-shadow;
+  transition-property: transform, margin, border-right-color, box-shadow, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 
-/*----HEADER--*/
+/* line 280, ../sass/_styleBase.scss */
+.toggle-icon .bar:nth-of-type(1) {
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+
+/* line 285, ../sass/_styleBase.scss */
+.toggle-icon .bar:nth-of-type(2) {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+/*pushed*/
+/* line 291, ../sass/_styleBase.scss */
+.pushed .toggle-icon {
+  margin: -3.2em 0 0 0.7em;
+}
+
+/* line 295, ../sass/_styleBase.scss */
+.pushed .bar:nth-of-type(1) {
+  opacity: 0;
+}
+
+/* line 299, ../sass/_styleBase.scss */
+.pushed .bar:nth-of-type(2) {
+  margin-left: 1.4em;
+  -webkit-transform: rotate(-137deg) translateY(-1.5em);
+  transform: rotate(-137deg) translateY(-1.5em);
+}
+
+/* line 305, ../sass/_styleBase.scss */
+.pushed .bar:nth-of-type(3) {
+  margin-left: 0.5em;
+  -webkit-transform: rotate(-42deg);
+  transform: rotate(-42deg);
+}
+
+/*-----------header------------*/
+/* line 312, ../sass/_styleBase.scss */
+header {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFF;
+  border-bottom: 0.2rem solid #de1118;
+  background: #364050 url("../img/bg01.png");
+  height: 5rem;
+}
+
+/* line 328, ../sass/_styleBase.scss */
 h1 span {
-    color: #de1118;
+  color: #de1118;
 }
+
+/* line 332, ../sass/_styleBase.scss */
 header img {
-    width: 4rem;
-    height: 4rem;
-    padding-top: 1rem;
+  height: 3rem;
 }
 
-/*----HISTOIRE---*/
-.histoire {
-    display: flex;
-    flex-direction: column;
-}
-.histoire h2 {
-    padding: 1rem 0;
-    font-size: 2rem;
-}
-.histoire img {
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+/*-----------HISTOIRE----------*/
+/* line 337, ../sass/_styleBase.scss */
+#histoire {
+  padding-top: 8rem;
+  background-color: #fff;
+  background-image: url("../img/bg02.png");
 }
 
-/*tooltip*/
-.tooltip-label {
-    font-size: 1em;
-    background: lightblue;
-    padding: 0.1em 40%;
-    cursor: pointer;
-    margin: 0.3rem 0;
+/* line 343, ../sass/_styleBase.scss */
+#panel h2 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+  color: black;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
-.tooltip-input {
-    display: none;
+
+/* line 351, ../sass/_styleBase.scss */
+#menu h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 1rem;
 }
-/*Hide input element*/
-.tooltip-content {
-    margin: 0.5rem;
+
+/* line 357, ../sass/_styleBase.scss */
+nav a {
+  font-size: 2.3rem;
+  color: black;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding-left: 2rem;
 }
-.tooltip-input:not(checked) ~ .tooltip-content {
-    display: none;
+
+/* line 365, ../sass/_styleBase.scss */
+#sous-menu li a {
+  font-size: 1.7rem;
+  color: gray;
 }
-.tooltip-input:checked ~ .tooltip-content {
-    display: inline-block;
+
+/* line 370, ../sass/_styleBase.scss */
+#sous-menu li:first-child {
+  border-bottom: 1px dashed #364050;
+  padding: 1rem 2rem 1rem 1rem;
 }
-.tooltip {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+
+/* line 375, ../sass/_styleBase.scss */
+#sous-menu li:last-child {
+  padding: 1rem 2rem 0 1rem;
 }
+
+/* line 379, ../sass/_styleBase.scss */
+nav > ul > li {
+  border-bottom: 1px solid #364050;
+  padding: 1rem;
+}
+
+/* line 384, ../sass/_styleBase.scss */
+.article h3 {
+  font-size: 1.80rem;
+  color: #9C9C9C;
+  padding-bottom: 1rem;
+  text-align: left;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/* line 393, ../sass/_styleBase.scss */
+.article img {
+  max-width: 100%;
+  display: block;
+}
+
+/* line 398, ../sass/_styleBase.scss */
+.article figcaption {
+  padding-bottom: 1rem;
+}
+
+/* line 402, ../sass/_styleBase.scss */
+.article p {
+  line-height: 3rem;
+}
+
+/* line 406, ../sass/_styleBase.scss */
+.article p:first-of-type:first-letter {
+  font-size: 2.5rem;
+}
+
+/* line 410, ../sass/_styleBase.scss */
+.article,
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* line 425, ../sass/_styleBase.scss */
+.article:not(#bienEtre) {
+  border-bottom: 1px solid #de1118;
+}
+
+/* line 429, ../sass/_styleBase.scss */
+#bienEtre ol {
+  font-size: 1.65rem;
+  line-height: 3rem;
+  text-align: left;
+}
+
+/*------------FOOTER-----*/
+/* line 436, ../sass/_styleBase.scss */
+footer {
+  background: #364050 url("../img/bg01.png");
+  border-top: 0.1rem solid #de1118;
+  font-size: 1.65rem;
+  color: #FFF;
+}
+
+/* line 443, ../sass/_styleBase.scss */
+[type="text"] {
+  height: 5rem;
+}
+
+/* line 447, ../sass/_styleBase.scss */
+footer legend {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* line 453, ../sass/_styleBase.scss */
+footer input {
+  background: #252e3d url("../img/bg01.png");
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #17202d;
+  border-radius: 3px;
+  text-overflow: clip;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0px 1px 1px 0px rgba(93, 104, 122, 0.6);
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0;
+}
+
+/* line 470, ../sass/_styleBase.scss */
+[value="Envoyer"] {
+  color: white;
+  background: #de1118;
+  text-transform: uppercase;
+}
+
+/* line 476, ../sass/_styleBase.scss */
+.invisible {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

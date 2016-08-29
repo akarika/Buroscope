@@ -1,0 +1,5 @@
+@mixin font($family:"Arial", $size:0.1rem, $color:"green") {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
