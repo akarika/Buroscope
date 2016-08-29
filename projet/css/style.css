@@ -534,62 +534,87 @@ footer input {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 2, ../sass/_deviceTablet.scss */
+  /* line 3, ../sass/_deviceTablet.scss */
   header {
     padding: 2rem;
   }
-  /* line 4, ../sass/_deviceTablet.scss */
+  /* line 5, ../sass/_deviceTablet.scss */
   header img {
     height: 3.5rem;
   }
-  /* line 7, ../sass/_deviceTablet.scss */
+  /* line 8, ../sass/_deviceTablet.scss */
   header h1 {
-    font-size: 3.5rem;
-    padding-left: 8rem;
+    font-size: 3.8rem;
+    padding-left: 20rem;
   }
 
-  /* line 12, ../sass/_deviceTablet.scss */
+  /* line 13, ../sass/_deviceTablet.scss */
   #histoire {
-    padding-top: 15rem;
+    padding-top: 10rem;
   }
-  /* line 14, ../sass/_deviceTablet.scss */
+  /* line 15, ../sass/_deviceTablet.scss */
   #histoire figure {
     margin-right: 2rem;
   }
 
-  /* line 18, ../sass/_deviceTablet.scss */
+  /* line 19, ../sass/_deviceTablet.scss */
   .content {
     display: flex;
-    justify-content: space-between;
   }
 
-  /* line 22, ../sass/_deviceTablet.scss */
+  /* line 23, ../sass/_deviceTablet.scss */
+  .article p {
+    line-height: 3.5rem;
+    font-size: 1.9rem;
+  }
+  /* line 26, ../sass/_deviceTablet.scss */
+  .article p:first-of-type::first-letter {
+    font-size: 3rem;
+  }
+  /* line 31, ../sass/_deviceTablet.scss */
   .article figure {
     flex-basis: 50%;
   }
 
-  /* line 25, ../sass/_deviceTablet.scss */
+  /* line 35, ../sass/_deviceTablet.scss */
   .flex_colum_start {
     display: block;
     flex-basis: 50%;
   }
 
-  /* line 29, ../sass/_deviceTablet.scss */
+  /* line 39, ../sass/_deviceTablet.scss */
   footer {
     display: block;
   }
-  /* line 31, ../sass/_deviceTablet.scss */
+  /* line 41, ../sass/_deviceTablet.scss */
   footer input {
     width: 95%;
   }
-  /* line 33, ../sass/_deviceTablet.scss */
+  /* line 44, ../sass/_deviceTablet.scss */
   footer label {
     font-size: 2.2rem;
   }
 
-  /* line 36, ../sass/_deviceTablet.scss */
+  /* line 48, ../sass/_deviceTablet.scss */
   legend {
     font-size: 3.2rem;
+  }
+
+  /* line 52, ../sass/_deviceTablet.scss */
+  #menu h2 {
+    font-size: 3rem;
+  }
+  /* line 56, ../sass/_deviceTablet.scss */
+  #menu ul > li {
+    padding: 2rem;
+  }
+  /* line 59, ../sass/_deviceTablet.scss */
+  #menu a {
+    font-size: 2.6rem;
+  }
+  /* line 62, ../sass/_deviceTablet.scss */
+  #menu ul:nth-of-type(2) a {
+    font-size: 2rem;
   }
 }
 
