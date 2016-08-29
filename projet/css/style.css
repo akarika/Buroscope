@@ -618,9 +618,56 @@ footer input {
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 3, ../sass/_desktop.scss */
+  /* line 2, ../sass/_desktop.scss */
+  html {
+    height: 100%;
+  }
+
+  /* line 4, ../sass/_desktop.scss */
+  body {
+    height: 600%;
+  }
+
+  /* line 7, ../sass/_desktop.scss */
+  .article {
+    height: 15%;
+  }
+
+  /* line 10, ../sass/_desktop.scss */
   header {
     display: none;
+  }
+
+  /* line 14, ../sass/_desktop.scss */
+  #backGrd_video {
+    position: relative;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  /* line 20, ../sass/_desktop.scss */
+  #backGrd_video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
   }
 }
 

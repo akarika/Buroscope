@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head runat="server">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"  type="application/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('nav a').on('click', function () { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <a href="#one">one</a>
+        <a href="#two">two</a>
+        <a href="#three">three</a>
+        <a href="#four">four</a>
+        <a href="#five">five</a>
+    </nav>
+    <section id="one">Page 1
+        <video autoplay src="top10.mp4" id="videobg" type="video/mp4">
+
+        </video>
+    </section>
+    <section id="two">Page 2</section>
+    <section id="three">Page 3</section>
+    <section id="four">Page 4</section>
+    <section id="five">Page 5</section>
+</body>
+
+
+</body>
+
+
+
+</html>
