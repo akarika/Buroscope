@@ -1,6 +1,6 @@
 /*Regles communes*/
 @import "https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech";
-/* line 4, ../sass/_styleBase.scss */
+/* line 5, ../sass/_styleBase.scss */
 html,
 body,
 div,
@@ -90,7 +90,7 @@ video {
   vertical-align: baseline;
 }
 
-/* line 93, ../sass/_styleBase.scss */
+/* line 94, ../sass/_styleBase.scss */
 article,
 aside,
 details,
@@ -105,32 +105,32 @@ section {
   display: block;
 }
 
-/* line 107, ../sass/_styleBase.scss */
+/* line 108, ../sass/_styleBase.scss */
 h2,
 h3,
 h4 {
   font-family: 'Oswald', sans-serif;
 }
 
-/* line 113, ../sass/_styleBase.scss */
+/* line 114, ../sass/_styleBase.scss */
 body,
 form {
   line-height: 1;
   font-family: 'Share Tech', sans-serif;
 }
 
-/* line 119, ../sass/_styleBase.scss */
+/* line 120, ../sass/_styleBase.scss */
 ul {
   list-style: none;
 }
 
-/* line 123, ../sass/_styleBase.scss */
+/* line 124, ../sass/_styleBase.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 128, ../sass/_styleBase.scss */
+/* line 129, ../sass/_styleBase.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -139,26 +139,26 @@ q:after {
   content: none;
 }
 
-/* line 136, ../sass/_styleBase.scss */
+/* line 137, ../sass/_styleBase.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 141, ../sass/_styleBase.scss */
+/* line 142, ../sass/_styleBase.scss */
 html {
   font-size: .625em;
   font-size: calc(1em * .625);
 }
 
-/* line 146, ../sass/_styleBase.scss */
+/* line 147, ../sass/_styleBase.scss */
 a {
   text-decoration: none;
   color: inherit;
   outline-style: none;
 }
 
-/* line 152, ../sass/_styleBase.scss */
+/* line 153, ../sass/_styleBase.scss */
 h1 {
   font-family: 'Denk One', sans-serif;
   font-size: 3rem;
@@ -166,12 +166,12 @@ h1 {
   padding-left: 5rem;
 }
 
-/* line 159, ../sass/_styleBase.scss */
+/* line 160, ../sass/_styleBase.scss */
 p {
   font-size: 1.65rem;
 }
 
-/* line 163, ../sass/_styleBase.scss */
+/* line 164, ../sass/_styleBase.scss */
 body {
   width: 100%;
   height: 100%;
@@ -179,12 +179,12 @@ body {
   background-image: url("../img/bg02.png");
 }
 
-/* line 170, ../sass/_styleBase.scss */
+/* line 171, ../sass/_styleBase.scss */
 .container {
   padding: 0 3rem;
 }
 
-/* line 174, ../sass/_styleBase.scss */
+/* line 175, ../sass/_styleBase.scss */
 .flex_colum_start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,12 +199,12 @@ body {
 }
 
 /*------effet slide---------*/
-/* line 188, ../sass/_styleBase.scss */
+/* line 189, ../sass/_styleBase.scss */
 #panel {
   box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 192, ../sass/_styleBase.scss */
+/* line 193, ../sass/_styleBase.scss */
 .slideout-menu {
   position: fixed;
   left: 0;
@@ -218,26 +218,26 @@ body {
   display: none;
 }
 
-/* line 205, ../sass/_styleBase.scss */
+/* line 206, ../sass/_styleBase.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
 }
 
-/* line 211, ../sass/_styleBase.scss */
+/* line 212, ../sass/_styleBase.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 217, ../sass/_styleBase.scss */
+/* line 218, ../sass/_styleBase.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
-/* line 221, ../sass/_styleBase.scss */
+/* line 222, ../sass/_styleBase.scss */
 .toggle-button {
   background-color: transparent;
   color: white;
@@ -247,7 +247,7 @@ body {
   outline: none;
 }
 
-/* line 230, ../sass/_styleBase.scss */
+/* line 231, ../sass/_styleBase.scss */
 .fixed {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -260,20 +260,20 @@ body {
   width: 100%;
 }
 
-/* line 242, ../sass/_styleBase.scss */
+/* line 243, ../sass/_styleBase.scss */
 .fixed-open {
   -webkit-transform: translate3d(256px, 0px, 0px);
   transform: translate3d(256px, 0px, 0px);
 }
 
-/* line 247, ../sass/_styleBase.scss */
+/* line 248, ../sass/_styleBase.scss */
 #nav-container {
   /*position: absolute;*/
   font-size: 0.8rem;
 }
 
 /*toggle-icon*/
-/* line 253, ../sass/_styleBase.scss */
+/* line 254, ../sass/_styleBase.scss */
 .toggle-icon {
   display: block;
   position: relative;
@@ -284,7 +284,7 @@ body {
   cursor: pointer;
 }
 
-/* line 263, ../sass/_styleBase.scss */
+/* line 264, ../sass/_styleBase.scss */
 .toggle-icon .bar {
   display: block;
   width: 3.8em;
@@ -302,37 +302,37 @@ body {
   transition-duration: 300ms;
 }
 
-/* line 280, ../sass/_styleBase.scss */
+/* line 281, ../sass/_styleBase.scss */
 .toggle-icon .bar:nth-of-type(1) {
   -webkit-transition: opacity 150ms;
   transition: opacity 150ms;
 }
 
-/* line 285, ../sass/_styleBase.scss */
+/* line 286, ../sass/_styleBase.scss */
 .toggle-icon .bar:nth-of-type(2) {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
 
 /*pushed*/
-/* line 291, ../sass/_styleBase.scss */
+/* line 292, ../sass/_styleBase.scss */
 .pushed .toggle-icon {
   margin: -3.2em 0 0 0.7em;
 }
 
-/* line 295, ../sass/_styleBase.scss */
+/* line 296, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(1) {
   opacity: 0;
 }
 
-/* line 299, ../sass/_styleBase.scss */
+/* line 300, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(2) {
   margin-left: 1.4em;
   -webkit-transform: rotate(-137deg) translateY(-1.5em);
   transform: rotate(-137deg) translateY(-1.5em);
 }
 
-/* line 305, ../sass/_styleBase.scss */
+/* line 306, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(3) {
   margin-left: 0.5em;
   -webkit-transform: rotate(-42deg);
@@ -340,7 +340,7 @@ body {
 }
 
 /*-----------header------------*/
-/* line 312, ../sass/_styleBase.scss */
+/* line 313, ../sass/_styleBase.scss */
 header {
   display: -moz-flex;
   display: -ms-flex;
@@ -357,25 +357,25 @@ header {
   padding: 1.5rem;
 }
 
-/* line 328, ../sass/_styleBase.scss */
+/* line 329, ../sass/_styleBase.scss */
 h1 span {
   color: #de1118;
 }
 
-/* line 332, ../sass/_styleBase.scss */
+/* line 333, ../sass/_styleBase.scss */
 header img {
   height: 3rem;
 }
 
 /*-----------HISTOIRE----------*/
-/* line 337, ../sass/_styleBase.scss */
+/* line 338, ../sass/_styleBase.scss */
 #histoire {
   padding-top: 8rem;
   background-color: #fff;
   background-image: url("../img/bg02.png");
 }
 
-/* line 343, ../sass/_styleBase.scss */
+/* line 344, ../sass/_styleBase.scss */
 #panel h2 {
   font-size: 2.3rem;
   padding-bottom: 1rem;
@@ -384,14 +384,14 @@ header img {
   align-self: flex-start;
 }
 
-/* line 351, ../sass/_styleBase.scss */
+/* line 352, ../sass/_styleBase.scss */
 #menu h2 {
   font-size: 2.3rem;
   text-align: center;
   padding: 1rem;
 }
 
-/* line 357, ../sass/_styleBase.scss */
+/* line 358, ../sass/_styleBase.scss */
 nav a {
   font-size: 2.3rem;
   color: black;
@@ -400,30 +400,30 @@ nav a {
   padding-left: 2rem;
 }
 
-/* line 365, ../sass/_styleBase.scss */
+/* line 366, ../sass/_styleBase.scss */
 #sous-menu li a {
   font-size: 1.7rem;
   color: gray;
 }
 
-/* line 370, ../sass/_styleBase.scss */
+/* line 371, ../sass/_styleBase.scss */
 #sous-menu li:first-child {
   border-bottom: 1px dashed #364050;
   padding: 1rem 2rem 1rem 1rem;
 }
 
-/* line 375, ../sass/_styleBase.scss */
+/* line 376, ../sass/_styleBase.scss */
 #sous-menu li:last-child {
   padding: 1rem 2rem 0 1rem;
 }
 
-/* line 379, ../sass/_styleBase.scss */
+/* line 380, ../sass/_styleBase.scss */
 nav > ul > li {
   border-bottom: 1px solid #364050;
   padding: 1rem;
 }
 
-/* line 384, ../sass/_styleBase.scss */
+/* line 385, ../sass/_styleBase.scss */
 .article h3 {
   font-size: 1.80rem;
   color: #9C9C9C;
@@ -433,28 +433,28 @@ nav > ul > li {
   align-self: flex-start;
 }
 
-/* line 393, ../sass/_styleBase.scss */
+/* line 394, ../sass/_styleBase.scss */
 .article img {
   max-width: 100%;
   display: block;
 }
 
-/* line 398, ../sass/_styleBase.scss */
+/* line 399, ../sass/_styleBase.scss */
 .article figcaption {
   padding-bottom: 1rem;
 }
 
-/* line 402, ../sass/_styleBase.scss */
+/* line 403, ../sass/_styleBase.scss */
 .article p {
   line-height: 3rem;
 }
 
-/* line 406, ../sass/_styleBase.scss */
+/* line 407, ../sass/_styleBase.scss */
 .article p:first-of-type:first-letter {
   font-size: 2.5rem;
 }
 
-/* line 410, ../sass/_styleBase.scss */
+/* line 411, ../sass/_styleBase.scss */
 .article,
 footer {
   display: -webkit-box;
@@ -470,12 +470,12 @@ footer {
   padding: 2rem;
 }
 
-/* line 425, ../sass/_styleBase.scss */
+/* line 426, ../sass/_styleBase.scss */
 .article:not(#bienEtre) {
   border-bottom: 1px solid #de1118;
 }
 
-/* line 429, ../sass/_styleBase.scss */
+/* line 430, ../sass/_styleBase.scss */
 #bienEtre ol {
   font-size: 1.65rem;
   line-height: 3rem;
@@ -483,7 +483,7 @@ footer {
 }
 
 /*------------FOOTER-----*/
-/* line 436, ../sass/_styleBase.scss */
+/* line 437, ../sass/_styleBase.scss */
 footer {
   background: #364050 url("../img/bg01.png");
   border-top: 0.1rem solid #de1118;
@@ -491,19 +491,19 @@ footer {
   color: #FFF;
 }
 
-/* line 443, ../sass/_styleBase.scss */
+/* line 444, ../sass/_styleBase.scss */
 [type="text"] {
   height: 5rem;
 }
 
-/* line 447, ../sass/_styleBase.scss */
+/* line 448, ../sass/_styleBase.scss */
 footer legend {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
 }
 
-/* line 453, ../sass/_styleBase.scss */
+/* line 454, ../sass/_styleBase.scss */
 footer input {
   background: #252e3d url("../img/bg01.png");
   display: inline-block;
@@ -521,133 +521,98 @@ footer input {
   margin: 1rem 0;
 }
 
-/* line 470, ../sass/_styleBase.scss */
+/* line 471, ../sass/_styleBase.scss */
 [value="Envoyer"] {
   color: white;
   background: #de1118;
   text-transform: uppercase;
 }
 
-/* line 476, ../sass/_styleBase.scss */
+/* line 477, ../sass/_styleBase.scss */
 .invisible {
   display: none;
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 768px) {
-  /* line 3, ../sass/_deviceTablet.scss */
+  /* line 4, ../sass/_deviceTablet.scss */
   header {
     padding: 2rem;
   }
-  /* line 5, ../sass/_deviceTablet.scss */
+  /* line 6, ../sass/_deviceTablet.scss */
   header img {
     height: 3.5rem;
   }
-  /* line 8, ../sass/_deviceTablet.scss */
+  /* line 9, ../sass/_deviceTablet.scss */
   header h1 {
     font-size: 3.8rem;
     padding-left: 20rem;
   }
 
-  /* line 13, ../sass/_deviceTablet.scss */
+  /* line 14, ../sass/_deviceTablet.scss */
   #histoire {
     padding-top: 10rem;
   }
-  /* line 15, ../sass/_deviceTablet.scss */
+  /* line 16, ../sass/_deviceTablet.scss */
   #histoire figure {
     margin-right: 2rem;
   }
 
-  /* line 19, ../sass/_deviceTablet.scss */
+  /* line 20, ../sass/_deviceTablet.scss */
   .content {
     display: flex;
   }
 
-  /* line 23, ../sass/_deviceTablet.scss */
+  /* line 24, ../sass/_deviceTablet.scss */
   .article p {
     line-height: 3.5rem;
     font-size: 1.9rem;
   }
-  /* line 26, ../sass/_deviceTablet.scss */
+  /* line 27, ../sass/_deviceTablet.scss */
   .article p:first-of-type::first-letter {
     font-size: 3rem;
   }
-  /* line 31, ../sass/_deviceTablet.scss */
-=======
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 2, ../sass/_deviceTablet.scss */
-  header {
-    padding: 2rem;
-  }
-  /* line 4, ../sass/_deviceTablet.scss */
-  header img {
-    height: 3.5rem;
-  }
-  /* line 7, ../sass/_deviceTablet.scss */
-  header h1 {
-    font-size: 3.5rem;
-    padding-left: 8rem;
-  }
-
-  /* line 12, ../sass/_deviceTablet.scss */
-  #histoire {
-    padding-top: 15rem;
-  }
-
-  /* line 15, ../sass/_deviceTablet.scss */
-  .content {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  /* line 19, ../sass/_deviceTablet.scss */
->>>>>>> a4c225272bc9bc09e07bbca9e372e36cb6e4ba87
+  /* line 32, ../sass/_deviceTablet.scss */
   .article figure {
     flex-basis: 50%;
   }
 
-<<<<<<< HEAD
-  /* line 35, ../sass/_deviceTablet.scss */
-=======
-  /* line 22, ../sass/_deviceTablet.scss */
->>>>>>> a4c225272bc9bc09e07bbca9e372e36cb6e4ba87
+  /* line 36, ../sass/_deviceTablet.scss */
   .flex_colum_start {
     display: block;
     flex-basis: 50%;
   }
-<<<<<<< HEAD
 
-  /* line 39, ../sass/_deviceTablet.scss */
+  /* line 40, ../sass/_deviceTablet.scss */
   footer {
     display: block;
   }
-  /* line 41, ../sass/_deviceTablet.scss */
+  /* line 42, ../sass/_deviceTablet.scss */
   footer input {
     width: 95%;
   }
-  /* line 44, ../sass/_deviceTablet.scss */
+  /* line 45, ../sass/_deviceTablet.scss */
   footer label {
     font-size: 2.2rem;
   }
 
-  /* line 48, ../sass/_deviceTablet.scss */
+  /* line 49, ../sass/_deviceTablet.scss */
   legend {
     font-size: 3.2rem;
   }
 
-  /* line 52, ../sass/_deviceTablet.scss */
+  /* line 53, ../sass/_deviceTablet.scss */
   #menu h2 {
     font-size: 3rem;
   }
-  /* line 56, ../sass/_deviceTablet.scss */
+  /* line 57, ../sass/_deviceTablet.scss */
   #menu ul > li {
     padding: 2rem;
   }
-  /* line 59, ../sass/_deviceTablet.scss */
+  /* line 60, ../sass/_deviceTablet.scss */
   #menu a {
     font-size: 2.6rem;
   }
-  /* line 62, ../sass/_deviceTablet.scss */
+  /* line 63, ../sass/_deviceTablet.scss */
   #menu ul:nth-of-type(2) a {
     font-size: 2rem;
   }
@@ -704,8 +669,6 @@ footer input {
     margin: 0;
     padding: 0;
   }
-=======
->>>>>>> a4c225272bc9bc09e07bbca9e372e36cb6e4ba87
 }
 
 /*# sourceMappingURL=style.css.map */
