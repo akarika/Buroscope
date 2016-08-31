@@ -1,0 +1,12 @@
+body{
+    margin: 0 10%;
+}
+.navbar-brand{
+    height:auto;
+}
+.navbar{
+    border-bottom: 1px solid gray;
+}
+.section{
+    margin-bottom: 2rem;
+}
