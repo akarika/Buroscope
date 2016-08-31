@@ -184,6 +184,9 @@ body {
   -ms-flex-align: start;
   align-items: flex-start;
 }
+#one{
+  display: none;
+}
 /*------effet slide---------*/
 
 #panel {
@@ -355,7 +358,7 @@ header img {
   padding: 1rem;
 }
 
-nav a {
+#menu a {
   font-size: 2.3rem;
   color: black;
   -ms-flex-item-align: start;
@@ -377,7 +380,7 @@ nav a {
   padding: 1rem 2rem 0 1rem;
 }
 
-nav>ul>li {
+#menu>ul>li {
   border-bottom: 1px solid #364050;
   padding: 1rem;
 }

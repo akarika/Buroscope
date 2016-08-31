@@ -18,33 +18,6 @@ section {
     padding-left: 120px;
 }
 
-#one {
-    color: #fff;
-    font-size: 30px;
-}
-
-#two {
-    background: #123037;
-    color: #fff;
-    font-size: 30px;
-}
-
-#three {
-    background: #74BE98;
-    font-size: 30px;
-}
-
-#four {
-    background: #BED28D;
-    font-size: 30px;
-}
-
-#five {
-    background: #95211D;
-    color: #fff;
-    font-size: 30px;
-}
-
 nav {
     position: fixed;
 }
@@ -74,112 +47,116 @@ video#videobg {
     transition: 1s opacity;
 }
 
-@-webkit-keyframes bounceInLeft {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-3000px, 0, 0);
-        transform: translate3d(-3000px, 0, 0);
-    }
-    60% {
-        opacity: 1;
-        -webkit-transform: translate3d(25px, 0, 0);
-        transform: translate3d(25px, 0, 0);
-    }
-    75% {
-        -webkit-transform: translate3d(-10px, 0, 0);
-        transform: translate3d(-10px, 0, 0);
-    }
-    90% {
-        -webkit-transform: translate3d(5px, 0, 0);
-        transform: translate3d(5px, 0, 0);
-    }
-    to {
-        -webkit-transform: none;
-        transform: none;
-    }
+
+/*--------------------------------------------------*/
+
+
+/*-------------------ARROW EFFECT 1 SECTION-------------------*/
+
+
+/*--------------------------------------------------*/
+
+
+/*--------------------------------------------------*/
+
+.scrolldown-container {
+    top: 80%;
+    position: relative;
 }
 
-@keyframes bounceInLeft {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-3000px, 0, 0);
-        transform: translate3d(-3000px, 0, 0);
-    }
-    60% {
-        opacity: 1;
-        -webkit-transform: translate3d(25px, 0, 0);
-        transform: translate3d(25px, 0, 0);
-    }
-    75% {
-        -webkit-transform: translate3d(-10px, 0, 0);
-        transform: translate3d(-10px, 0, 0);
-    }
-    90% {
-        -webkit-transform: translate3d(5px, 0, 0);
-        transform: translate3d(5px, 0, 0);
-    }
-    to {
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-.bounceInLeft {
-    -webkit-animation-name: bounceInLeft;
-    animation-name: bounceInLeft;
-    font-size: 10rem;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+.scrolldown-container .scrolldown-btn {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     text-align: center;
+    fill: red;
 }
 
-@-webkit-keyframes fadeOutUpBig {
-    from {
-        opacity: 1;
-    }
-    to {
+.scrolldown-container .scrolldown-btn svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    x=0px;
+    y=0px;
+    viewbox="0 0 50 80";
+}
+
+.scrolldown-container .scrolldown-btn svg path.first-path {
+    -webkit-animation: scrollanim 1s ease-in-out infinite;
+    animation: scrollanim 1s ease-in-out infinite;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.scrolldown-container .scrolldown-btn svg path.second-path {
+    -webkit-animation: scrollanim2 1s ease-in-out infinite;
+    animation: scrollanim2 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes scrollanim {
+    0% {
+        -webkit-transform: translate(0, -40px);
         opacity: 0;
-        -webkit-transform: translate3d(0, -2000px, 0);
-        transform: translate3d(0, -2000px, 0);
+    }
+    60% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0.8;
     }
 }
 
-@keyframes fadeOutUpBig {
-    from {
-        opacity: 1;
-    }
-    to {
+@keyframes scrollanim {
+    0% {
+        -webkit-transform: translate(0, -40px);
+        transform: translate(0, -40px);
         opacity: 0;
-        -webkit-transform: translate3d(0, -2000px, 0);
-        transform: translate3d(0, -2000px, 0);
+    }
+    60% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 0.8;
     }
 }
 
-.fadeOutUpBig {
-    -webkit-animation-name: fadeOutUpBig;
-    animation-name: fadeOutUpBig;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+@-webkit-keyframes scrollanim2 {
+    0% {
+        -webkit-transform: translate(0, -40px);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: translate(0, 0px);
+        opacity: 0.6;
+    }
 }
+
+@keyframes scrollanim2 {
+    0% {
+        -webkit-transform: translate(0, -40px);
+        transform: translate(0, -40px);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+        opacity: 0.6;
+    }
+}
+
+
+/*--------------------------------------------------*/
+
+
+/*-------------------ARROW EFFECT 1 SECTION-------------------*/
+
+
+/*--------------------------------------------------*/
+
+
+/*--------------------------------------------------*/

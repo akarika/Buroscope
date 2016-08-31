@@ -1,4 +1,5 @@
 @media screen and (min-width: 1024px) {
+  @import 'https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech';
   html {
     height: 100%;
     position: relative;
@@ -10,7 +11,178 @@
     position: relative;
   }
 
+  section {
+    display: block;
+    height: 100%;
+  }
 
+  #one {
+    display: block;
+  }
+  .fixed {
+    position: relative;
+    backface-visibility: visible;
+  }
 
+  video#videobg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+  }
+
+  /*--------------------------------------------------*/
+
+  /*-------------------ARROW EFFECT 1 SECTION-------------------*/
+
+  /*--------------------------------------------------*/
+
+  /*--------------------------------------------------*/
+
+  .scrolldown-container {
+    top: 80%;
+    position: relative;
+  }
+
+  .scrolldown-container .scrolldown-btn {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    fill: red;
+  }
+
+  .scrolldown-container .scrolldown-btn svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .scrolldown-container .scrolldown-btn svg path.first-path {
+    -webkit-animation: scrollanim 1s ease-in-out infinite;
+    animation: scrollanim 1s ease-in-out infinite;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+
+  .scrolldown-container .scrolldown-btn svg path.second-path {
+    -webkit-animation: scrollanim2 1s ease-in-out infinite;
+    animation: scrollanim2 1s ease-in-out infinite;
+  }
+
+  @-webkit-keyframes scrollanim {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes scrollanim {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0.8;
+    }
+  }
+
+  @-webkit-keyframes scrollanim2 {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0px);
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes scrollanim2 {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0px);
+      transform: translate(0, 0px);
+      opacity: 0.6;
+    }
+  }
+  /*-----------------------------------------*/
+  /*------------NAV DESSKTOP---------------*/
+  /*-----------------------------------------*/
+
+  #one {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    >h1 {
+      padding:3rem 0 0 0;
+      font-size: 6rem;
+      color: white;
+    }
+    span:first-of-type {
+      color: #17202d;
+    }
+    span:last-of-type {
+      color: #de1118;
+    }
+    img {
+      width: 10rem;
+    }
+  }
+  #navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    color: white;
+    li {
+      width: 100%;
+      a {
+        &:after {
+          position: absolute;
+          content: ' ';
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 0;
+        }
+
+        &:hover:after {
+          height: 2px;
+          background: #de1118;
+          width: 10px;
+        }
+      }
+    }
+  }
 
 }
