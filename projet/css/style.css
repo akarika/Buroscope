@@ -765,17 +765,13 @@ footer input {
   /*-----------------------------------------*/
   /*------------NAV DESSKTOP---------------*/
   /*-----------------------------------------*/
-  /* line 141, ../sass/_desktop.scss */
-  #one {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  /* line 145, ../sass/_desktop.scss */
+  /* line 143, ../sass/_desktop.scss */
   #one > h1 {
-    padding: 3rem 0 0 0;
+    padding: 3rem 0 3rem;
     font-size: 6rem;
     color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   /* line 150, ../sass/_desktop.scss */
   #one span:first-of-type {
@@ -794,29 +790,42 @@ footer input {
   #navbar {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 3rem;
     font-size: 2.5rem;
     color: white;
-  }
-  /* line 167, ../sass/_desktop.scss */
-  #navbar li {
-    width: 100%;
+    margin: 0 30%;
   }
   /* line 170, ../sass/_desktop.scss */
-  #navbar li a:after {
+  #navbar li a {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    -moz-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    transition: all 400ms;
+  }
+  /* line 177, ../sass/_desktop.scss */
+  #navbar li a:before {
     position: absolute;
+    display: block;
     content: ' ';
     bottom: 0;
-    right: 0;
-    left: 0;
     width: 0;
+    transition: all 400ms;
   }
-  /* line 179, ../sass/_desktop.scss */
-  #navbar li a:hover:after {
+  /* line 186, ../sass/_desktop.scss */
+  #navbar li a:hover:before {
+    background: #17202d;
+    background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #17202d), color-stop(50%, #17202d), color-stop(51%, #de1118), color-stop(100%, #de1118));
+    background: -webkit-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: -o-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: -ms-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: linear-gradient(to right, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17202d', endColorstr='#de1118', GradientType=1);
     height: 2px;
-    background: #de1118;
-    width: 10px;
+    width: 100%;
   }
 }
 
