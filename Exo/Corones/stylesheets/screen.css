@@ -1,0 +1,161 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/screen.scss */
+body {
+  font-family: 'Myriad Pro', serif;
+}
+
+/* line 12, ../sass/screen.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 17, ../sass/screen.scss */
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* line 22, ../sass/screen.scss */
+header {
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  background: url("../img/2nd_background.jpg") no-repeat center/cover;
+}
+/* line 28, ../sass/screen.scss */
+header h3 {
+  color: gainsboro;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+/* line 36, ../sass/screen.scss */
+header h3 a {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 39, ../sass/screen.scss */
+header h3 a:hover {
+  color: black;
+  background: rgba(255, 255, 255, 0.9);
+}
+/* line 45, ../sass/screen.scss */
+header h2 {
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  font-size: 3rem;
+  font-family: "Palace Script MT";
+  text-align: center;
+}
+
+/* line 56, ../sass/screen.scss */
+#h_h1 h1 {
+  display: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 61, ../sass/screen.scss */
+#h_h1 img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  padding-bottom: 5rem;
+}
+
+/* line 70, ../sass/screen.scss */
+footer {
+  height: 10vh;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 76, ../sass/screen.scss */
+.f_accueil {
+  font-size: 1.2rem;
+  padding: 1.6rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 84, ../sass/screen.scss */
+section {
+  padding-bottom: 2rem;
+}
+
+/* line 87, ../sass/screen.scss */
+img {
+  width: 100vh;
+}

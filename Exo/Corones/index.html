@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Corones immobilier l'agence de luxe , vente , achat de propriété , villa  somptueuse , éco-responable ,hight-tech , norme A++">
+    <title>Corones Immobilier</title>
+</head>
+<body>
+<section id="accueil">
+    <header>
+        <div id="h_h1"><img src="img/Corones.png" alt="Vos rêves les plus fous deviennent réalités ">
+            <h1>Corones Immobilier</h1></div>
+        <h3><a href="#achat">Achat</a><a href="#vente">Vente</a></h3>
+        <h2>Tout comme nos biens vous êtes uniques</h2>
+    </header>
+    <footer>
+        <div class="f_accueil">
+            <div id="charte"><p></p>
+                <div class="nous"><a href="">Qui sommes nous</a></div>
+            </div>
+            <div class="chartes"><a href="">Notre chartes qualités</a></div>
+            <div class="fiers"><a href="">Ils nous ont fait confiance</a></div>
+            <div class="questions"><a href="">Des questions ?</a></div>
+            <div class="contacter"><a href="">Nous contacter</a></div>
+        </div>
+    </footer>
+</section>
+<section id="achat"><img src="img/accueil-Corones.jpg" alt=""></section>
+<section><img src="img/offres-Corones.jpg" alt=""></section>
+<section><img src="img/produits-Corones.jpg" alt=""></section>
+<section><img src="img/Newsletter.jpg" alt=""></section>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('a').on('click', function () { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate({scrollTop: $(page).offset().top}, speed); // Go
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
