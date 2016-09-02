@@ -1,0 +1,350 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, ../sass/_header.scss */
+body {
+  font-size: calc(1rem * .625);
+  font-family: "Times New Roman";
+}
+
+/* line 6, ../sass/_header.scss */
+a {
+  outline: none;
+  color: black;
+}
+
+/* line 11, ../sass/_header.scss */
+.row-no-gutter {
+  margin-right: 0;
+  margin-left: 0;
+}
+/* line 15, ../sass/_header.scss */
+.row-no-gutter [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 21, ../sass/_header.scss */
+header {
+  background: url("../img/slider.jpg") no-repeat center/cover;
+  height: 50vh;
+}
+/* line 24, ../sass/_header.scss */
+header nav {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 0 20%;
+}
+/* line 31, ../sass/_header.scss */
+header nav a {
+  font-size: 1.2rem;
+}
+
+/* line 39, ../sass/_header.scss */
+#about_carrousel .carousel-indicators {
+  display: none;
+}
+/* line 42, ../sass/_header.scss */
+#about_carrousel img {
+  width: 100%;
+}
+/* line 45, ../sass/_header.scss */
+#about_carrousel h3 {
+  color: white;
+  font-size: 2.4rem;
+  font-style: italic;
+}
+
+/* line 2, ../sass/_about.scss */
+#about_left img {
+  position: relative;
+  width: 100%;
+  height: calc(100vw/3);
+}
+/* line 7, ../sass/_about.scss */
+#about_left p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 3.6rem;
+  padding: 2rem 3rem;
+  border: 1rem solid black;
+  color: black;
+}
+
+/* line 21, ../sass/_about.scss */
+#about_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2efe5;
+  height: calc(100vw/3);
+}
+/* line 27, ../sass/_about.scss */
+#about_right img {
+  box-sizing: content-box;
+  padding: 8rem 0 3rem;
+}
+/* line 32, ../sass/_about.scss */
+#about_right h3 {
+  font-size: 1.8rem;
+  margin: 0 10%;
+  text-align: center;
+}
+/* line 36, ../sass/_about.scss */
+#about_right h3 ~ p {
+  margin: 0 10%;
+  font-size: 1.6rem;
+}
+/* line 41, ../sass/_about.scss */
+#about_right p:first-of-type {
+  padding-bottom: 3rem;
+}
+
+/* line 46, ../sass/_about.scss */
+#about_footer {
+  background: url("../img/testimonial-1.jpg") no-repeat center/cover;
+}
+/* line 48, ../sass/_about.scss */
+#about_footer p {
+  font-size: 2.4rem;
+}
+
+/* line 53, ../sass/_about.scss */
+#newsletter {
+  background: #f2efe5;
+  height: calc(100vw/3);
+}
+/* line 56, ../sass/_about.scss */
+#newsletter h3 {
+  padding-top: 15rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 30%;
+}
+/* line 63, ../sass/_about.scss */
+#newsletter p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0 30%;
+}
+/* line 68, ../sass/_about.scss */
+#newsletter input[type] {
+  margin: 0 30%;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  width: 30rem;
+  padding: 1rem 0 1rem 0.5rem;
+}
+/* line 74, ../sass/_about.scss */
+#newsletter input[type]:last-of-type {
+  border: none;
+  margin-top: 2rem;
+  background: #9a977a;
+}
+/* line 80, ../sass/_about.scss */
+#newsletter form {
+  padding-top: 5rem;
+}
+
+/* line 1, ../sass/_team.scss */
+#team {
+  background: #f2efe5;
+}
+/* line 3, ../sass/_team.scss */
+#team img {
+  height: calc(100vw/3);
+}
+
+/* line 10, ../sass/_team.scss */
+#team_left img {
+  height: calc(100vw/3);
+}
+/* line 15, ../sass/_team.scss */
+#team_left #team_top_team img {
+  position: relative;
+}
+/* line 19, ../sass/_team.scss */
+#team_left #team_top_team p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 3.6rem;
+  padding: 2rem 8rem;
+  border: 1rem solid black;
+  color: black;
+}
+
+/* line 33, ../sass/_team.scss */
+#team_right {
+  background: #ccc8b6;
+  height: calc(100vw / 3);
+}
+/* line 36, ../sass/_team.scss */
+#team_right h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 6rem 0 5rem;
+}
+/* line 42, ../sass/_team.scss */
+#team_right p {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 1.4rem;
+  margin: 0 10%;
+}
+
+/* line 48, ../sass/_team.scss */
+.ico_social {
+  padding-top: 4rem;
+}
+/* line 50, ../sass/_team.scss */
+.ico_social a {
+  font-size: 5rem;
+}
+/* line 52, ../sass/_team.scss */
+.ico_social a ~ a {
+  padding-left: 2rem;
+}
+
+/* line 57, ../sass/_team.scss */
+#kat {
+  background: #ccc8b6;
+  height: calc(100vw/3);
+  position: relative;
+}
+/* line 61, ../sass/_team.scss */
+#kat h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 10rem 0 5rem;
+}
+/* line 67, ../sass/_team.scss */
+#kat p {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 1.4rem;
+  margin: 0 10%;
+}
+
+/*---------------------ARROW------------------*/
+/* line 76, ../sass/_team.scss */
+.arrow-left {
+  position: absolute;
+  top: 10rem;
+  width: 0;
+  height: 0;
+  left: -3rem;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid #ccc8b6;
+}
+
+/* line 87, ../sass/_team.scss */
+#newsletter {
+  background: #f2efe5;
+  height: calc(100vw/3);
+}
+/* line 90, ../sass/_team.scss */
+#newsletter h3 {
+  padding-top: 15rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+/* line 97, ../sass/_team.scss */
+#newsletter p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* line 104, ../sass/_team.scss */
+#form_newsform {
+  padding-top: 4rem;
+}
+/* line 106, ../sass/_team.scss */
+#form_newsform input {
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 0 0 0 0;
+}
+/* line 110, ../sass/_team.scss */
+#form_newsform input:last-of-type {
+  border: none;
+  background: #9a977a;
+  margin-top: 2rem;
+}
+
+/* line 116, ../sass/_team.scss */
+#team_footer {
+  position: relative;
+}
+/* line 118, ../sass/_team.scss */
+#team_footer img {
+  width: 100%;
+  height: 35rem;
+}
+/* line 122, ../sass/_team.scss */
+#team_footer p {
+  position: absolute;
+  top: 0;
+  font-size: 2.2rem;
+  color: white;
+  font-style: italic;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 133, ../sass/_team.scss */
+#team_footer a {
+  color: #ccc8b6;
+  font-size: 6rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 1, ../sass/_gallery.scss */
+#gallery_back {
+  background: #afac9c;
+}
+/* line 3, ../sass/_gallery.scss */
+#gallery_back h3 {
+  position: relative;
+  margin: 0;
+  top: 40%;
+  margin: 0 20%;
+  text-align: center;
+  font-size: 3.6rem;
+  border: 1rem solid black;
+  color: black;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 17, ../sass/_gallery.scss */
+.col-g-2 {
+  box-sizing: border-box;
+  width: 40%;
+  height: calc(100vw / 5);
+  float: left;
+}
+
+/* line 27, ../sass/_gallery.scss */
+.col-g-1 {
+  box-sizing: border-box;
+  width: 20%;
+  height: calc(100vw / 5);
+  float: left;
+}
+
+/*# sourceMappingURL=screen.css.map */
