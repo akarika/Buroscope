@@ -640,7 +640,7 @@ footer input {
   /* line 14, ../sass/_desktop.scss */
   section {
     display: block;
-    height: 100%;
+    height: 100vh;
   }
 
   /* line 19, ../sass/_desktop.scss */
@@ -676,7 +676,7 @@ footer input {
   /*--------------------------------------------------*/
   /* line 50, ../sass/_desktop.scss */
   .scrolldown-container {
-    top: 80%;
+    top: 50%;
     position: relative;
   }
 
@@ -772,21 +772,30 @@ footer input {
     color: white;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
+    display: none;
   }
-  /* line 150, ../sass/_desktop.scss */
+  /* line 151, ../sass/_desktop.scss */
   #one span:first-of-type {
     color: #17202d;
   }
-  /* line 153, ../sass/_desktop.scss */
+  /* line 154, ../sass/_desktop.scss */
   #one span:last-of-type {
     color: #de1118;
   }
-  /* line 156, ../sass/_desktop.scss */
+  /* line 157, ../sass/_desktop.scss */
   #one img {
     width: 10rem;
   }
 
-  /* line 160, ../sass/_desktop.scss */
+  @keyframes app_h1 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  /* line 171, ../sass/_desktop.scss */
   #navbar {
     display: flex;
     position: relative;
@@ -796,7 +805,7 @@ footer input {
     color: white;
     margin: 0 30%;
   }
-  /* line 170, ../sass/_desktop.scss */
+  /* line 181, ../sass/_desktop.scss */
   #navbar li a {
     position: relative;
     box-sizing: border-box;
@@ -805,16 +814,15 @@ footer input {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     transition: all 400ms;
   }
-  /* line 177, ../sass/_desktop.scss */
+  /* line 188, ../sass/_desktop.scss */
   #navbar li a:before {
     position: absolute;
     display: block;
     content: ' ';
     bottom: 0;
-    width: 0;
     transition: all 400ms;
   }
-  /* line 186, ../sass/_desktop.scss */
+  /* line 196, ../sass/_desktop.scss */
   #navbar li a:hover:before {
     background: #17202d;
     background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
@@ -826,6 +834,14 @@ footer input {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17202d', endColorstr='#de1118', GradientType=1);
     height: 2px;
     width: 100%;
+  }
+
+  /*--------------------------------------------------*/
+  /*-------------------------HEADER------------------*/
+  /*--------------------------------------------------*/
+  /* line 217, ../sass/_desktop.scss */
+  .fixed {
+    display: none;
   }
 }
 

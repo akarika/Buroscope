@@ -64,4 +64,5 @@ $(document).ready(function () {
         }, speed); // Go
         return false;
     });
+    $('#one>h1').show(5000);
 });
