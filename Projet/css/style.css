@@ -1,54 +1,848 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+/*Regles communes*/
+@import "https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech";
+/* line 5, ../sass/_styleBase.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+/* line 94, ../sass/_styleBase.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-body {
-    line-height: 1;
+/* line 108, ../sass/_styleBase.scss */
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', sans-serif;
 }
 
-ol, ul {
-    list-style: none;
+/* line 114, ../sass/_styleBase.scss */
+body,
+form {
+  line-height: 1;
+  font-family: 'Share Tech', sans-serif;
 }
 
-blockquote, q {
-    quotes: none;
+/* line 120, ../sass/_styleBase.scss */
+ul {
+  list-style: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+/* line 124, ../sass/_styleBase.scss */
+blockquote,
+q {
+  quotes: none;
 }
 
+/* line 129, ../sass/_styleBase.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 137, ../sass/_styleBase.scss */
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-a{
-    text-decoration: none;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* */
+/* line 142, ../sass/_styleBase.scss */
+html {
+  font-size: .625em;
+  font-size: calc(1em * .625);
+}
+
+/* line 147, ../sass/_styleBase.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+  outline-style: none;
+}
+
+/* line 153, ../sass/_styleBase.scss */
+h1 {
+  font-family: 'Denk One', sans-serif;
+  font-size: 3rem;
+  color: white;
+  padding-left: 5rem;
+}
+
+/* line 160, ../sass/_styleBase.scss */
+p {
+  font-size: 1.65rem;
+}
+
+/* line 164, ../sass/_styleBase.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+  background-image: url("../img/bg02.png");
+}
+
+/* line 171, ../sass/_styleBase.scss */
+.container {
+  padding: 0 3rem;
+}
+
+/* line 175, ../sass/_styleBase.scss */
+.flex_colum_start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/* line 187, ../sass/_styleBase.scss */
+#one {
+  display: none;
+}
+
+/*------effet slide---------*/
+/* line 192, ../sass/_styleBase.scss */
+#panel {
+  box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 196, ../sass/_styleBase.scss */
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 25.6rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+/* line 209, ../sass/_styleBase.scss */
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+/* line 215, ../sass/_styleBase.scss */
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+/* line 221, ../sass/_styleBase.scss */
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+/* line 225, ../sass/_styleBase.scss */
+.toggle-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-left: 1rem;
+  outline: none;
+}
+
+/* line 234, ../sass/_styleBase.scss */
+.fixed {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: fixed;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  width: 100%;
+}
+
+/* line 246, ../sass/_styleBase.scss */
+.fixed-open {
+  -webkit-transform: translate3d(256px, 0px, 0px);
+  transform: translate3d(256px, 0px, 0px);
+}
+
+/* line 251, ../sass/_styleBase.scss */
+#nav-container {
+  /*position: absolute;*/
+  font-size: 0.8rem;
+}
+
+/*toggle-icon*/
+/* line 257, ../sass/_styleBase.scss */
+.toggle-icon {
+  display: block;
+  position: relative;
+  /*width: 100%;
+  margin: -2.2em auto 0 0.2em;*/
+  -webkit-transition: margin 300ms;
+  transition: margin 300ms;
+  cursor: pointer;
+}
+
+/* line 267, ../sass/_styleBase.scss */
+.toggle-icon .bar {
+  display: block;
+  width: 3.8em;
+  height: 0.2em;
+  margin: 0.9em;
+  border-right: 2.8em solid #fff;
+  border-left: 0.6em solid #d6d6d6;
+  box-sizing: border-box;
+  -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+  -webkit-transition-property: margin, border-right-color, box-shadow, -webkit-transform;
+  transition-property: margin, border-right-color, box-shadow, -webkit-transform;
+  transition-property: transform, margin, border-right-color, box-shadow;
+  transition-property: transform, margin, border-right-color, box-shadow, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+
+/* line 284, ../sass/_styleBase.scss */
+.toggle-icon .bar:nth-of-type(1) {
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+
+/* line 289, ../sass/_styleBase.scss */
+.toggle-icon .bar:nth-of-type(2) {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+/*pushed*/
+/* line 295, ../sass/_styleBase.scss */
+.pushed .toggle-icon {
+  margin: -3.2em 0 0 0.7em;
+}
+
+/* line 299, ../sass/_styleBase.scss */
+.pushed .bar:nth-of-type(1) {
+  opacity: 0;
+}
+
+/* line 303, ../sass/_styleBase.scss */
+.pushed .bar:nth-of-type(2) {
+  margin-left: 1.4em;
+  -webkit-transform: rotate(-137deg) translateY(-1.5em);
+  transform: rotate(-137deg) translateY(-1.5em);
+}
+
+/* line 309, ../sass/_styleBase.scss */
+.pushed .bar:nth-of-type(3) {
+  margin-left: 0.5em;
+  -webkit-transform: rotate(-42deg);
+  transform: rotate(-42deg);
+}
+
+/*-----------header------------*/
+/* line 316, ../sass/_styleBase.scss */
+header {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFF;
+  border-bottom: 0.2rem solid #de1118;
+  background: #364050 url("../img/bg01.png");
+  padding: 1.5rem;
+}
+
+/* line 332, ../sass/_styleBase.scss */
+h1 span {
+  color: #de1118;
+}
+
+/* line 336, ../sass/_styleBase.scss */
+header img {
+  height: 3rem;
+}
+
+/*-----------HISTOIRE----------*/
+/* line 341, ../sass/_styleBase.scss */
+#histoire {
+  padding-top: 8rem;
+  background-color: #fff;
+  background-image: url("../img/bg02.png");
+}
+
+/* line 347, ../sass/_styleBase.scss */
+#panel h2 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+  color: black;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/* line 355, ../sass/_styleBase.scss */
+#menu h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* line 361, ../sass/_styleBase.scss */
+#menu a {
+  font-size: 2.3rem;
+  color: black;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+
+/* line 369, ../sass/_styleBase.scss */
+#sous-menu li a {
+  font-size: 1.7rem;
+  color: gray;
+}
+
+/* line 374, ../sass/_styleBase.scss */
+#sous-menu li:first-child {
+  border-bottom: 1px dashed #364050;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+/* line 379, ../sass/_styleBase.scss */
+#sous-menu li:last-child {
+  padding: 1rem 2rem 0 1rem;
+}
+
+/* line 383, ../sass/_styleBase.scss */
+#menu > ul > li {
+  border-bottom: 1px solid #364050;
+  padding: 1rem;
+}
+
+/* line 388, ../sass/_styleBase.scss */
+.article h3 {
+  font-size: 1.80rem;
+  color: #9C9C9C;
+  padding-bottom: 1rem;
+  text-align: left;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/* line 397, ../sass/_styleBase.scss */
+.article img {
+  max-width: 100%;
+  display: block;
+}
+
+/* line 402, ../sass/_styleBase.scss */
+.article figcaption {
+  padding-bottom: 1rem;
+}
+
+/* line 406, ../sass/_styleBase.scss */
+.article p {
+  line-height: 3rem;
+}
+
+/* line 410, ../sass/_styleBase.scss */
+.article p:first-of-type:first-letter {
+  font-size: 2.5rem;
+}
+
+/* line 414, ../sass/_styleBase.scss */
+.article,
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* line 429, ../sass/_styleBase.scss */
+.article:not(#bienEtre) {
+  border-bottom: 1px solid #de1118;
+}
+
+/* line 433, ../sass/_styleBase.scss */
+#bienEtre ol {
+  font-size: 1.65rem;
+  line-height: 3rem;
+  text-align: left;
+}
+
+/*------------FOOTER-----*/
+/* line 440, ../sass/_styleBase.scss */
+footer {
+  background: #364050 url("../img/bg01.png");
+  border-top: 0.1rem solid #de1118;
+  font-size: 1.65rem;
+  color: #FFF;
+}
+
+/* line 447, ../sass/_styleBase.scss */
+[type="text"] {
+  height: 5rem;
+}
+
+/* line 451, ../sass/_styleBase.scss */
+footer legend {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* line 457, ../sass/_styleBase.scss */
+footer input {
+  background: #252e3d url("../img/bg01.png");
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #17202d;
+  border-radius: 3px;
+  text-overflow: clip;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0px 1px 1px 0px rgba(93, 104, 122, 0.6);
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0;
+}
+
+/* line 474, ../sass/_styleBase.scss */
+[value="Envoyer"] {
+  color: white;
+  background: #de1118;
+  text-transform: uppercase;
+}
+
+/* line 480, ../sass/_styleBase.scss */
+.invisible {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 4, ../sass/_deviceTablet.scss */
+  header {
+    padding: 2rem;
+  }
+  /* line 6, ../sass/_deviceTablet.scss */
+  header img {
+    height: 3.5rem;
+  }
+  /* line 9, ../sass/_deviceTablet.scss */
+  header h1 {
+    font-size: 3.8rem;
+    padding-left: 20rem;
+  }
+
+  /* line 14, ../sass/_deviceTablet.scss */
+  #histoire {
+    padding-top: 10rem;
+  }
+  /* line 16, ../sass/_deviceTablet.scss */
+  #histoire figure {
+    margin-right: 2rem;
+  }
+
+  /* line 20, ../sass/_deviceTablet.scss */
+  .content {
+    display: flex;
+  }
+
+  /* line 24, ../sass/_deviceTablet.scss */
+  .article p {
+    line-height: 3.5rem;
+    font-size: 1.9rem;
+  }
+  /* line 27, ../sass/_deviceTablet.scss */
+  .article p:first-of-type::first-letter {
+    font-size: 3rem;
+  }
+  /* line 32, ../sass/_deviceTablet.scss */
+  .article figure {
+    flex-basis: 50%;
+  }
+
+  /* line 36, ../sass/_deviceTablet.scss */
+  .flex_colum_start {
+    display: block;
+    flex-basis: 50%;
+  }
+
+  /* line 40, ../sass/_deviceTablet.scss */
+  footer {
+    display: block;
+  }
+  /* line 42, ../sass/_deviceTablet.scss */
+  footer input {
+    width: 95%;
+  }
+  /* line 45, ../sass/_deviceTablet.scss */
+  footer label {
+    font-size: 2.2rem;
+  }
+
+  /* line 49, ../sass/_deviceTablet.scss */
+  legend {
+    font-size: 3.2rem;
+  }
+
+  /* line 53, ../sass/_deviceTablet.scss */
+  #menu h2 {
+    font-size: 3rem;
+  }
+  /* line 57, ../sass/_deviceTablet.scss */
+  #menu ul > li {
+    padding: 2rem;
+  }
+  /* line 60, ../sass/_deviceTablet.scss */
+  #menu a {
+    font-size: 2.6rem;
+  }
+  /* line 63, ../sass/_deviceTablet.scss */
+  #menu ul:nth-of-type(2) a {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  @import "https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech";
+  /* line 3, ../sass/_desktop.scss */
+  html {
+    height: 100%;
+    position: relative;
+  }
+
+  /* line 8, ../sass/_desktop.scss */
+  body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+  }
+
+  /* line 14, ../sass/_desktop.scss */
+  section {
+    display: block;
+    height: 100vh;
+  }
+
+  /* line 19, ../sass/_desktop.scss */
+  #one {
+    display: block;
+  }
+
+  /* line 22, ../sass/_desktop.scss */
+  .fixed {
+    position: relative;
+    backface-visibility: visible;
+  }
+
+  /* line 27, ../sass/_desktop.scss */
+  video#videobg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+  }
+
+  /*--------------------------------------------------*/
+  /*-------------------ARROW EFFECT 1 SECTION-------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /* line 50, ../sass/_desktop.scss */
+  .scrolldown-container {
+    top: 50%;
+    position: relative;
+  }
+
+  /* line 55, ../sass/_desktop.scss */
+  .scrolldown-container .scrolldown-btn {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    fill: red;
+  }
+
+  /* line 69, ../sass/_desktop.scss */
+  .scrolldown-container .scrolldown-btn svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 78, ../sass/_desktop.scss */
+  .scrolldown-container .scrolldown-btn svg path.first-path {
+    -webkit-animation: scrollanim 1s ease-in-out infinite;
+    animation: scrollanim 1s ease-in-out infinite;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+
+  /* line 85, ../sass/_desktop.scss */
+  .scrolldown-container .scrolldown-btn svg path.second-path {
+    -webkit-animation: scrollanim2 1s ease-in-out infinite;
+    animation: scrollanim2 1s ease-in-out infinite;
+  }
+
+  @-webkit-keyframes scrollanim {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0.8;
+    }
+  }
+  @keyframes scrollanim {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0.8;
+    }
+  }
+  @-webkit-keyframes scrollanim2 {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0px);
+      opacity: 0.6;
+    }
+  }
+  @keyframes scrollanim2 {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0px);
+      transform: translate(0, 0px);
+      opacity: 0.6;
+    }
+  }
+  /*-----------------------------------------*/
+  /*------------NAV DESSKTOP---------------*/
+  /*-----------------------------------------*/
+  /* line 143, ../sass/_desktop.scss */
+  #one > h1 {
+    padding: 3rem 0 3rem;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: none;
+  }
+  /* line 151, ../sass/_desktop.scss */
+  #one span:first-of-type {
+    color: #17202d;
+  }
+  /* line 154, ../sass/_desktop.scss */
+  #one span:last-of-type {
+    color: #de1118;
+  }
+  /* line 157, ../sass/_desktop.scss */
+  #one img {
+    width: 10rem;
+  }
+
+  @keyframes app_h1 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  /* line 171, ../sass/_desktop.scss */
+  #navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 30%;
+  }
+  /* line 181, ../sass/_desktop.scss */
+  #navbar li a {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    -moz-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    transition: all 400ms;
+  }
+  /* line 188, ../sass/_desktop.scss */
+  #navbar li a:before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    bottom: 0;
+    transition: all 400ms;
+  }
+  /* line 196, ../sass/_desktop.scss */
+  #navbar li a:hover:before {
+    background: #17202d;
+    background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #17202d), color-stop(50%, #17202d), color-stop(51%, #de1118), color-stop(100%, #de1118));
+    background: -webkit-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: -o-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: -ms-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    background: linear-gradient(to right, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17202d', endColorstr='#de1118', GradientType=1);
+    height: 2px;
+    width: 100%;
+  }
+
+  /*--------------------------------------------------*/
+  /*-------------------------HEADER------------------*/
+  /*--------------------------------------------------*/
+  /* line 217, ../sass/_desktop.scss */
+  .fixed {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
