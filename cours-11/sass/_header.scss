@@ -1,0 +1,50 @@
+body {
+  font-size: calc(1rem * .625);
+  font-family: "Times New Roman";
+}
+
+a {
+  outline: none;
+  color: black;
+}
+
+.row-no-gutter {
+  margin-right: 0;
+  margin-left: 0;
+
+  [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+header {
+  background: url("../img/slider.jpg") no-repeat center /cover;
+  height: 50vh;
+  nav {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 20%;
+    a {
+      font-size: 1.2rem;
+    }
+
+  }
+}
+
+#about_carrousel {
+  .carousel-indicators {
+    display: none;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    color: white;
+    font-size: 2.4rem;
+    font-style: italic;
+  }
+}

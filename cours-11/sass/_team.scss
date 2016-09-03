@@ -1,0 +1,141 @@
+#team {
+  background: #f2efe5;
+  img {
+    height: $h_100;
+
+  }
+}
+
+#team_left {
+  img {
+    height: $h_100;
+
+  }
+  #team_top_team {
+    img {
+      position: relative;
+
+    }
+    p {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 3.6rem;
+      padding: 2rem 8rem;
+      border: 1rem solid black;
+      color: black;
+    }
+  }
+}
+
+#team_right {
+  background: $color_bckgrd;
+  height: calc(100vw / 3);
+  h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 6rem 0 5rem;
+  }
+  p {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 1.4rem;
+    margin: 0 10%;
+  }
+}
+.ico_social{
+  padding-top:4rem;
+  a {
+    font-size: 5rem;
+  ~a{
+    padding-left: 2rem;
+  }}
+}
+
+#kat {
+  background: $color_bckgrd;
+  height: $h_100;
+  position: relative;
+  h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 10rem 0 5rem;
+  }
+  p {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 1.4rem;
+    margin: 0 10%;
+  }
+}
+
+/*---------------------ARROW------------------*/
+
+.arrow-left {
+  position: absolute;
+  top: 10rem;
+  width: 0;
+  height: 0;
+  left: -3rem;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid $color_bckgrd;
+}
+
+#newsletter {
+  background: #f2efe5;
+  height: $h_100;
+  h3 {
+    padding-top: 15rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+
+  }
+  p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+  }
+
+}
+#form_newsform{
+  padding-top: 4rem;
+  input{
+    border: 1px solid black;
+    background: transparent;
+    border-radius: 0 0 0 0;
+  &:last-of-type{
+    border: none;
+    background:#9a977a ;
+    margin-top:2rem;
+  }}
+}
+#team_footer{
+  position: relative;
+img{
+  width: 100%;
+  height:35rem;
+
+}p{
+   position: absolute;
+  top:0;
+   font-size: 2.2rem;
+   color: white;
+   font-style: italic;
+   top: 45%;
+   transform: translateY(-50%);
+   left: 50%;
+   transform: translateX(-50%);
+ }
+  a{
+    color: #ccc8b6;
+    font-size:6rem;
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
