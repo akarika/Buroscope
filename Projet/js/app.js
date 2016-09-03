@@ -43,14 +43,13 @@ $(document).ready(function () {
             var target = $($(this).attr('href')).offset().top;
             if (target < bottom_screen && target > (pos - w_height)) {
                 $(this).css({
-                    'border-bottom': '1px solid red'
+                    'color': 'rgba(222, 17, 24, 1)'
                     ,
                 })
             }
             else {
                 $(this).css({
-                    'background-color': 'transparent'
-                    , 'border': 'none'
+                    'color':'white'
                     ,
                 })
             }
@@ -64,5 +63,17 @@ $(document).ready(function () {
         }, speed); // Go
         return false;
     });
-    $('#one>h1').show(5000);
+    /*-------------EFFET STICKY------------*/
+    $(window).scroll(function (event) {
+        // A chaque fois que l'utilisateur va scroller (descendre la page)
+        var y = $(this).scrollTop(); // On récupérer la valeur du scroll vertical
+        //si cette valeur > à 200 on ajouter la class
+        if (y >= 700) {
+            $('#navbar').addClass('fixed_navbar');
+        } else {
+            // sinon, on l'enlève
+            $('#navbar').removeClass('fixed_navbar');
+        }
+    });
+
 });

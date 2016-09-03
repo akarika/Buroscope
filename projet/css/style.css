@@ -772,40 +772,52 @@ footer input {
     color: white;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
-    display: none;
   }
-  /* line 151, ../sass/_desktop.scss */
+  /* line 150, ../sass/_desktop.scss */
   #one span:first-of-type {
     color: #17202d;
   }
-  /* line 154, ../sass/_desktop.scss */
+  /* line 153, ../sass/_desktop.scss */
   #one span:last-of-type {
     color: #de1118;
   }
-  /* line 157, ../sass/_desktop.scss */
+  /* line 156, ../sass/_desktop.scss */
   #one img {
     width: 10rem;
   }
 
-  @keyframes app_h1 {
-    from {
-      opacity: 0;
+  @keyframes stickAnim {
+    0% {
+      transform: translateY(-55px);
     }
-    to {
-      opacity: 0;
+    100% {
+      transform: translateY(0);
     }
   }
-  /* line 171, ../sass/_desktop.scss */
+  /* line 169, ../sass/_desktop.scss */
+  .fixed_navbar {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    z-index: 1000;
+    animation: stickAnim .3s;
+  }
+
+  /* line 176, ../sass/_desktop.scss */
   #navbar {
-    display: flex;
     position: relative;
-    justify-content: space-around;
     padding-top: 3rem;
     font-size: 2.5rem;
     color: white;
-    margin: 0 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
   }
-  /* line 181, ../sass/_desktop.scss */
+  /* line 185, ../sass/_desktop.scss */
+  #navbar li {
+    display: inline-block;
+  }
+  /* line 188, ../sass/_desktop.scss */
   #navbar li a {
     position: relative;
     box-sizing: border-box;
@@ -814,7 +826,7 @@ footer input {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     transition: all 400ms;
   }
-  /* line 188, ../sass/_desktop.scss */
+  /* line 195, ../sass/_desktop.scss */
   #navbar li a:before {
     position: absolute;
     display: block;
@@ -822,7 +834,7 @@ footer input {
     bottom: 0;
     transition: all 400ms;
   }
-  /* line 196, ../sass/_desktop.scss */
+  /* line 203, ../sass/_desktop.scss */
   #navbar li a:hover:before {
     background: #17202d;
     background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
@@ -839,8 +851,8 @@ footer input {
   /*--------------------------------------------------*/
   /*-------------------------HEADER------------------*/
   /*--------------------------------------------------*/
-  /* line 217, ../sass/_desktop.scss */
-  .fixed {
+  /* line 224, ../sass/_desktop.scss */
+  .fixed, .hidden, .invisible, h2 {
     display: none;
   }
 }

@@ -1,0 +1,349 @@
+<html lang="en" class=" js   ">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sticky Menu Tutorial</title>
+
+    <meta name="viewport" content="initial-scale=1.0">
+
+
+    <style type="text/css">
+        /* micro reset */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body,
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            line-height: 1.75;
+            background: #B13C2E;
+            color: #F1EEDD;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        
+        .main-header {
+            background: #FFF;
+            color: #B13C2E;
+        }
+        
+        .header-inner {
+            display: table;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 25px;
+        }
+        
+        .header-inner > * {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        .header-nav {
+            text-align: right;
+        }
+        
+        .header-nav ul,
+        .header-nav li {
+            display: inline;
+            list-style: none;
+        }
+        
+        .header-nav a {
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            vertical-align: middle;
+            font-weight: 300;
+            /* between regular and light */
+            letter-spacing: 0.025em;
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .header-nav a:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            left: 20px;
+            height: 2px;
+            background-color: #B13C2E;
+            /* for animation */
+            opacity: 0;
+            transform: translateY(5px);
+            transition: all .4s;
+        }
+        
+        .header-nav a:hover:after,
+        .header-nav a:focus:after {
+            opacity: .6;
+            bottom: 0;
+            transform: translateY(0);
+        }
+        
+        .header-nav a:focus {
+            outline: none;
+            /* I can do it because I already have a style for that */
+        }
+        /* When navbar is stuck */
+        
+        .nav-is-stuck .main-header {
+            /* http://caniuse.com/#feat=css-sticky */
+            /* not good support at this time (nov 2015) */
+            /* so use fixed if JS activated */
+            position: sticky;
+        }
+        
+        .nav-is-stuck .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+            animation: stickAnim .3s;
+        }
+        
+        @keyframes stickAnim {
+            0% {
+                transform: translateY(-86px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        /* 
+	Other styles for demo
+ */
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 25px;
+            color: #364452;
+        }
+        
+        .cleanbg {
+            padding-bottom: 50px;
+            background: #FFF;
+        }
+        
+        .bigtxt {
+            margin: 4em 0;
+            color: #fff;
+            font-size: 1.75vw;
+            letter-spacing: 0.125em;
+            word-spacing: 0.125em;
+            text-transform: uppercase;
+        }
+        
+        .txtcenter {
+            text-align: center;
+        }
+        
+        h1,
+        h2 {
+            margin: 2.5em 0 1.5em;
+            letter-spacing: 0.125em;
+            word-spacing: 0.125em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2em;
+            font-weight: lighter;
+        }
+        
+        h2 {
+            font-weight: normal;
+        }
+        
+        p {
+            margin: 1.75em 0;
+            font-weight: 300;
+            letter-spacing: 0.025em;
+            word-spacing: 0.025em;
+        }
+        
+        .main-footer {
+            background: #364452;
+        }
+        
+        .main-footer .container {
+            padding: 50px 25px;
+            color: #FFF;
+            color: rgba(255, 255, 255, .6);
+        }
+        
+        .main-footer a {
+            color: inherit;
+            letter-spacing: 0.125em;
+            word-spacing: 0.125em;
+            text-transform: uppercase;
+            font-size: .8em;
+        }
+        
+        .main-footer span {
+            display: inline-block;
+            margin: 0 15px;
+            color: rgba(255, 255, 255, .2);
+        }
+    </style>
+</head>
+
+<body data-pinterest-extension-installed="cr1.39.2" cz-shortcut-listen="true" style="padding-top: 0px;">
+    <header id="header" role="banner" class="main-header">
+        <div class="header-inner">
+            <div class="header-logo">
+
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our projects</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="section" class="main-section first-section">
+        <div class="container">
+            <p class="bigtxt txtcenter">Some awesome calls to action</p>
+        </div>
+    </section>
+
+
+    <section id="main" class="main-section cleanbg">
+        <div class="container">
+            <h1>Done is better than perfect</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus luctus ligula, vitae lacinia eros faucibus ut. Vestibulum eget iaculis ligula. Integer posuere sed nulla nec elementum. Nulla convallis nisl id sagittis convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id ex et turpis sollicitudin fermentum vitae sit amet urna. Vestibulum faucibus libero non eleifend eleifend. Mauris a lectus ac justo dictum porttitor ac id nisi. Donec dapibus dapibus velit, eget convallis lorem tempor nec. Fusce malesuada justo ac nibh facilisis imperdiet. Vestibulum lectus diam, mollis eget rutrum vitae, aliquet a lorem. Etiam dignissim sem non orci ultricies hendrerit. Nam a augue sed tortor tempor interdum. Etiam eget arcu pretium, molestie massa et, posuere justo.</p>
+
+            <p>Suspendisse tincidunt, nibh id vehicula consequat, libero ligula mollis purus, ac scelerisque neque orci et arcu. Nam maximus maximus odio, nec tincidunt sem auctor aliquet. Fusce felis ligula, pulvinar vel aliquet non, venenatis non ligula. Donec a malesuada nunc, et pharetra nulla. Aenean vulputate varius consectetur. Aenean at ante dui. Proin rhoncus, dolor et semper varius, mi eros varius mauris, quis luctus mauris erat sed erat. Nulla faucibus id risus quis dapibus. In bibendum consequat nisl at efficitur. In at aliquet ipsum, in pharetra lacus.</p>
+
+            <h2>Should be perfect but…</h2>
+
+            <p>Sed in lobortis urna, nec placerat mi. Cras maximus sapien vitae tellus bibendum luctus. Suspendisse suscipit eros nulla, nec tincidunt lectus luctus vel. Praesent quis ipsum eu urna volutpat fringilla ultrices eget ex. Morbi tincidunt placerat odio, tempor consequat sapien pretium accumsan. Sed faucibus tortor non arcu venenatis, sed finibus augue ullamcorper. Mauris tellus nibh, efficitur ac pulvinar id, egestas ut risus. Curabitur mollis ante in magna efficitur commodo. Integer nisi magna, lobortis vitae imperdiet id, vulputate sit amet neque. Curabitur volutpat, dolor auctor congue ullamcorper, nunc est suscipit mauris, eget vulputate ligula est in nibh. Praesent viverra, turpis et sagittis efficitur, turpis odio gravida nulla, vitae ultrices elit nulla ac massa. Sed quis pretium lectus.</p>
+
+            <p>Proin non risus eros. Maecenas sed volutpat lacus, ac varius elit. Vivamus facilisis vitae orci quis fringilla. Nullam rutrum tristique arcu ac hendrerit. Donec eget sollicitudin felis. Donec sagittis libero eget neque sollicitudin, vitae viverra felis cursus. Donec viverra velit sed odio rhoncus porttitor. Aenean at lacus ut libero consequat consectetur. In quis metus id nibh sodales ornare. Mauris nec mauris vel sem ornare luctus. Ut egestas lacinia arcu vitae bibendum. Vivamus venenatis, lectus quis luctus porttitor, nibh risus ultrices velit, id pretium dolor massa a nibh. Mauris interdum consequat ipsum in commodo. Curabitur interdum tellus in tortor sagittis efficitur. Integer vulputate metus sed turpis imperdiet mattis.</p>
+
+            <h2>just done!</h2>
+
+            <p>Nulla sed luctus nulla, quis dictum mi. Ut non posuere ante, a aliquet urna. Nullam at diam vitae neque malesuada vestibulum vitae eget arcu. Curabitur euismod enim ut lacus sollicitudin, eget gravida massa varius. Etiam scelerisque non erat non consectetur. Suspendisse malesuada lacus eu metus bibendum, in vehicula dui accumsan. In egestas tincidunt leo, eget varius tellus ultricies ac.</p>
+
+            <p>Proin non risus eros. Maecenas sed volutpat lacus, ac varius elit. Vivamus facilisis vitae orci quis fringilla. Nullam rutrum tristique arcu ac hendrerit. Donec eget sollicitudin felis. Donec sagittis libero eget neque sollicitudin, vitae viverra felis cursus. Donec viverra velit sed odio rhoncus porttitor. Aenean at lacus ut libero consequat consectetur. In quis metus id nibh sodales ornare. Mauris nec mauris vel sem ornare luctus. Ut egestas lacinia arcu vitae bibendum. Vivamus venenatis, lectus quis luctus porttitor, nibh risus ultrices velit, id pretium dolor massa a nibh. Mauris interdum consequat ipsum in commodo. Curabitur interdum tellus in tortor sagittis efficitur. Integer vulputate metus sed turpis imperdiet mattis.</p>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="txtcenter">
+                <a href="http://www.creativejuiz.fr/blog/tutoriels/creer-menu-sticky-avec-javascript-css" hreflang="fr">Go back to article</a> <span>–</span>
+                <a href="http://www.creativejuiz.fr/blog/tutoriels/creer-menu-sticky-avec-javascript-css" lang="fr" hreflang="fr">Retour à l'article</a>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script>
+        /*
+                	RequestAnimationFrame Polyfill
+
+                	http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+                	http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+                	by Erik Möller, fixes from Paul Irish and Tino Zijdel
+
+                	MIT license
+                 */
+
+        (function () {
+            var lastTime = 0;
+            var vendors = ['ms', 'moz', 'webkit', 'o'];
+            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+            }
+
+            if (!window.requestAnimationFrame) {
+                window.requestAnimationFrame = function (callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function () {
+                            callback(currTime + timeToCall);
+                        },
+                        timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id;
+                };
+            }
+
+            if (!window.cancelAnimationFrame) {
+                window.cancelAnimationFrame = function (id) {
+                    clearTimeout(id);
+                };
+            }
+        }());
+
+
+        /*
+        	Sticky menu script
+         */
+
+        (function (w, d, undefined) {
+            var el_html = d.documentElement,
+                el_body = d.getElementsByTagName('body')[0],
+                header = d.getElementById('header'),
+                menuIsStuck = function (triggerElement) {
+                    var _scrollTop = w.pageYOffset || el_body.scrollTop,
+                        regexp = /(nav\-is\-stuck)/i,
+                        classFound = el_html.className.match(regexp),
+                        navHeight = header.offsetHeight,
+                        bodyRect = el_body.getBoundingClientRect(),
+                        scrollValue = triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight : 800,
+                        scrollValFix = classFound ? scrollValue : scrollValue + navHeight;
+
+                    // if scroll down is 700 or more and nav-is-stuck class doesn't exist
+                    if (_scrollTop > scrollValFix && !classFound) {
+                        el_html.className = el_html.className + ' nav-is-stuck';
+                        el_body.style.paddingTop = navHeight + 'px';
+                    }
+
+                    // if we are to high in the page and nav-is-stuck class exists
+                    if (_scrollTop <= 2 && classFound) {
+                        el_html.className = el_html.className.replace(regexp, '');
+                        el_body.style.paddingTop = '0px';
+                    }
+                },
+                onScrolling = function () {
+                    // this function fires menuIsStuck()…
+                    menuIsStuck(d.getElementById('main'));
+                    // and could do more stuff below
+                };
+
+
+            el_html.className = el_html.className + ' js';
+
+            // when you scroll, fire onScrolling() function
+            w.addEventListener('scroll', function () {
+                w.requestAnimationFrame(onScrolling);
+            });
+
+
+        }(window, document));
+    </script>
+
+
+</body>
+
+</html>
