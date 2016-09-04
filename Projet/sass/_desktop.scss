@@ -160,31 +160,32 @@
 
   @keyframes stickAnim {
     0% {
-      transform: translateY(-55px);
+      opacity: 0;
     }
     100% {
-      transform: translateY(0);
+      opacity:1;
     }
   }
   .fixed_navbar{
-    position:fixed;
-    display: inline-block;
-    top:0;
+    position:fixed !important;
     z-index:1000;
-    animation: stickAnim .3s;
+    animation: stickAnim 2s;
+    top:0;
   }
   #navbar {
     position: relative;
     padding-top: 3rem;
     font-size: 2.5rem;
     color: white;
+    display: flex;
+    justify-content: center;
     left: 50%;
     transform: translateX(-50%);
-    display: inline-block;
 
     li {
-    display: inline-block;
-
+      ~li{
+        padding-left: 10rem;
+      }
       a {
         position: relative;
         box-sizing: border-box;

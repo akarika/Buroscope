@@ -68,12 +68,13 @@ $(document).ready(function () {
         // A chaque fois que l'utilisateur va scroller (descendre la page)
         var y = $(this).scrollTop(); // On récupérer la valeur du scroll vertical
         //si cette valeur > à 200 on ajouter la class
-        if (y >= 700) {
+        if (y >= (200)) {
             $('#navbar').addClass('fixed_navbar');
         } else {
             // sinon, on l'enlève
             $('#navbar').removeClass('fixed_navbar');
         }
     });
+
 
 });

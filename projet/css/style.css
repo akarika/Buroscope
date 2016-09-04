@@ -788,36 +788,36 @@ footer input {
 
   @keyframes stickAnim {
     0% {
-      transform: translateY(-55px);
+      opacity: 0;
     }
     100% {
-      transform: translateY(0);
+      opacity: 1;
     }
   }
   /* line 169, ../sass/_desktop.scss */
   .fixed_navbar {
-    position: fixed;
-    display: inline-block;
-    top: 0;
+    position: fixed !important;
     z-index: 1000;
-    animation: stickAnim .3s;
+    animation: stickAnim 2s;
+    top: 0;
   }
 
-  /* line 176, ../sass/_desktop.scss */
+  /* line 175, ../sass/_desktop.scss */
   #navbar {
     position: relative;
     padding-top: 3rem;
     font-size: 2.5rem;
     color: white;
+    display: flex;
+    justify-content: center;
     left: 50%;
     transform: translateX(-50%);
-    display: inline-block;
   }
-  /* line 185, ../sass/_desktop.scss */
-  #navbar li {
-    display: inline-block;
+  /* line 186, ../sass/_desktop.scss */
+  #navbar li ~ li {
+    padding-left: 10rem;
   }
-  /* line 188, ../sass/_desktop.scss */
+  /* line 189, ../sass/_desktop.scss */
   #navbar li a {
     position: relative;
     box-sizing: border-box;
@@ -826,7 +826,7 @@ footer input {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     transition: all 400ms;
   }
-  /* line 195, ../sass/_desktop.scss */
+  /* line 196, ../sass/_desktop.scss */
   #navbar li a:before {
     position: absolute;
     display: block;
@@ -834,7 +834,7 @@ footer input {
     bottom: 0;
     transition: all 400ms;
   }
-  /* line 203, ../sass/_desktop.scss */
+  /* line 204, ../sass/_desktop.scss */
   #navbar li a:hover:before {
     background: #17202d;
     background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
@@ -851,7 +851,7 @@ footer input {
   /*--------------------------------------------------*/
   /*-------------------------HEADER------------------*/
   /*--------------------------------------------------*/
-  /* line 224, ../sass/_desktop.scss */
+  /* line 225, ../sass/_desktop.scss */
   .fixed, .hidden, .invisible, h2 {
     display: none;
   }
