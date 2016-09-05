@@ -187,6 +187,11 @@ body {
 #one{
   display: none;
 }
+section:not(#one){
+  background-color: #fff;
+  background-image: url("../img/bg02.png");
+  padding-top: 8rem;
+}
 /*------effet slide---------*/
 
 #panel {
@@ -340,8 +345,6 @@ header img {
 
 #histoire {
   padding-top: 8rem;
-  background-color: #fff;
-  background-image: url("../img/bg02.png");
 }
 
 #panel h2 {
