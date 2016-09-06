@@ -203,13 +203,20 @@ body {
   display: none;
 }
 
+/* line 190, ../sass/_styleBase.scss */
+section:not(#one) {
+  background-color: #fff;
+  background-image: url("../img/bg02.png");
+  padding-top: 8rem;
+}
+
 /*------effet slide---------*/
-/* line 192, ../sass/_styleBase.scss */
+/* line 197, ../sass/_styleBase.scss */
 #panel {
   box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 196, ../sass/_styleBase.scss */
+/* line 201, ../sass/_styleBase.scss */
 .slideout-menu {
   position: fixed;
   left: 0;
@@ -223,26 +230,26 @@ body {
   display: none;
 }
 
-/* line 209, ../sass/_styleBase.scss */
+/* line 214, ../sass/_styleBase.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
 }
 
-/* line 215, ../sass/_styleBase.scss */
+/* line 220, ../sass/_styleBase.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 221, ../sass/_styleBase.scss */
+/* line 226, ../sass/_styleBase.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
-/* line 225, ../sass/_styleBase.scss */
+/* line 230, ../sass/_styleBase.scss */
 .toggle-button {
   background-color: transparent;
   color: white;
@@ -252,7 +259,7 @@ body {
   outline: none;
 }
 
-/* line 234, ../sass/_styleBase.scss */
+/* line 239, ../sass/_styleBase.scss */
 .fixed {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -265,20 +272,20 @@ body {
   width: 100%;
 }
 
-/* line 246, ../sass/_styleBase.scss */
+/* line 251, ../sass/_styleBase.scss */
 .fixed-open {
   -webkit-transform: translate3d(256px, 0px, 0px);
   transform: translate3d(256px, 0px, 0px);
 }
 
-/* line 251, ../sass/_styleBase.scss */
+/* line 256, ../sass/_styleBase.scss */
 #nav-container {
   /*position: absolute;*/
   font-size: 0.8rem;
 }
 
 /*toggle-icon*/
-/* line 257, ../sass/_styleBase.scss */
+/* line 262, ../sass/_styleBase.scss */
 .toggle-icon {
   display: block;
   position: relative;
@@ -289,7 +296,7 @@ body {
   cursor: pointer;
 }
 
-/* line 267, ../sass/_styleBase.scss */
+/* line 272, ../sass/_styleBase.scss */
 .toggle-icon .bar {
   display: block;
   width: 3.8em;
