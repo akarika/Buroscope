@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*  POLICE DE CARACTERES*/
+
+@font-face {
+    font-family: "Ardecode";
+    src: url("../font/ARDECODE.eot");
+    src: url("../font/ARDECODE.eot?#iefix") format("embedded-opentype"),
+    url("../font/ARDECODE.woff") format("woff"),
+    url("../font/ARDECODE.ttf") format("truetype"),
+    url("../font/ARDECODE.svg#ARDECODE") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DroidSans-Bold";
+    src: url("../font/DroidSans-Bold.eot");
+    src: url("../font/DroidSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/DroidSans-Bold.woff") format("woff"),
+    url("../font/DroidSans-Bold.ttf") format("truetype"),
+    url("../font/DroidSans-Bold.svg#DroidSans-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "QuicksandLight-Regular";
+    src: url("../font/QuicksandLight-Regular.eot");
+    src: url("../font/QuicksandLight-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/QuicksandLight-Regular.woff") format("woff"),
+    url("../font/QuicksandLight-Regular.ttf") format("truetype"),
+    url("../font/QuicksandLight-Regular.svg#QuicksandLight-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** GLOBAL **/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-family: 'QuicksandLight-Regular';
+
+}
+
+.container {
+    padding: 0 8%;
+}
+
+/** HEADER **/
+
+header {
+    position: relative;
+}
+
+#top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2e33;
+
+}
+#logo {
+    font-family: 'DroidSans-Bold';
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+#logo span{
+    color: #ffd700;
+}
+
+#logo em {
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+/** nav **/
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    padding: 3rem 1rem;
+    border-top: 3px solid transparent;
+}
+
+#menu a:hover, #menu a.active {
+    border-top: 3px solid transparent;
+    border-color: #ffd700;
+
+}
+
+/** banner **/
+#banner {
+    background-color: #00bbf5;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#banner div {
+    padding: 7rem 0 14rem;
+}
+
+#banner hr{
+    margin: 5rem 0 ;
+    border-top: 1px dashed #FFFFFF;
+    border-bottom: none;
+}
+
+#banner hr:last-of-type {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+#banner p {
+    font-size: 3rem;
+}
+
+#banner h2 {
+    font-size: 6rem;
+}
+
+/** Form **/
+#price-form {
+    background-color: #2a2e33;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 70%;
+    padding: 2rem 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4rem 57px -30px #000000;}
+
+#price-form div {
+    flex-basis: 25%;
+}
+
+#price-form div:last-of-type {
+    flex-basis: 15%;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+}
+
+[type=date]:before {
+    content: "\f100";
+    font-family: 'Flaticon';
+    padding: 0 1rem;
+}
+
+[type=submit] {
+    background: #ffd700 ;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 100%;
+    padding-left: 3rem;
+    box-sizing: border-box;
+}
+
+
+/** Slider **/
+#slider {
+    color: #000000;
+    text-align: center;
+    background-color: #F2EDEA;
+    padding: 8rem 0 5rem;
+    border-bottom: 1px solid #373C37;
+
+}
+
+#slider h2 {
+    font-family: 'Ardecode';
+    font-size: 6rem;
+    margin: 2rem 0;
+}
+
+#slider p, .slider {
+    width: 58rem ;
+    margin: auto;
+}
+
+.slider {
+    max-height: 19rem;
+}
+
+.slide {
+    width: 15rem !important;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 3px solid #000000;
+    background-color: #FFFFFF;
+    margin: 2rem;
+}
+
+/** **/
+#rooms {
+    text-align: center;
+    color: #000000;
+    padding: 3rem 0 10rem;
+}
+
+#rooms h2 {
+    font-family: 'Ardecode';
+    font-size: 6rem;
+    margin: 3rem 0 2rem;
+}
+
+#rooms h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.room-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.room {
+    flex:0 1 30%;
+    margin: 2rem 0;
+}
+
+.room-img {
+    display: inline-block;
+    width: 38rem;
+    height: 20rem;
+    background: #2a2e33;
+}
+
+.services {
+    margin-top: 2rem;
+}
+
+#text-zone {
+    position: relative;
+    background-color: #ffd700;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+#text-zone img {
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+}
+
+#text-zone p {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#text-zone q{
+    display: block;
+    font-size: 1.3rem;
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #2a2e33;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div, form {
+    flex-grow: 1;
+    flex-basis: 20%;
+    padding: 0 2rem;
+    margin: 3rem 0
+}
+
+footer div:nth-child(3) {
+    flex-grow: 2;
+    flex-basis: 40%;
+}
+
+footer h2 {
+    font-size: 2rem;
+    font-family: 'QuicksandLight-Regular';
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
