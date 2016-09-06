@@ -934,7 +934,7 @@ footer input {
     display: flex;
     width: 80%;
   }
-  /* line 287, ../sass/_desktop.scss */
+  /* line 288, ../sass/_desktop.scss */
   #regles .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -943,16 +943,16 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION MATERIEL-------------------*/
   /*--------------------------------------------------*/
-  /* line 296, ../sass/_desktop.scss */
+  /* line 297, ../sass/_desktop.scss */
   #materiel img {
     height: 50vh;
   }
-  /* line 299, ../sass/_desktop.scss */
+  /* line 300, ../sass/_desktop.scss */
   #materiel .content {
     display: flex;
     width: 80%;
   }
-  /* line 302, ../sass/_desktop.scss */
+  /* line 304, ../sass/_desktop.scss */
   #materiel .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -961,16 +961,16 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION BIEN ETRE-------------------*/
   /*--------------------------------------------------*/
-  /* line 311, ../sass/_desktop.scss */
+  /* line 313, ../sass/_desktop.scss */
   #bienEtre img {
     height: 50vh;
   }
-  /* line 314, ../sass/_desktop.scss */
+  /* line 316, ../sass/_desktop.scss */
   #bienEtre .content {
     display: flex;
     width: 80%;
   }
-  /* line 317, ../sass/_desktop.scss */
+  /* line 320, ../sass/_desktop.scss */
   #bienEtre .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -979,13 +979,17 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------FOOTER -------------------*/
   /*--------------------------------------------------*/
-  /* line 326, ../sass/_desktop.scss */
+  /* line 329, ../sass/_desktop.scss */
   footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
-  /* line 330, ../sass/_desktop.scss */
+  /* line 333, ../sass/_desktop.scss */
+  footer iframe {
+    width: 40%;
+  }
+  /* line 336, ../sass/_desktop.scss */
   footer form {
     width: 30%;
   }
