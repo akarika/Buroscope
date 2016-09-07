@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>HOTEL DELUXE - <?php echo $title ;?></title>
     <meta name="description" content="<?php echo $description ;?>">
-
+    <?php if (!empty($slidesOutput)&& $pageEnCours=="home") :   ?>
     <link rel="stylesheet" href="js/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <?php   endif;?>
     <link rel="stylesheet" href="icon/font/flaticon.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 

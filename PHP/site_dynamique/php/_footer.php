@@ -45,7 +45,9 @@
     </form>
 </footer>
 <script src="js/jquery-3.1.0.min.js"></script>
+<?php if (!empty($slidesOutput)&& $pageEnCours=="home") :   ?>
 <script src="js/slick/slick.min.js"></script>
+<?php   endif;?>
 <script src="js/app.js"></script>
 </body>
 </html>

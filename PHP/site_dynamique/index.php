@@ -3,7 +3,7 @@
 <?php
 $title = "Bienvenue dans notre hotel de luxe";
 $description = "Hotel de luxe par exellence, privee , etc... prout prout prout ";
-$pageEnCours = "home";
+$pageEnCours = "toto";
 $slides = array(1,2,3,4,5,6);
 $slidesOutput ="";
 include "php/_header.php";
@@ -11,6 +11,8 @@ foreach ($slides as $key => $slide ){
     $slidesOutput .="<div class=\"slide\">'.$slide.<img src=\"http://loremflickr.com/320/240?random=".$slide."\"></div>";
 }
 ?>
+<!-- affiche le slider si je suis sur la home et qu il y a des slides-->
+<?php if (!empty($slidesOutput)&& $pageEnCours=="home") :   ?>
     <div id="slider" class="container">
         <h2>Book a Package</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ducimus fugiat id maiores molestiae
@@ -20,6 +22,7 @@ foreach ($slides as $key => $slide ){
             <?php echo $slidesOutput;?>
         </div>
     </div>
+<?php   endif;?>
     <div id="rooms" class="container">
         <h2>Our Room Types</h2>
         <div class="room-types">
