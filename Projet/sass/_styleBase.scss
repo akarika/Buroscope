@@ -397,11 +397,6 @@ header img {
   align-self: flex-start;
 }
 
-.article img {
-  max-width: 100%;
-  display: block;
-}
-
 .article figcaption {
   padding-bottom: 1rem;
 }
@@ -483,4 +478,14 @@ footer input {
 .invisible {
   display: none;
 }
-
+.icon_sociaux{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  font-size: 3rem;
+  color: #71838f;
+  a~a{
+    padding-left: 4rem;
+  }}

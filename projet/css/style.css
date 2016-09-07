@@ -444,27 +444,21 @@ header img {
 }
 
 /* line 400, ../sass/_styleBase.scss */
-.article img {
-  max-width: 100%;
-  display: block;
-}
-
-/* line 405, ../sass/_styleBase.scss */
 .article figcaption {
   padding-bottom: 1rem;
 }
 
-/* line 409, ../sass/_styleBase.scss */
+/* line 404, ../sass/_styleBase.scss */
 .article p {
   line-height: 3rem;
 }
 
-/* line 413, ../sass/_styleBase.scss */
+/* line 408, ../sass/_styleBase.scss */
 .article p:first-of-type:first-letter {
   font-size: 2.5rem;
 }
 
-/* line 417, ../sass/_styleBase.scss */
+/* line 412, ../sass/_styleBase.scss */
 .article,
 footer {
   display: -webkit-box;
@@ -480,12 +474,12 @@ footer {
   padding: 2rem;
 }
 
-/* line 432, ../sass/_styleBase.scss */
+/* line 427, ../sass/_styleBase.scss */
 .article:not(#bienEtre) {
   border-bottom: 1px solid #de1118;
 }
 
-/* line 436, ../sass/_styleBase.scss */
+/* line 431, ../sass/_styleBase.scss */
 #bienEtre ol {
   font-size: 1.65rem;
   line-height: 3rem;
@@ -493,7 +487,7 @@ footer {
 }
 
 /*------------FOOTER-----*/
-/* line 443, ../sass/_styleBase.scss */
+/* line 438, ../sass/_styleBase.scss */
 footer {
   background: #364050 url("../img/bg01.png");
   border-top: 0.1rem solid #de1118;
@@ -501,19 +495,19 @@ footer {
   color: #FFF;
 }
 
-/* line 450, ../sass/_styleBase.scss */
+/* line 445, ../sass/_styleBase.scss */
 [type="text"] {
   height: 5rem;
 }
 
-/* line 454, ../sass/_styleBase.scss */
+/* line 449, ../sass/_styleBase.scss */
 footer legend {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
 }
 
-/* line 460, ../sass/_styleBase.scss */
+/* line 455, ../sass/_styleBase.scss */
 footer input {
   background: #252e3d url("../img/bg01.png");
   display: inline-block;
@@ -531,16 +525,31 @@ footer input {
   margin: 1rem 0;
 }
 
-/* line 477, ../sass/_styleBase.scss */
+/* line 472, ../sass/_styleBase.scss */
 [value="Envoyer"] {
   color: white;
   background: #de1118;
   text-transform: uppercase;
 }
 
-/* line 483, ../sass/_styleBase.scss */
+/* line 478, ../sass/_styleBase.scss */
 .invisible {
   display: none;
+}
+
+/* line 481, ../sass/_styleBase.scss */
+.icon_sociaux {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  font-size: 3rem;
+  color: #71838f;
+}
+/* line 489, ../sass/_styleBase.scss */
+.icon_sociaux a ~ a {
+  padding-left: 4rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -681,17 +690,22 @@ footer input {
     margin: 0 10%;
   }
 
+  /* line 46, ../sass/_desktop.scss */
+  #panel img {
+    height: 40vh;
+  }
+
   /*--------------------------------------------------*/
   /*-------------------ARROW EFFECT 1 SECTION-------------------*/
   /*--------------------------------------------------*/
   /*--------------------------------------------------*/
-  /* line 53, ../sass/_desktop.scss */
+  /* line 57, ../sass/_desktop.scss */
   .scrolldown-container {
     top: 50%;
     position: relative;
   }
 
-  /* line 58, ../sass/_desktop.scss */
+  /* line 62, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn {
     width: 50px;
     height: 100px;
@@ -706,7 +720,7 @@ footer input {
     fill: red;
   }
 
-  /* line 72, ../sass/_desktop.scss */
+  /* line 76, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg {
     position: absolute;
     bottom: 0;
@@ -715,7 +729,7 @@ footer input {
     height: auto;
   }
 
-  /* line 81, ../sass/_desktop.scss */
+  /* line 85, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg path.first-path {
     -webkit-animation: scrollanim 1s ease-in-out infinite;
     animation: scrollanim 1s ease-in-out infinite;
@@ -723,7 +737,7 @@ footer input {
     animation-delay: 0.8s;
   }
 
-  /* line 88, ../sass/_desktop.scss */
+  /* line 92, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg path.second-path {
     -webkit-animation: scrollanim2 1s ease-in-out infinite;
     animation: scrollanim2 1s ease-in-out infinite;
@@ -776,7 +790,7 @@ footer input {
   /*-----------------------------------------*/
   /*------------NAV DESSKTOP---------------*/
   /*-----------------------------------------*/
-  /* line 146, ../sass/_desktop.scss */
+  /* line 151, ../sass/_desktop.scss */
   #one > h1 {
     padding: 3rem 0 3rem;
     font-size: 6rem;
@@ -784,15 +798,15 @@ footer input {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  /* line 153, ../sass/_desktop.scss */
+  /* line 158, ../sass/_desktop.scss */
   #one span:first-of-type {
     color: #17202d;
   }
-  /* line 156, ../sass/_desktop.scss */
+  /* line 161, ../sass/_desktop.scss */
   #one span:last-of-type {
     color: #de1118;
   }
-  /* line 159, ../sass/_desktop.scss */
+  /* line 164, ../sass/_desktop.scss */
   #one img {
     width: 10rem;
   }
@@ -805,7 +819,7 @@ footer input {
       opacity: 1;
     }
   }
-  /* line 172, ../sass/_desktop.scss */
+  /* line 178, ../sass/_desktop.scss */
   .fixed_navbar {
     position: fixed;
     z-index: 1000;
@@ -813,7 +827,7 @@ footer input {
     animation: stickAnim 2s;
   }
 
-  /* line 179, ../sass/_desktop.scss */
+  /* line 185, ../sass/_desktop.scss */
   .navbar {
     position: fixed;
     padding-top: 3rem;
@@ -824,15 +838,15 @@ footer input {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* line 189, ../sass/_desktop.scss */
+  /* line 195, ../sass/_desktop.scss */
   .navbar li ~ li {
     padding-left: 3rem;
   }
-  /* line 192, ../sass/_desktop.scss */
+  /* line 198, ../sass/_desktop.scss */
   .navbar li:last-of-type {
     display: none;
   }
-  /* line 195, ../sass/_desktop.scss */
+  /* line 201, ../sass/_desktop.scss */
   .navbar li a {
     position: relative;
     box-sizing: border-box;
@@ -841,7 +855,7 @@ footer input {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     transition: all 400ms;
   }
-  /* line 202, ../sass/_desktop.scss */
+  /* line 208, ../sass/_desktop.scss */
   .navbar li a:before {
     position: absolute;
     display: block;
@@ -849,7 +863,7 @@ footer input {
     bottom: 0;
     transition: all 400ms;
   }
-  /* line 210, ../sass/_desktop.scss */
+  /* line 216, ../sass/_desktop.scss */
   .navbar li a:hover:before {
     background: #17202d;
     background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
@@ -863,7 +877,7 @@ footer input {
     width: 100%;
   }
 
-  /* line 228, ../sass/_desktop.scss */
+  /* line 235, ../sass/_desktop.scss */
   .li_show {
     display: inline !important;
   }
@@ -871,7 +885,7 @@ footer input {
   /*--------------------------------------------------*/
   /*-------------------------HEADER------------------*/
   /*--------------------------------------------------*/
-  /* line 234, ../sass/_desktop.scss */
+  /* line 242, ../sass/_desktop.scss */
   .fixed, .hidden, .invisible, h2 {
     display: none;
   }
@@ -879,46 +893,45 @@ footer input {
   /*--------------------------------------------------------*/
   /*-------------------SECTION HISTOIRE-----------------*/
   /*--------------------------------------------------------*/
-  /* line 240, ../sass/_desktop.scss */
+  /* line 249, ../sass/_desktop.scss */
   #histoire {
     display: flex;
     padding-top: 6rem;
   }
-  /* line 243, ../sass/_desktop.scss */
+  /* line 252, ../sass/_desktop.scss */
   #histoire article {
     width: 80%;
   }
-  /* line 245, ../sass/_desktop.scss */
+  /* line 254, ../sass/_desktop.scss */
   #histoire article:first-of-type h3 {
     align-self: flex-end;
   }
-  /* line 249, ../sass/_desktop.scss */
+  /* line 258, ../sass/_desktop.scss */
   #histoire article h3 {
     text-transform: uppercase;
   }
-  /* line 252, ../sass/_desktop.scss */
+  /* line 261, ../sass/_desktop.scss */
   #histoire article p {
     display: block;
   }
-
-  /* line 259, ../sass/_desktop.scss */
-  #waiKhru img {
-    height: 343px;
+  /* line 266, ../sass/_desktop.scss */
+  #histoire .icon_sociaux {
+    padding-top: 2rem;
   }
 
-  /* line 264, ../sass/_desktop.scss */
+  /* line 272, ../sass/_desktop.scss */
   #commencement .content:first-of-type {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
   }
-  /* line 269, ../sass/_desktop.scss */
+  /* line 277, ../sass/_desktop.scss */
   #commencement article {
     text-align: right;
     text-align: -webkit-right;
   }
 
-  /* line 274, ../sass/_desktop.scss */
+  /* line 283, ../sass/_desktop.scss */
   .open_slide {
     display: block;
   }
@@ -926,16 +939,12 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION REGLES-------------------*/
   /*--------------------------------------------------*/
-  /* line 282, ../sass/_desktop.scss */
-  #regles img {
-    height: 50vh;
-  }
-  /* line 285, ../sass/_desktop.scss */
+  /* line 292, ../sass/_desktop.scss */
   #regles .content {
     display: flex;
     width: 80%;
   }
-  /* line 289, ../sass/_desktop.scss */
+  /* line 296, ../sass/_desktop.scss */
   #regles .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -944,16 +953,12 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION MATERIEL-------------------*/
   /*--------------------------------------------------*/
-  /* line 298, ../sass/_desktop.scss */
-  #materiel img {
-    height: 50vh;
-  }
-  /* line 301, ../sass/_desktop.scss */
+  /* line 305, ../sass/_desktop.scss */
   #materiel .content {
     display: flex;
     width: 80%;
   }
-  /* line 305, ../sass/_desktop.scss */
+  /* line 309, ../sass/_desktop.scss */
   #materiel .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -962,16 +967,12 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION BIEN ETRE-------------------*/
   /*--------------------------------------------------*/
-  /* line 314, ../sass/_desktop.scss */
-  #bienEtre img {
-    height: 50vh;
-  }
-  /* line 317, ../sass/_desktop.scss */
+  /* line 319, ../sass/_desktop.scss */
   #bienEtre .content {
     display: flex;
     width: 80%;
   }
-  /* line 321, ../sass/_desktop.scss */
+  /* line 323, ../sass/_desktop.scss */
   #bienEtre .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -980,38 +981,23 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------FOOTER -------------------*/
   /*--------------------------------------------------*/
-  /* line 330, ../sass/_desktop.scss */
+  /* line 332, ../sass/_desktop.scss */
   footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
-  /* line 334, ../sass/_desktop.scss */
+  /* line 336, ../sass/_desktop.scss */
   footer .icon_sociaux {
     margin: 0 auto;
   }
-  /* line 337, ../sass/_desktop.scss */
+  /* line 339, ../sass/_desktop.scss */
   footer iframe {
     width: 40%;
   }
-  /* line 340, ../sass/_desktop.scss */
+  /* line 342, ../sass/_desktop.scss */
   footer form {
     width: 30%;
-  }
-
-  /* line 344, ../sass/_desktop.scss */
-  .icon_sociaux {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    padding-left: 2rem;
-    padding-top: 5rem;
-    font-size: 3rem;
-    color: #71838f;
-  }
-  /* line 352, ../sass/_desktop.scss */
-  .icon_sociaux a ~ a {
-    padding-left: 4rem;
   }
 }
 

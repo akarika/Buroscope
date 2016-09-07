@@ -42,6 +42,10 @@
   .container_desktop {
     margin: 0 10%;
   }
+
+  #panel img {
+      height: 40vh;
+    }
   /*--------------------------------------------------*/
 
   /*-------------------ARROW EFFECT 1 SECTION-------------------*/
@@ -137,6 +141,7 @@
       opacity: 0.6;
     }
   }
+
   /*-----------------------------------------*/
   /*------------NAV DESSKTOP---------------*/
   /*-----------------------------------------*/
@@ -169,6 +174,7 @@
       opacity: 1;
     }
   }
+
   .fixed_navbar {
     position: fixed;
     z-index: 1000;
@@ -225,15 +231,18 @@
       }
     }
   }
+
   .li_show {
     display: inline !important;
   }
+
   /*--------------------------------------------------*/
   /*-------------------------HEADER------------------*/
   /*--------------------------------------------------*/
   .fixed, .hidden, .invisible, h2 {
     display: none;
   }
+
   /*--------------------------------------------------------*/
   /*-------------------SECTION HISTOIRE-----------------*/
   /*--------------------------------------------------------*/
@@ -254,12 +263,11 @@
       }
 
     }
-  }
-  #waiKhru {
-    img {
-      height: 343px;
+    .icon_sociaux {
+      padding-top: 2rem;
     }
   }
+
   #commencement {
     .content:first-of-type {
       display: flex;
@@ -271,17 +279,16 @@
       text-align: -webkit-right;
     }
   }
+
   .open_slide {
     display: block;
   }
+
   /*--------------------------------------------------*/
   /*------------------SECTION REGLES-------------------*/
   /*--------------------------------------------------*/
 
   #regles {
-    img {
-      height: 50vh;
-    }
     .content {
       display: flex;
       width: 80%;
@@ -291,68 +298,53 @@
       width: 40%;
     }
   }
-  /*--------------------------------------------------*/
-  /*------------------SECTION MATERIEL-------------------*/
-  /*--------------------------------------------------*/
-  #materiel {
-    img {
-      height: 50vh;
+    /*--------------------------------------------------*/
+    /*------------------SECTION MATERIEL-------------------*/
+    /*--------------------------------------------------*/
+    #materiel {
+      .content {
+        display: flex;
+        width: 80%;
+      }
+      .flex_colum_start {
+        padding-left: 5rem;
+        width: 40%;
+      }
     }
-    .content {
-      display: flex;
-      width: 80%;
-    }
-    .flex_colum_start {
-      padding-left: 5rem;
-      width: 40%;
-    }
-  }
-  /*--------------------------------------------------*/
-  /*------------------SECTION BIEN ETRE-------------------*/
-  /*--------------------------------------------------*/
-  #bienEtre {
-    img {
-      height: 50vh;
-    }
-    .content {
-      display: flex;
-      width: 80%;
-    }
-    .flex_colum_start {
-      padding-left: 5rem;
-      width: 40%;
-    }
-  }
-  /*--------------------------------------------------*/
-  /*------------------FOOTER -------------------*/
-  /*--------------------------------------------------*/
+      /*--------------------------------------------------*/
+      /*------------------SECTION BIEN ETRE-------------------*/
+      /*--------------------------------------------------*/
+      #bienEtre {
 
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    .icon_sociaux{
-      margin: 0 auto;
-    }
-    iframe{
-      width:40%;
-    }
-    form {
-      width: 30%;
-    }
-  }
-   .icon_sociaux{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    padding-left: 2rem;
-    padding-top: 5rem;
-    font-size: 3rem;
-     color: #71838f;
-  a~a{
-    padding-left: 4rem;
-  }}
-}
+        .content {
+          display: flex;
+          width: 80%;
+        }
+        .flex_colum_start {
+          padding-left: 5rem;
+          width: 40%;
+        }
+      }
+        /*--------------------------------------------------*/
+        /*------------------FOOTER -------------------*/
+        /*--------------------------------------------------*/
+
+        footer {
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-start;
+          .icon_sociaux {
+            margin: 0 auto;
+          }
+          iframe {
+            width: 40%;
+          }
+          form {
+            width: 30%;
+          }
+        }
+      }
+
 
 
 
