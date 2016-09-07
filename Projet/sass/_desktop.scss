@@ -331,6 +331,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    .icon_sociaux{
+      margin: 0 auto;
+    }
     iframe{
       width:40%;
     }
@@ -340,12 +343,15 @@
   }
    .icon_sociaux{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 50%;
     padding-left: 2rem;
     padding-top: 5rem;
     font-size: 3rem;
-  }
+     color: #71838f;
+  a~a{
+    padding-left: 4rem;
+  }}
 }
 
 

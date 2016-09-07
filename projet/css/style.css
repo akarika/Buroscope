@@ -987,22 +987,31 @@ footer input {
     align-items: flex-start;
   }
   /* line 334, ../sass/_desktop.scss */
+  footer .icon_sociaux {
+    margin: 0 auto;
+  }
+  /* line 337, ../sass/_desktop.scss */
   footer iframe {
     width: 40%;
   }
-  /* line 337, ../sass/_desktop.scss */
+  /* line 340, ../sass/_desktop.scss */
   footer form {
     width: 30%;
   }
 
-  /* line 341, ../sass/_desktop.scss */
+  /* line 344, ../sass/_desktop.scss */
   .icon_sociaux {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 50%;
     padding-left: 2rem;
     padding-top: 5rem;
     font-size: 3rem;
+    color: #71838f;
+  }
+  /* line 352, ../sass/_desktop.scss */
+  .icon_sociaux a ~ a {
+    padding-left: 4rem;
   }
 }
 
