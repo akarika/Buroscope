@@ -90,7 +90,7 @@ video {
   vertical-align: baseline;
 }
 
-/* line 94, ../sass/_styleBase.scss */
+/* line 93, ../sass/_styleBase.scss */
 article,
 aside,
 details,
@@ -105,32 +105,32 @@ section {
   display: block;
 }
 
-/* line 108, ../sass/_styleBase.scss */
+/* line 107, ../sass/_styleBase.scss */
 h2,
 h3,
 h4 {
   font-family: 'Oswald', sans-serif;
 }
 
-/* line 114, ../sass/_styleBase.scss */
+/* line 113, ../sass/_styleBase.scss */
 body,
 form {
   line-height: 1;
   font-family: 'Share Tech', sans-serif;
 }
 
-/* line 120, ../sass/_styleBase.scss */
+/* line 119, ../sass/_styleBase.scss */
 ul {
   list-style: none;
 }
 
-/* line 124, ../sass/_styleBase.scss */
+/* line 123, ../sass/_styleBase.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 129, ../sass/_styleBase.scss */
+/* line 128, ../sass/_styleBase.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -139,26 +139,26 @@ q:after {
   content: none;
 }
 
-/* line 137, ../sass/_styleBase.scss */
+/* line 136, ../sass/_styleBase.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 142, ../sass/_styleBase.scss */
+/* line 141, ../sass/_styleBase.scss */
 html {
   font-size: .625em;
   font-size: calc(1em * .625);
 }
 
-/* line 147, ../sass/_styleBase.scss */
+/* line 146, ../sass/_styleBase.scss */
 a {
   text-decoration: none;
   color: inherit;
   outline-style: none;
 }
 
-/* line 153, ../sass/_styleBase.scss */
+/* line 152, ../sass/_styleBase.scss */
 h1 {
   font-family: 'Denk One', sans-serif;
   font-size: 3rem;
@@ -166,12 +166,12 @@ h1 {
   padding-left: 5rem;
 }
 
-/* line 160, ../sass/_styleBase.scss */
+/* line 159, ../sass/_styleBase.scss */
 p {
   font-size: 1.65rem;
 }
 
-/* line 164, ../sass/_styleBase.scss */
+/* line 163, ../sass/_styleBase.scss */
 body {
   width: 100%;
   height: 100%;
@@ -179,12 +179,12 @@ body {
   background-image: url("../img/bg02.png");
 }
 
-/* line 171, ../sass/_styleBase.scss */
+/* line 170, ../sass/_styleBase.scss */
 .container {
   padding: 0 3rem;
 }
 
-/* line 175, ../sass/_styleBase.scss */
+/* line 174, ../sass/_styleBase.scss */
 .flex_colum_start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,12 +198,12 @@ body {
   align-items: flex-start;
 }
 
-/* line 187, ../sass/_styleBase.scss */
+/* line 186, ../sass/_styleBase.scss */
 #one {
   display: none;
 }
 
-/* line 190, ../sass/_styleBase.scss */
+/* line 189, ../sass/_styleBase.scss */
 section:not(#one) {
   background-color: #fff;
   background-image: url("../img/bg02.png");
@@ -211,12 +211,12 @@ section:not(#one) {
 }
 
 /*------effet slide---------*/
-/* line 197, ../sass/_styleBase.scss */
+/* line 196, ../sass/_styleBase.scss */
 #panel {
   box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 201, ../sass/_styleBase.scss */
+/* line 200, ../sass/_styleBase.scss */
 .slideout-menu {
   position: fixed;
   left: 0;
@@ -230,26 +230,26 @@ section:not(#one) {
   display: none;
 }
 
-/* line 214, ../sass/_styleBase.scss */
+/* line 213, ../sass/_styleBase.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
 }
 
-/* line 220, ../sass/_styleBase.scss */
+/* line 219, ../sass/_styleBase.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 226, ../sass/_styleBase.scss */
+/* line 225, ../sass/_styleBase.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
-/* line 230, ../sass/_styleBase.scss */
+/* line 229, ../sass/_styleBase.scss */
 .toggle-button {
   background-color: transparent;
   color: white;
@@ -259,7 +259,7 @@ section:not(#one) {
   outline: none;
 }
 
-/* line 239, ../sass/_styleBase.scss */
+/* line 238, ../sass/_styleBase.scss */
 .fixed {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -272,20 +272,20 @@ section:not(#one) {
   width: 100%;
 }
 
-/* line 251, ../sass/_styleBase.scss */
+/* line 250, ../sass/_styleBase.scss */
 .fixed-open {
   -webkit-transform: translate3d(256px, 0px, 0px);
   transform: translate3d(256px, 0px, 0px);
 }
 
-/* line 256, ../sass/_styleBase.scss */
+/* line 255, ../sass/_styleBase.scss */
 #nav-container {
   /*position: absolute;*/
   font-size: 0.8rem;
 }
 
 /*toggle-icon*/
-/* line 262, ../sass/_styleBase.scss */
+/* line 261, ../sass/_styleBase.scss */
 .toggle-icon {
   display: block;
   position: relative;
@@ -296,7 +296,7 @@ section:not(#one) {
   cursor: pointer;
 }
 
-/* line 272, ../sass/_styleBase.scss */
+/* line 271, ../sass/_styleBase.scss */
 .toggle-icon .bar {
   display: block;
   width: 3.8em;

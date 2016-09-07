@@ -90,7 +90,7 @@ video {
   vertical-align: baseline;
 }
 
-/* line 94, ../sass/_styleBase.scss */
+/* line 93, ../sass/_styleBase.scss */
 article,
 aside,
 details,
@@ -105,32 +105,32 @@ section {
   display: block;
 }
 
-/* line 108, ../sass/_styleBase.scss */
+/* line 107, ../sass/_styleBase.scss */
 h2,
 h3,
 h4 {
   font-family: 'Oswald', sans-serif;
 }
 
-/* line 114, ../sass/_styleBase.scss */
+/* line 113, ../sass/_styleBase.scss */
 body,
 form {
   line-height: 1;
   font-family: 'Share Tech', sans-serif;
 }
 
-/* line 120, ../sass/_styleBase.scss */
+/* line 119, ../sass/_styleBase.scss */
 ul {
   list-style: none;
 }
 
-/* line 124, ../sass/_styleBase.scss */
+/* line 123, ../sass/_styleBase.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 129, ../sass/_styleBase.scss */
+/* line 128, ../sass/_styleBase.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -139,26 +139,26 @@ q:after {
   content: none;
 }
 
-/* line 137, ../sass/_styleBase.scss */
+/* line 136, ../sass/_styleBase.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 142, ../sass/_styleBase.scss */
+/* line 141, ../sass/_styleBase.scss */
 html {
   font-size: .625em;
   font-size: calc(1em * .625);
 }
 
-/* line 147, ../sass/_styleBase.scss */
+/* line 146, ../sass/_styleBase.scss */
 a {
   text-decoration: none;
   color: inherit;
   outline-style: none;
 }
 
-/* line 153, ../sass/_styleBase.scss */
+/* line 152, ../sass/_styleBase.scss */
 h1 {
   font-family: 'Denk One', sans-serif;
   font-size: 3rem;
@@ -166,12 +166,12 @@ h1 {
   padding-left: 5rem;
 }
 
-/* line 160, ../sass/_styleBase.scss */
+/* line 159, ../sass/_styleBase.scss */
 p {
   font-size: 1.65rem;
 }
 
-/* line 164, ../sass/_styleBase.scss */
+/* line 163, ../sass/_styleBase.scss */
 body {
   width: 100%;
   height: 100%;
@@ -179,12 +179,12 @@ body {
   background-image: url("../img/bg02.png");
 }
 
-/* line 171, ../sass/_styleBase.scss */
+/* line 170, ../sass/_styleBase.scss */
 .container {
   padding: 0 3rem;
 }
 
-/* line 175, ../sass/_styleBase.scss */
+/* line 174, ../sass/_styleBase.scss */
 .flex_colum_start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,12 +198,12 @@ body {
   align-items: flex-start;
 }
 
-/* line 187, ../sass/_styleBase.scss */
+/* line 186, ../sass/_styleBase.scss */
 #one {
   display: none;
 }
 
-/* line 190, ../sass/_styleBase.scss */
+/* line 189, ../sass/_styleBase.scss */
 section:not(#one) {
   background-color: #fff;
   background-image: url("../img/bg02.png");
@@ -211,12 +211,12 @@ section:not(#one) {
 }
 
 /*------effet slide---------*/
-/* line 197, ../sass/_styleBase.scss */
+/* line 196, ../sass/_styleBase.scss */
 #panel {
   box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 201, ../sass/_styleBase.scss */
+/* line 200, ../sass/_styleBase.scss */
 .slideout-menu {
   position: fixed;
   left: 0;
@@ -230,26 +230,26 @@ section:not(#one) {
   display: none;
 }
 
-/* line 214, ../sass/_styleBase.scss */
+/* line 213, ../sass/_styleBase.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
 }
 
-/* line 220, ../sass/_styleBase.scss */
+/* line 219, ../sass/_styleBase.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 226, ../sass/_styleBase.scss */
+/* line 225, ../sass/_styleBase.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
-/* line 230, ../sass/_styleBase.scss */
+/* line 229, ../sass/_styleBase.scss */
 .toggle-button {
   background-color: transparent;
   color: white;
@@ -259,7 +259,7 @@ section:not(#one) {
   outline: none;
 }
 
-/* line 239, ../sass/_styleBase.scss */
+/* line 238, ../sass/_styleBase.scss */
 .fixed {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -272,20 +272,20 @@ section:not(#one) {
   width: 100%;
 }
 
-/* line 251, ../sass/_styleBase.scss */
+/* line 250, ../sass/_styleBase.scss */
 .fixed-open {
   -webkit-transform: translate3d(256px, 0px, 0px);
   transform: translate3d(256px, 0px, 0px);
 }
 
-/* line 256, ../sass/_styleBase.scss */
+/* line 255, ../sass/_styleBase.scss */
 #nav-container {
   /*position: absolute;*/
   font-size: 0.8rem;
 }
 
 /*toggle-icon*/
-/* line 262, ../sass/_styleBase.scss */
+/* line 261, ../sass/_styleBase.scss */
 .toggle-icon {
   display: block;
   position: relative;
@@ -296,7 +296,7 @@ section:not(#one) {
   cursor: pointer;
 }
 
-/* line 272, ../sass/_styleBase.scss */
+/* line 271, ../sass/_styleBase.scss */
 .toggle-icon .bar {
   display: block;
   width: 3.8em;
@@ -314,37 +314,37 @@ section:not(#one) {
   transition-duration: 300ms;
 }
 
-/* line 289, ../sass/_styleBase.scss */
+/* line 288, ../sass/_styleBase.scss */
 .toggle-icon .bar:nth-of-type(1) {
   -webkit-transition: opacity 150ms;
   transition: opacity 150ms;
 }
 
-/* line 294, ../sass/_styleBase.scss */
+/* line 293, ../sass/_styleBase.scss */
 .toggle-icon .bar:nth-of-type(2) {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
 
 /*pushed*/
-/* line 300, ../sass/_styleBase.scss */
+/* line 299, ../sass/_styleBase.scss */
 .pushed .toggle-icon {
   margin: -3.2em 0 0 0.7em;
 }
 
-/* line 304, ../sass/_styleBase.scss */
+/* line 303, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(1) {
   opacity: 0;
 }
 
-/* line 308, ../sass/_styleBase.scss */
+/* line 307, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(2) {
   margin-left: 1.4em;
   -webkit-transform: rotate(-137deg) translateY(-1.5em);
   transform: rotate(-137deg) translateY(-1.5em);
 }
 
-/* line 314, ../sass/_styleBase.scss */
+/* line 313, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(3) {
   margin-left: 0.5em;
   -webkit-transform: rotate(-42deg);
@@ -352,7 +352,7 @@ section:not(#one) {
 }
 
 /*-----------header------------*/
-/* line 321, ../sass/_styleBase.scss */
+/* line 320, ../sass/_styleBase.scss */
 header {
   display: -moz-flex;
   display: -ms-flex;
@@ -369,25 +369,23 @@ header {
   padding: 1.5rem;
 }
 
-/* line 332, ../sass/_styleBase.scss */
+/* line 336, ../sass/_styleBase.scss */
 h1 span {
   color: #de1118;
 }
 
-/* line 336, ../sass/_styleBase.scss */
+/* line 340, ../sass/_styleBase.scss */
 header img {
   height: 3rem;
 }
 
 /*-----------HISTOIRE----------*/
-/* line 341, ../sass/_styleBase.scss */
+/* line 345, ../sass/_styleBase.scss */
 #histoire {
   padding-top: 8rem;
-  background-color: #fff;
-  background-image: url("../img/bg02.png");
 }
 
-/* line 347, ../sass/_styleBase.scss */
+/* line 349, ../sass/_styleBase.scss */
 #panel h2 {
   font-size: 2.3rem;
   padding-bottom: 1rem;
@@ -396,14 +394,14 @@ header img {
   align-self: flex-start;
 }
 
-/* line 355, ../sass/_styleBase.scss */
+/* line 357, ../sass/_styleBase.scss */
 #menu h2 {
   font-size: 2.3rem;
   text-align: center;
   padding: 1rem;
 }
 
-/* line 361, ../sass/_styleBase.scss */
+/* line 363, ../sass/_styleBase.scss */
 #menu a {
   font-size: 2.3rem;
   color: black;
@@ -412,30 +410,30 @@ header img {
   padding-left: 2rem;
 }
 
-/* line 369, ../sass/_styleBase.scss */
+/* line 371, ../sass/_styleBase.scss */
 #sous-menu li a {
   font-size: 1.7rem;
   color: gray;
 }
 
-/* line 374, ../sass/_styleBase.scss */
+/* line 376, ../sass/_styleBase.scss */
 #sous-menu li:first-child {
   border-bottom: 1px dashed #364050;
   padding: 1rem 2rem 1rem 1rem;
 }
 
-/* line 379, ../sass/_styleBase.scss */
+/* line 381, ../sass/_styleBase.scss */
 #sous-menu li:last-child {
   padding: 1rem 2rem 0 1rem;
 }
 
-/* line 383, ../sass/_styleBase.scss */
+/* line 385, ../sass/_styleBase.scss */
 #menu > ul > li {
   border-bottom: 1px solid #364050;
   padding: 1rem;
 }
 
-/* line 388, ../sass/_styleBase.scss */
+/* line 390, ../sass/_styleBase.scss */
 .article h3 {
   font-size: 1.80rem;
   color: #9C9C9C;
@@ -445,28 +443,22 @@ header img {
   align-self: flex-start;
 }
 
-/* line 397, ../sass/_styleBase.scss */
-.article img {
-  max-width: 100%;
-  display: block;
-}
-
-/* line 402, ../sass/_styleBase.scss */
+/* line 399, ../sass/_styleBase.scss */
 .article figcaption {
   padding-bottom: 1rem;
 }
 
-/* line 406, ../sass/_styleBase.scss */
+/* line 403, ../sass/_styleBase.scss */
 .article p {
   line-height: 3rem;
 }
 
-/* line 410, ../sass/_styleBase.scss */
+/* line 407, ../sass/_styleBase.scss */
 .article p:first-of-type:first-letter {
   font-size: 2.5rem;
 }
 
-/* line 414, ../sass/_styleBase.scss */
+/* line 411, ../sass/_styleBase.scss */
 .article,
 footer {
   display: -webkit-box;
@@ -482,12 +474,12 @@ footer {
   padding: 2rem;
 }
 
-/* line 429, ../sass/_styleBase.scss */
+/* line 426, ../sass/_styleBase.scss */
 .article:not(#bienEtre) {
   border-bottom: 1px solid #de1118;
 }
 
-/* line 433, ../sass/_styleBase.scss */
+/* line 430, ../sass/_styleBase.scss */
 #bienEtre ol {
   font-size: 1.65rem;
   line-height: 3rem;
@@ -495,7 +487,7 @@ footer {
 }
 
 /*------------FOOTER-----*/
-/* line 440, ../sass/_styleBase.scss */
+/* line 437, ../sass/_styleBase.scss */
 footer {
   background: #364050 url("../img/bg01.png");
   border-top: 0.1rem solid #de1118;
@@ -503,19 +495,19 @@ footer {
   color: #FFF;
 }
 
-/* line 447, ../sass/_styleBase.scss */
+/* line 444, ../sass/_styleBase.scss */
 [type="text"] {
   height: 5rem;
 }
 
-/* line 451, ../sass/_styleBase.scss */
+/* line 448, ../sass/_styleBase.scss */
 footer legend {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
 }
 
-/* line 457, ../sass/_styleBase.scss */
+/* line 454, ../sass/_styleBase.scss */
 footer input {
   background: #252e3d url("../img/bg01.png");
   display: inline-block;
@@ -533,16 +525,31 @@ footer input {
   margin: 1rem 0;
 }
 
-/* line 474, ../sass/_styleBase.scss */
+/* line 471, ../sass/_styleBase.scss */
 [value="Envoyer"] {
   color: white;
   background: #de1118;
   text-transform: uppercase;
 }
 
-/* line 480, ../sass/_styleBase.scss */
+/* line 477, ../sass/_styleBase.scss */
 .invisible {
   display: none;
+}
+
+/* line 480, ../sass/_styleBase.scss */
+.icon_sociaux {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  font-size: 3rem;
+  color: #71838f;
+}
+/* line 488, ../sass/_styleBase.scss */
+.icon_sociaux a ~ a {
+  padding-left: 4rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -630,38 +637,38 @@ footer input {
   }
 }
 @media screen and (min-width: 1024px) {
-  @import "https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech";
-  /* line 3, ../sass/_desktop.scss */
+  /* line 4, ../sass/_desktop.scss */
   html {
     height: 100%;
     position: relative;
   }
 
-  /* line 8, ../sass/_desktop.scss */
+  /* line 9, ../sass/_desktop.scss */
   body {
     margin: 0;
     height: 100%;
     position: relative;
+    box-sizing: border-box;
   }
 
-  /* line 14, ../sass/_desktop.scss */
+  /* line 16, ../sass/_desktop.scss */
   section {
     display: block;
     height: 100vh;
   }
 
-  /* line 19, ../sass/_desktop.scss */
+  /* line 21, ../sass/_desktop.scss */
   #one {
     display: block;
   }
 
-  /* line 22, ../sass/_desktop.scss */
+  /* line 24, ../sass/_desktop.scss */
   .fixed {
     position: relative;
     backface-visibility: visible;
   }
 
-  /* line 27, ../sass/_desktop.scss */
+  /* line 29, ../sass/_desktop.scss */
   video#videobg {
     position: fixed;
     top: 50%;
@@ -677,17 +684,27 @@ footer input {
     transition: 1s opacity;
   }
 
+  /* line 43, ../sass/_desktop.scss */
+  .container_desktop {
+    margin: 0 10%;
+  }
+
+  /* line 47, ../sass/_desktop.scss */
+  #panel img {
+    height: 40vh;
+  }
+
   /*--------------------------------------------------*/
   /*-------------------ARROW EFFECT 1 SECTION-------------------*/
   /*--------------------------------------------------*/
   /*--------------------------------------------------*/
-  /* line 50, ../sass/_desktop.scss */
+  /* line 58, ../sass/_desktop.scss */
   .scrolldown-container {
     top: 50%;
     position: relative;
   }
 
-  /* line 55, ../sass/_desktop.scss */
+  /* line 63, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn {
     width: 50px;
     height: 100px;
@@ -702,7 +719,7 @@ footer input {
     fill: red;
   }
 
-  /* line 69, ../sass/_desktop.scss */
+  /* line 77, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg {
     position: absolute;
     bottom: 0;
@@ -711,7 +728,7 @@ footer input {
     height: auto;
   }
 
-  /* line 78, ../sass/_desktop.scss */
+  /* line 86, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg path.first-path {
     -webkit-animation: scrollanim 1s ease-in-out infinite;
     animation: scrollanim 1s ease-in-out infinite;
@@ -719,7 +736,7 @@ footer input {
     animation-delay: 0.8s;
   }
 
-  /* line 85, ../sass/_desktop.scss */
+  /* line 93, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg path.second-path {
     -webkit-animation: scrollanim2 1s ease-in-out infinite;
     animation: scrollanim2 1s ease-in-out infinite;
@@ -772,7 +789,7 @@ footer input {
   /*-----------------------------------------*/
   /*------------NAV DESSKTOP---------------*/
   /*-----------------------------------------*/
-  /* line 143, ../sass/_desktop.scss */
+  /* line 152, ../sass/_desktop.scss */
   #one > h1 {
     padding: 3rem 0 3rem;
     font-size: 6rem;
@@ -780,15 +797,15 @@ footer input {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  /* line 150, ../sass/_desktop.scss */
+  /* line 159, ../sass/_desktop.scss */
   #one span:first-of-type {
     color: #17202d;
   }
-  /* line 153, ../sass/_desktop.scss */
+  /* line 162, ../sass/_desktop.scss */
   #one span:last-of-type {
     color: #de1118;
   }
-  /* line 156, ../sass/_desktop.scss */
+  /* line 165, ../sass/_desktop.scss */
   #one img {
     width: 10rem;
   }
@@ -801,17 +818,17 @@ footer input {
       opacity: 1;
     }
   }
-  /* line 169, ../sass/_desktop.scss */
+  /* line 179, ../sass/_desktop.scss */
   .fixed_navbar {
-    position: fixed !important;
+    position: fixed;
     z-index: 1000;
-    animation: stickAnim 2s;
     top: 0;
+    animation: stickAnim 2s;
   }
 
-  /* line 175, ../sass/_desktop.scss */
-  #navbar {
-    position: relative;
+  /* line 186, ../sass/_desktop.scss */
+  .navbar {
+    position: fixed;
     padding-top: 3rem;
     font-size: 2.5rem;
     color: white;
@@ -820,12 +837,16 @@ footer input {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* line 186, ../sass/_desktop.scss */
-  #navbar li ~ li {
-    padding-left: 10rem;
+  /* line 196, ../sass/_desktop.scss */
+  .navbar li ~ li {
+    padding-left: 3rem;
   }
-  /* line 189, ../sass/_desktop.scss */
-  #navbar li a {
+  /* line 199, ../sass/_desktop.scss */
+  .navbar li:last-of-type {
+    display: none;
+  }
+  /* line 202, ../sass/_desktop.scss */
+  .navbar li a {
     position: relative;
     box-sizing: border-box;
     -webkit-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
@@ -833,16 +854,16 @@ footer input {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     transition: all 400ms;
   }
-  /* line 196, ../sass/_desktop.scss */
-  #navbar li a:before {
+  /* line 209, ../sass/_desktop.scss */
+  .navbar li a:before {
     position: absolute;
     display: block;
     content: ' ';
     bottom: 0;
     transition: all 400ms;
   }
-  /* line 204, ../sass/_desktop.scss */
-  #navbar li a:hover:before {
+  /* line 217, ../sass/_desktop.scss */
+  .navbar li a:hover:before {
     background: #17202d;
     background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, #17202d), color-stop(50%, #17202d), color-stop(51%, #de1118), color-stop(100%, #de1118));
@@ -855,12 +876,127 @@ footer input {
     width: 100%;
   }
 
+  /* line 236, ../sass/_desktop.scss */
+  .li_show {
+    display: inline !important;
+  }
+
   /*--------------------------------------------------*/
   /*-------------------------HEADER------------------*/
   /*--------------------------------------------------*/
-  /* line 225, ../sass/_desktop.scss */
+  /* line 243, ../sass/_desktop.scss */
   .fixed, .hidden, .invisible, h2 {
     display: none;
+  }
+
+  /*--------------------------------------------------------*/
+  /*-------------------SECTION HISTOIRE-----------------*/
+  /*--------------------------------------------------------*/
+  /* line 250, ../sass/_desktop.scss */
+  #histoire {
+    display: flex;
+    padding-top: 6rem;
+  }
+  /* line 253, ../sass/_desktop.scss */
+  #histoire article {
+    width: 80%;
+  }
+  /* line 255, ../sass/_desktop.scss */
+  #histoire article:first-of-type h3 {
+    align-self: flex-end;
+  }
+  /* line 259, ../sass/_desktop.scss */
+  #histoire article h3 {
+    text-transform: uppercase;
+  }
+  /* line 262, ../sass/_desktop.scss */
+  #histoire article p {
+    display: block;
+  }
+  /* line 267, ../sass/_desktop.scss */
+  #histoire .icon_sociaux {
+    padding-top: 2rem;
+  }
+
+  /* line 273, ../sass/_desktop.scss */
+  #commencement .content:first-of-type {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  /* line 278, ../sass/_desktop.scss */
+  #commencement article {
+    text-align: right;
+    text-align: -webkit-right;
+  }
+
+  /* line 284, ../sass/_desktop.scss */
+  .open_slide {
+    display: block;
+  }
+
+  /*--------------------------------------------------*/
+  /*------------------SECTION REGLES-------------------*/
+  /*--------------------------------------------------*/
+  /* line 293, ../sass/_desktop.scss */
+  #regles .content {
+    display: flex;
+    width: 80%;
+  }
+  /* line 297, ../sass/_desktop.scss */
+  #regles .flex_colum_start {
+    padding-left: 5rem;
+    width: 40%;
+  }
+
+  /*--------------------------------------------------*/
+  /*------------------SECTION MATERIEL-------------------*/
+  /*--------------------------------------------------*/
+  /* line 306, ../sass/_desktop.scss */
+  #materiel .content {
+    display: flex;
+    width: 80%;
+  }
+  /* line 310, ../sass/_desktop.scss */
+  #materiel .flex_colum_start {
+    padding-left: 5rem;
+    width: 40%;
+  }
+
+  /*--------------------------------------------------*/
+  /*------------------SECTION BIEN ETRE-------------------*/
+  /*--------------------------------------------------*/
+  /* line 320, ../sass/_desktop.scss */
+  #bienEtre .content {
+    display: flex;
+    width: 80%;
+  }
+  /* line 324, ../sass/_desktop.scss */
+  #bienEtre .flex_colum_start {
+    padding-left: 5rem;
+    width: 40%;
+  }
+
+  /*--------------------------------------------------*/
+  /*------------------FOOTER -------------------*/
+  /*--------------------------------------------------*/
+  /* line 333, ../sass/_desktop.scss */
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  /* line 337, ../sass/_desktop.scss */
+  footer .icon_sociaux {
+    margin: 0 auto;
+  }
+  /* line 340, ../sass/_desktop.scss */
+  footer iframe {
+    width: 40%;
+  }
+  /* line 343, ../sass/_desktop.scss */
+  footer form {
+    width: 30%;
   }
 }
 
