@@ -1,3 +1,4 @@
+/*--------------------------BT MORE-------------------------------------------*/
 $(document).ready(function () {
     $('.bt_more').click(function () {
         if ($(this).hasClass("open")) {
@@ -8,7 +9,7 @@ $(document).ready(function () {
         }
         $('.open_slide').slideToggle('fast');
     });
-    /*slideout*/
+    /*---------------------------------slideout-------------------------------*/
     var slideout = new Slideout({
         'panel': document.getElementById('panel')
         , 'menu': document.getElementById('menu')
@@ -34,7 +35,7 @@ $(document).ready(function () {
             $('#nav-container').toggleClass("pushed");
         }
     });
-    /*Position del anavigation dans nav*/
+    /*----------------Position del anavigation dans nav-------------------*/
     $(window).scroll(function () {
         var w_height = ($(window).height()) * 0.5
             , pos = $(window).scrollTop()
@@ -63,7 +64,7 @@ $(document).ready(function () {
         }, speed); // Go
         return false;
     });
-    /*-------------EFFET STICKY------------*/
+    /*--------------------EFFET STICKY---------------------------------------*/
     $(window).scroll(function (event) {
         // A chaque fois que l'utilisateur va scroller (descendre la page)
         var y = $(this).scrollTop(); // On récupérer la valeur du scroll vertical

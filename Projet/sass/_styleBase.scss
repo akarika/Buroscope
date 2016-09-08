@@ -1,6 +1,6 @@
 /*Regles communes*/
-
 @import 'https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech';
+
 html,
 body,
 div,
@@ -183,14 +183,17 @@ body {
   -ms-flex-align: start;
   align-items: flex-start;
 }
-#one{
+
+#one {
   display: none;
 }
-section:not(#one){
+
+section:not(#one) {
   background-color: #fff;
   background-image: url("../img/bg02.png");
   padding-top: 8rem;
 }
+
 /*------effet slide---------*/
 
 #panel {
@@ -256,6 +259,7 @@ section:not(#one){
   /*position: absolute;*/
   font-size: 0.8rem;
 }
+
 /*toggle-icon*/
 
 .toggle-icon {
@@ -294,6 +298,7 @@ section:not(#one){
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
+
 /*pushed*/
 
 .pushed .toggle-icon {
@@ -315,6 +320,7 @@ section:not(#one){
   -webkit-transform: rotate(-42deg);
   transform: rotate(-42deg);
 }
+
 /*-----------header------------*/
 
 header {
@@ -340,11 +346,8 @@ h1 span {
 header img {
   height: 3rem;
 }
-/*-----------HISTOIRE----------*/
 
-#histoire {
-  padding-top: 8rem;
-}
+/*-----------HISTOIRE----------*/
 
 #panel h2 {
   font-size: 2.3rem;
@@ -382,7 +385,7 @@ header img {
   padding: 1rem 2rem 0 1rem;
 }
 
-#menu>ul>li {
+#menu > ul > li {
   border-bottom: 1px solid #364050;
   padding: 1rem;
 }
@@ -427,11 +430,6 @@ footer {
   border-bottom: 1px solid #de1118;
 }
 
-#bienEtre ol {
-  font-size: 1.65rem;
-  line-height: 3rem;
-  text-align: left;
-}
 /*------------FOOTER-----*/
 
 footer {
@@ -477,7 +475,8 @@ footer input {
 .invisible {
   display: none;
 }
-.icon_sociaux{
+
+.icon_sociaux {
   display: flex;
   justify-content: center;
   width: 50%;
@@ -485,6 +484,10 @@ footer input {
   padding-top: 5rem;
   font-size: 3rem;
   color: #71838f;
-  a~a{
+  a ~ a {
     padding-left: 4rem;
-  }}
+  }
+  iframe{
+    display: none;
+  }
+}
