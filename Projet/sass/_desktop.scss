@@ -15,7 +15,7 @@
 
   section {
     display: block;
-    height: 100vh;
+    height: 100%;
   }
 
   #one {
@@ -339,9 +339,11 @@
     }
     iframe {
       width: 40%;
+      display: block;
     }
     form {
       width: 30%;
+      min-width: inherit;
     }
   }
 }
