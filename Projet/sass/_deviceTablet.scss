@@ -64,4 +64,12 @@
       font-size: 2rem;
     }
   }
+  .content figure{
+    margin-right: 2rem;
+  }
+  footer iframe{
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
 }

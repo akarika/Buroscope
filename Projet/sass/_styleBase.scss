@@ -194,6 +194,10 @@ section:not(#one) {
   padding-top: 8rem;
 }
 
+section img {
+  max-width: 100%;
+}
+
 /*------effet slide---------*/
 
 #panel {
@@ -437,6 +441,12 @@ footer {
   border-top: 0.1rem solid #de1118;
   font-size: 1.65rem;
   color: #FFF;
+  form {
+    min-width: 100%;
+  }
+  iframe {
+    max-width: 100%;
+  }
 }
 
 [type="text"] {
@@ -461,8 +471,8 @@ footer input {
   box-shadow: 0px 1px 1px 0px rgba(93, 104, 122, 0.6);
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  width: 100%;
-  padding: 1.2rem 2rem;
+  min-width: 100%;
+  padding: 1.2rem 0rem;
   margin: 1rem 0;
 }
 
@@ -479,15 +489,11 @@ footer input {
 .icon_sociaux {
   display: flex;
   justify-content: center;
-  width: 50%;
-  padding-left: 2rem;
-  padding-top: 5rem;
+  padding: 2rem 0;
   font-size: 3rem;
   color: #71838f;
   a ~ a {
     padding-left: 4rem;
   }
-  iframe{
-    display: none;
-  }
+
 }

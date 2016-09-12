@@ -15,7 +15,7 @@
 
   section {
     display: block;
-    height: 100vh;
+    height: 100%;
   }
 
   #one {
@@ -343,6 +343,7 @@
     }
     form {
       width: 30%;
+      min-width: inherit;
     }
   }
 }
