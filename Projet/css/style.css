@@ -1,6 +1,6 @@
 /*Regles communes*/
 @import "https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech";
-/* line 5, ../sass/_styleBase.scss */
+/* line 4, ../sass/_styleBase.scss */
 html,
 body,
 div,
@@ -90,7 +90,7 @@ video {
   vertical-align: baseline;
 }
 
-/* line 94, ../sass/_styleBase.scss */
+/* line 93, ../sass/_styleBase.scss */
 article,
 aside,
 details,
@@ -105,32 +105,32 @@ section {
   display: block;
 }
 
-/* line 108, ../sass/_styleBase.scss */
+/* line 107, ../sass/_styleBase.scss */
 h2,
 h3,
 h4 {
   font-family: 'Oswald', sans-serif;
 }
 
-/* line 114, ../sass/_styleBase.scss */
+/* line 113, ../sass/_styleBase.scss */
 body,
 form {
   line-height: 1;
   font-family: 'Share Tech', sans-serif;
 }
 
-/* line 120, ../sass/_styleBase.scss */
+/* line 119, ../sass/_styleBase.scss */
 ul {
   list-style: none;
 }
 
-/* line 124, ../sass/_styleBase.scss */
+/* line 123, ../sass/_styleBase.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 129, ../sass/_styleBase.scss */
+/* line 128, ../sass/_styleBase.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -139,26 +139,26 @@ q:after {
   content: none;
 }
 
-/* line 137, ../sass/_styleBase.scss */
+/* line 136, ../sass/_styleBase.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 142, ../sass/_styleBase.scss */
+/* line 141, ../sass/_styleBase.scss */
 html {
   font-size: .625em;
   font-size: calc(1em * .625);
 }
 
-/* line 147, ../sass/_styleBase.scss */
+/* line 146, ../sass/_styleBase.scss */
 a {
   text-decoration: none;
   color: inherit;
   outline-style: none;
 }
 
-/* line 153, ../sass/_styleBase.scss */
+/* line 152, ../sass/_styleBase.scss */
 h1 {
   font-family: 'Denk One', sans-serif;
   font-size: 3rem;
@@ -166,12 +166,12 @@ h1 {
   padding-left: 5rem;
 }
 
-/* line 160, ../sass/_styleBase.scss */
+/* line 159, ../sass/_styleBase.scss */
 p {
   font-size: 1.65rem;
 }
 
-/* line 164, ../sass/_styleBase.scss */
+/* line 163, ../sass/_styleBase.scss */
 body {
   width: 100%;
   height: 100%;
@@ -179,12 +179,12 @@ body {
   background-image: url("../img/bg02.png");
 }
 
-/* line 171, ../sass/_styleBase.scss */
+/* line 170, ../sass/_styleBase.scss */
 .container {
   padding: 0 3rem;
 }
 
-/* line 175, ../sass/_styleBase.scss */
+/* line 174, ../sass/_styleBase.scss */
 .flex_colum_start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,20 +203,25 @@ body {
   display: none;
 }
 
-/* line 190, ../sass/_styleBase.scss */
+/* line 191, ../sass/_styleBase.scss */
 section:not(#one) {
   background-color: #fff;
   background-image: url("../img/bg02.png");
   padding-top: 8rem;
 }
 
-/*------effet slide---------*/
 /* line 197, ../sass/_styleBase.scss */
+section img {
+  max-width: 100%;
+}
+
+/*------effet slide---------*/
+/* line 203, ../sass/_styleBase.scss */
 #panel {
   box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 201, ../sass/_styleBase.scss */
+/* line 207, ../sass/_styleBase.scss */
 .slideout-menu {
   position: fixed;
   left: 0;
@@ -230,26 +235,26 @@ section:not(#one) {
   display: none;
 }
 
-/* line 214, ../sass/_styleBase.scss */
+/* line 220, ../sass/_styleBase.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
 }
 
-/* line 220, ../sass/_styleBase.scss */
+/* line 226, ../sass/_styleBase.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 226, ../sass/_styleBase.scss */
+/* line 232, ../sass/_styleBase.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
-/* line 230, ../sass/_styleBase.scss */
+/* line 236, ../sass/_styleBase.scss */
 .toggle-button {
   background-color: transparent;
   color: white;
@@ -259,7 +264,7 @@ section:not(#one) {
   outline: none;
 }
 
-/* line 239, ../sass/_styleBase.scss */
+/* line 245, ../sass/_styleBase.scss */
 .fixed {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -272,20 +277,20 @@ section:not(#one) {
   width: 100%;
 }
 
-/* line 251, ../sass/_styleBase.scss */
+/* line 257, ../sass/_styleBase.scss */
 .fixed-open {
   -webkit-transform: translate3d(256px, 0px, 0px);
   transform: translate3d(256px, 0px, 0px);
 }
 
-/* line 256, ../sass/_styleBase.scss */
+/* line 262, ../sass/_styleBase.scss */
 #nav-container {
   /*position: absolute;*/
   font-size: 0.8rem;
 }
 
 /*toggle-icon*/
-/* line 262, ../sass/_styleBase.scss */
+/* line 269, ../sass/_styleBase.scss */
 .toggle-icon {
   display: block;
   position: relative;
@@ -296,7 +301,7 @@ section:not(#one) {
   cursor: pointer;
 }
 
-/* line 272, ../sass/_styleBase.scss */
+/* line 279, ../sass/_styleBase.scss */
 .toggle-icon .bar {
   display: block;
   width: 3.8em;
@@ -314,37 +319,37 @@ section:not(#one) {
   transition-duration: 300ms;
 }
 
-/* line 289, ../sass/_styleBase.scss */
+/* line 296, ../sass/_styleBase.scss */
 .toggle-icon .bar:nth-of-type(1) {
   -webkit-transition: opacity 150ms;
   transition: opacity 150ms;
 }
 
-/* line 294, ../sass/_styleBase.scss */
+/* line 301, ../sass/_styleBase.scss */
 .toggle-icon .bar:nth-of-type(2) {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
 
 /*pushed*/
-/* line 300, ../sass/_styleBase.scss */
+/* line 308, ../sass/_styleBase.scss */
 .pushed .toggle-icon {
   margin: -3.2em 0 0 0.7em;
 }
 
-/* line 304, ../sass/_styleBase.scss */
+/* line 312, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(1) {
   opacity: 0;
 }
 
-/* line 308, ../sass/_styleBase.scss */
+/* line 316, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(2) {
   margin-left: 1.4em;
   -webkit-transform: rotate(-137deg) translateY(-1.5em);
   transform: rotate(-137deg) translateY(-1.5em);
 }
 
-/* line 314, ../sass/_styleBase.scss */
+/* line 322, ../sass/_styleBase.scss */
 .pushed .bar:nth-of-type(3) {
   margin-left: 0.5em;
   -webkit-transform: rotate(-42deg);
@@ -352,7 +357,7 @@ section:not(#one) {
 }
 
 /*-----------header------------*/
-/* line 321, ../sass/_styleBase.scss */
+/* line 330, ../sass/_styleBase.scss */
 header {
   display: -moz-flex;
   display: -ms-flex;
@@ -369,23 +374,18 @@ header {
   padding: 1.5rem;
 }
 
-/* line 337, ../sass/_styleBase.scss */
+/* line 346, ../sass/_styleBase.scss */
 h1 span {
   color: #de1118;
 }
 
-/* line 341, ../sass/_styleBase.scss */
+/* line 350, ../sass/_styleBase.scss */
 header img {
   height: 3rem;
 }
 
 /*-----------HISTOIRE----------*/
-/* line 346, ../sass/_styleBase.scss */
-#histoire {
-  padding-top: 8rem;
-}
-
-/* line 350, ../sass/_styleBase.scss */
+/* line 356, ../sass/_styleBase.scss */
 #panel h2 {
   font-size: 2.3rem;
   padding-bottom: 1rem;
@@ -394,14 +394,14 @@ header img {
   align-self: flex-start;
 }
 
-/* line 358, ../sass/_styleBase.scss */
+/* line 364, ../sass/_styleBase.scss */
 #menu h2 {
   font-size: 2.3rem;
   text-align: center;
   padding: 1rem;
 }
 
-/* line 364, ../sass/_styleBase.scss */
+/* line 370, ../sass/_styleBase.scss */
 #menu a {
   font-size: 2.3rem;
   color: black;
@@ -410,30 +410,30 @@ header img {
   padding-left: 2rem;
 }
 
-/* line 372, ../sass/_styleBase.scss */
+/* line 378, ../sass/_styleBase.scss */
 #sous-menu li a {
   font-size: 1.7rem;
   color: gray;
 }
 
-/* line 377, ../sass/_styleBase.scss */
+/* line 383, ../sass/_styleBase.scss */
 #sous-menu li:first-child {
   border-bottom: 1px dashed #364050;
   padding: 1rem 2rem 1rem 1rem;
 }
 
-/* line 382, ../sass/_styleBase.scss */
+/* line 388, ../sass/_styleBase.scss */
 #sous-menu li:last-child {
   padding: 1rem 2rem 0 1rem;
 }
 
-/* line 386, ../sass/_styleBase.scss */
+/* line 392, ../sass/_styleBase.scss */
 #menu > ul > li {
   border-bottom: 1px solid #364050;
   padding: 1rem;
 }
 
-/* line 391, ../sass/_styleBase.scss */
+/* line 397, ../sass/_styleBase.scss */
 .article h3 {
   font-size: 1.80rem;
   color: #9C9C9C;
@@ -443,22 +443,22 @@ header img {
   align-self: flex-start;
 }
 
-/* line 400, ../sass/_styleBase.scss */
+/* line 406, ../sass/_styleBase.scss */
 .article figcaption {
   padding-bottom: 1rem;
 }
 
-/* line 404, ../sass/_styleBase.scss */
+/* line 410, ../sass/_styleBase.scss */
 .article p {
   line-height: 3rem;
 }
 
-/* line 408, ../sass/_styleBase.scss */
+/* line 414, ../sass/_styleBase.scss */
 .article p:first-of-type:first-letter {
   font-size: 2.5rem;
 }
 
-/* line 412, ../sass/_styleBase.scss */
+/* line 418, ../sass/_styleBase.scss */
 .article,
 footer {
   display: -webkit-box;
@@ -474,40 +474,41 @@ footer {
   padding: 2rem;
 }
 
-/* line 427, ../sass/_styleBase.scss */
+/* line 433, ../sass/_styleBase.scss */
 .article:not(#bienEtre) {
   border-bottom: 1px solid #de1118;
 }
 
-/* line 431, ../sass/_styleBase.scss */
-#bienEtre ol {
-  font-size: 1.65rem;
-  line-height: 3rem;
-  text-align: left;
-}
-
 /*------------FOOTER-----*/
-/* line 438, ../sass/_styleBase.scss */
+/* line 439, ../sass/_styleBase.scss */
 footer {
   background: #364050 url("../img/bg01.png");
   border-top: 0.1rem solid #de1118;
   font-size: 1.65rem;
   color: #FFF;
 }
+/* line 444, ../sass/_styleBase.scss */
+footer form {
+  min-width: 100%;
+}
+/* line 447, ../sass/_styleBase.scss */
+footer iframe {
+  max-width: 100%;
+}
 
-/* line 445, ../sass/_styleBase.scss */
+/* line 452, ../sass/_styleBase.scss */
 [type="text"] {
   height: 5rem;
 }
 
-/* line 449, ../sass/_styleBase.scss */
+/* line 456, ../sass/_styleBase.scss */
 footer legend {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 2rem;
 }
 
-/* line 455, ../sass/_styleBase.scss */
+/* line 462, ../sass/_styleBase.scss */
 footer input {
   background: #252e3d url("../img/bg01.png");
   display: inline-block;
@@ -520,34 +521,32 @@ footer input {
   box-shadow: 0px 1px 1px 0px rgba(93, 104, 122, 0.6);
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  width: 100%;
-  padding: 1.2rem 2rem;
+  min-width: 100%;
+  padding: 1.2rem 0rem;
   margin: 1rem 0;
 }
 
-/* line 472, ../sass/_styleBase.scss */
+/* line 479, ../sass/_styleBase.scss */
 [value="Envoyer"] {
   color: white;
   background: #de1118;
   text-transform: uppercase;
 }
 
-/* line 478, ../sass/_styleBase.scss */
+/* line 485, ../sass/_styleBase.scss */
 .invisible {
   display: none;
 }
 
-/* line 481, ../sass/_styleBase.scss */
+/* line 489, ../sass/_styleBase.scss */
 .icon_sociaux {
   display: flex;
   justify-content: center;
-  width: 50%;
-  padding-left: 2rem;
-  padding-top: 5rem;
+  padding: 2rem 0;
   font-size: 3rem;
   color: #71838f;
 }
-/* line 489, ../sass/_styleBase.scss */
+/* line 495, ../sass/_styleBase.scss */
 .icon_sociaux a ~ a {
   padding-left: 4rem;
 }
@@ -635,16 +634,27 @@ footer input {
   #menu ul:nth-of-type(2) a {
     font-size: 2rem;
   }
+
+  /* line 67, ../sass/_deviceTablet.scss */
+  .content figure {
+    margin-right: 2rem;
+  }
+
+  /* line 70, ../sass/_deviceTablet.scss */
+  footer iframe {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
 }
 @media screen and (min-width: 1024px) {
-  @import "https://fonts.googleapis.com/css?family=Denk+One|Oswald:700|Share+Tech";
-  /* line 3, ../sass/_desktop.scss */
+  /* line 4, ../sass/_desktop.scss */
   html {
     height: 100%;
     position: relative;
   }
 
-  /* line 8, ../sass/_desktop.scss */
+  /* line 9, ../sass/_desktop.scss */
   body {
     margin: 0;
     height: 100%;
@@ -652,24 +662,24 @@ footer input {
     box-sizing: border-box;
   }
 
-  /* line 15, ../sass/_desktop.scss */
+  /* line 16, ../sass/_desktop.scss */
   section {
     display: block;
-    height: 100vh;
+    height: 100%;
   }
 
-  /* line 20, ../sass/_desktop.scss */
+  /* line 21, ../sass/_desktop.scss */
   #one {
     display: block;
   }
 
-  /* line 23, ../sass/_desktop.scss */
+  /* line 24, ../sass/_desktop.scss */
   .fixed {
     position: relative;
     backface-visibility: visible;
   }
 
-  /* line 28, ../sass/_desktop.scss */
+  /* line 29, ../sass/_desktop.scss */
   video#videobg {
     position: fixed;
     top: 50%;
@@ -685,12 +695,12 @@ footer input {
     transition: 1s opacity;
   }
 
-  /* line 42, ../sass/_desktop.scss */
+  /* line 43, ../sass/_desktop.scss */
   .container_desktop {
     margin: 0 10%;
   }
 
-  /* line 46, ../sass/_desktop.scss */
+  /* line 47, ../sass/_desktop.scss */
   #panel img {
     height: 40vh;
   }
@@ -699,13 +709,13 @@ footer input {
   /*-------------------ARROW EFFECT 1 SECTION-------------------*/
   /*--------------------------------------------------*/
   /*--------------------------------------------------*/
-  /* line 57, ../sass/_desktop.scss */
+  /* line 58, ../sass/_desktop.scss */
   .scrolldown-container {
     top: 50%;
     position: relative;
   }
 
-  /* line 62, ../sass/_desktop.scss */
+  /* line 63, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn {
     width: 50px;
     height: 100px;
@@ -720,7 +730,7 @@ footer input {
     fill: red;
   }
 
-  /* line 76, ../sass/_desktop.scss */
+  /* line 77, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg {
     position: absolute;
     bottom: 0;
@@ -729,7 +739,7 @@ footer input {
     height: auto;
   }
 
-  /* line 85, ../sass/_desktop.scss */
+  /* line 86, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg path.first-path {
     -webkit-animation: scrollanim 1s ease-in-out infinite;
     animation: scrollanim 1s ease-in-out infinite;
@@ -737,7 +747,7 @@ footer input {
     animation-delay: 0.8s;
   }
 
-  /* line 92, ../sass/_desktop.scss */
+  /* line 93, ../sass/_desktop.scss */
   .scrolldown-container .scrolldown-btn svg path.second-path {
     -webkit-animation: scrollanim2 1s ease-in-out infinite;
     animation: scrollanim2 1s ease-in-out infinite;
@@ -790,7 +800,7 @@ footer input {
   /*-----------------------------------------*/
   /*------------NAV DESSKTOP---------------*/
   /*-----------------------------------------*/
-  /* line 151, ../sass/_desktop.scss */
+  /* line 152, ../sass/_desktop.scss */
   #one > h1 {
     padding: 3rem 0 3rem;
     font-size: 6rem;
@@ -798,15 +808,15 @@ footer input {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  /* line 158, ../sass/_desktop.scss */
+  /* line 159, ../sass/_desktop.scss */
   #one span:first-of-type {
     color: #17202d;
   }
-  /* line 161, ../sass/_desktop.scss */
+  /* line 162, ../sass/_desktop.scss */
   #one span:last-of-type {
     color: #de1118;
   }
-  /* line 164, ../sass/_desktop.scss */
+  /* line 165, ../sass/_desktop.scss */
   #one img {
     width: 10rem;
   }
@@ -819,7 +829,7 @@ footer input {
       opacity: 1;
     }
   }
-  /* line 178, ../sass/_desktop.scss */
+  /* line 179, ../sass/_desktop.scss */
   .fixed_navbar {
     position: fixed;
     z-index: 1000;
@@ -827,7 +837,7 @@ footer input {
     animation: stickAnim 2s;
   }
 
-  /* line 185, ../sass/_desktop.scss */
+  /* line 186, ../sass/_desktop.scss */
   .navbar {
     position: fixed;
     padding-top: 3rem;
@@ -838,15 +848,15 @@ footer input {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* line 195, ../sass/_desktop.scss */
+  /* line 196, ../sass/_desktop.scss */
   .navbar li ~ li {
     padding-left: 3rem;
   }
-  /* line 198, ../sass/_desktop.scss */
+  /* line 199, ../sass/_desktop.scss */
   .navbar li:last-of-type {
     display: none;
   }
-  /* line 201, ../sass/_desktop.scss */
+  /* line 202, ../sass/_desktop.scss */
   .navbar li a {
     position: relative;
     box-sizing: border-box;
@@ -855,7 +865,7 @@ footer input {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     transition: all 400ms;
   }
-  /* line 208, ../sass/_desktop.scss */
+  /* line 209, ../sass/_desktop.scss */
   .navbar li a:before {
     position: absolute;
     display: block;
@@ -863,7 +873,7 @@ footer input {
     bottom: 0;
     transition: all 400ms;
   }
-  /* line 216, ../sass/_desktop.scss */
+  /* line 217, ../sass/_desktop.scss */
   .navbar li a:hover:before {
     background: #17202d;
     background: -moz-linear-gradient(left, #17202d 0%, #17202d 50%, #de1118 51%, #de1118 100%);
@@ -877,7 +887,7 @@ footer input {
     width: 100%;
   }
 
-  /* line 235, ../sass/_desktop.scss */
+  /* line 236, ../sass/_desktop.scss */
   .li_show {
     display: inline !important;
   }
@@ -885,7 +895,7 @@ footer input {
   /*--------------------------------------------------*/
   /*-------------------------HEADER------------------*/
   /*--------------------------------------------------*/
-  /* line 242, ../sass/_desktop.scss */
+  /* line 243, ../sass/_desktop.scss */
   .fixed, .hidden, .invisible, h2 {
     display: none;
   }
@@ -893,45 +903,45 @@ footer input {
   /*--------------------------------------------------------*/
   /*-------------------SECTION HISTOIRE-----------------*/
   /*--------------------------------------------------------*/
-  /* line 249, ../sass/_desktop.scss */
+  /* line 250, ../sass/_desktop.scss */
   #histoire {
     display: flex;
     padding-top: 6rem;
   }
-  /* line 252, ../sass/_desktop.scss */
+  /* line 253, ../sass/_desktop.scss */
   #histoire article {
     width: 80%;
   }
-  /* line 254, ../sass/_desktop.scss */
+  /* line 255, ../sass/_desktop.scss */
   #histoire article:first-of-type h3 {
     align-self: flex-end;
   }
-  /* line 258, ../sass/_desktop.scss */
+  /* line 259, ../sass/_desktop.scss */
   #histoire article h3 {
     text-transform: uppercase;
   }
-  /* line 261, ../sass/_desktop.scss */
+  /* line 262, ../sass/_desktop.scss */
   #histoire article p {
     display: block;
   }
-  /* line 266, ../sass/_desktop.scss */
+  /* line 267, ../sass/_desktop.scss */
   #histoire .icon_sociaux {
     padding-top: 2rem;
   }
 
-  /* line 272, ../sass/_desktop.scss */
+  /* line 273, ../sass/_desktop.scss */
   #commencement .content:first-of-type {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
   }
-  /* line 277, ../sass/_desktop.scss */
+  /* line 278, ../sass/_desktop.scss */
   #commencement article {
     text-align: right;
     text-align: -webkit-right;
   }
 
-  /* line 283, ../sass/_desktop.scss */
+  /* line 284, ../sass/_desktop.scss */
   .open_slide {
     display: block;
   }
@@ -939,12 +949,12 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION REGLES-------------------*/
   /*--------------------------------------------------*/
-  /* line 292, ../sass/_desktop.scss */
+  /* line 293, ../sass/_desktop.scss */
   #regles .content {
     display: flex;
     width: 80%;
   }
-  /* line 296, ../sass/_desktop.scss */
+  /* line 297, ../sass/_desktop.scss */
   #regles .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -953,12 +963,12 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION MATERIEL-------------------*/
   /*--------------------------------------------------*/
-  /* line 305, ../sass/_desktop.scss */
+  /* line 306, ../sass/_desktop.scss */
   #materiel .content {
     display: flex;
     width: 80%;
   }
-  /* line 309, ../sass/_desktop.scss */
+  /* line 310, ../sass/_desktop.scss */
   #materiel .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -967,12 +977,12 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------SECTION BIEN ETRE-------------------*/
   /*--------------------------------------------------*/
-  /* line 319, ../sass/_desktop.scss */
+  /* line 320, ../sass/_desktop.scss */
   #bienEtre .content {
     display: flex;
     width: 80%;
   }
-  /* line 323, ../sass/_desktop.scss */
+  /* line 324, ../sass/_desktop.scss */
   #bienEtre .flex_colum_start {
     padding-left: 5rem;
     width: 40%;
@@ -981,23 +991,25 @@ footer input {
   /*--------------------------------------------------*/
   /*------------------FOOTER -------------------*/
   /*--------------------------------------------------*/
-  /* line 332, ../sass/_desktop.scss */
+  /* line 333, ../sass/_desktop.scss */
   footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
-  /* line 336, ../sass/_desktop.scss */
+  /* line 337, ../sass/_desktop.scss */
   footer .icon_sociaux {
     margin: 0 auto;
   }
-  /* line 339, ../sass/_desktop.scss */
+  /* line 340, ../sass/_desktop.scss */
   footer iframe {
     width: 40%;
+    display: block;
   }
-  /* line 342, ../sass/_desktop.scss */
+  /* line 344, ../sass/_desktop.scss */
   footer form {
     width: 30%;
+    min-width: inherit;
   }
 }
 
