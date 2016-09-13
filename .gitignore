@@ -4,3 +4,4 @@ $ cat .gitignore
 /.idea
 *.xml
 *.mp4
+/.video
