@@ -29,3 +29,6 @@ section{
     background-color: #2ecc71;
     margin: 0 10%;
 }
+.active{
+    color: #c0392b;
+}
