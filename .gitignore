@@ -4,4 +4,4 @@ $ cat .gitignore
 /.idea
 *.xml
 *.mp4
-/.video
+/.video/wordpress/node_modules
