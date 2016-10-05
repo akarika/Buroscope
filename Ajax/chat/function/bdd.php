@@ -20,7 +20,7 @@ function getUserByPseudo($bdd,$pseudo){
 }
 function insertMessage($bdd,$message,$urlFile,$userId){
     $message=strip_tags($message,'<p><a><img><span><em><b><i>');
-    $requete="INSERT INTO message(id,content,created_date,url_file,user_id) VALUES (NULL,:content,:created_date,:url_file,:user_id)";
+    $requete="INSERT INTO message(id,content,created_date,url_file,user_id) VALUES (NULL,:content,:created_date,:url_file,:user_id)";// insert into fait quelque chose
     $resultat=$bdd->prepare($requete);
     $resultat->execute(array(
        ':content'       =>$message,
@@ -38,7 +38,14 @@ function getMessages($bdd,$nbMessages){
     $resultat->execute();
     return $resultat->fetchAll(PDO::FETCH_ASSOC);//retourne un tableau associatif
 }
-
+function getNewMsg($bdd,$id){
+    $id=intval($id);
+    $question = "SELECT message.*, user.pseudo, user.mail, user.url_avatar FROM message JOIN user  ON message.user_id = user.id WHERE message.id > :id ORDER BY message.created_date ASC";
+    $resultat = $bdd->prepare($question);
+    $resultat->bindParam(":id",$id, PDO::PARAM_INT);
+    $resultat->execute();
+    return $resultat->fetchAll(PDO::FETCH_ASSOC);//retourne un tableau associatif
+}
 
 
 

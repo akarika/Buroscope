@@ -1,0 +1,62 @@
+#panel {
+    box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 25.6rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+.toggle-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.fixed {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+    width: 100%;
+}
+
+.fixed-open {
+    -webkit-transform: translate3d(256px, 0px, 0px);
+    transform: translate3d(256px, 0px, 0px);
+}
+
+#nav-container {
+    font-size: 0.8rem;
+}

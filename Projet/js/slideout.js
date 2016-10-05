@@ -1,11 +1,11 @@
-! function (e) {
+! function(e) {
     if ("object" == typeof exports && "undefined" != typeof module) module.exports = e();
     else if ("function" == typeof define && define.amd) define([], e);
     else {
         var f;
         "undefined" != typeof window ? f = window : "undefined" != typeof global ? f = global : "undefined" != typeof self && (f = self), f.Slideout = e()
     }
-}(function () {
+}(function() {
     var define, module, exports;
     return (function e(t, n, r) {
         function s(o, u) {
@@ -20,7 +20,7 @@
                 var l = n[o] = {
                     exports: {}
                 };
-                t[o][0].call(l.exports, function (e) {
+                t[o][0].call(l.exports, function(e) {
                     var n = t[o][1][e];
                     return s(n ? n : e)
                 }, l, l.exports, e, t, n, r)
@@ -31,7 +31,7 @@
         for (var o = 0; o < r.length; o++) s(r[o]);
         return s
     })({
-        1: [function (require, module, exports) {
+        1: [function(require, module, exports) {
             'use strict';
 
             /**
@@ -136,7 +136,7 @@
             /**
              * Opens the slideout menu.
              */
-            Slideout.prototype.open = function () {
+            Slideout.prototype.open = function() {
                 var self = this;
                 this.emit('beforeopen');
                 if (html.className.search('slideout-open') === -1) {
@@ -145,7 +145,7 @@
                 this._setTransition();
                 this._translateXTo(this._translateTo);
                 this._opened = true;
-                setTimeout(function () {
+                setTimeout(function() {
                     self.panel.style.transition = self.panel.style['-webkit-transition'] = '';
                     self.emit('open');
                 }, this._duration + 50);
@@ -155,7 +155,7 @@
             /**
              * Closes slideout menu.
              */
-            Slideout.prototype.close = function () {
+            Slideout.prototype.close = function() {
                 var self = this;
                 if (!this.isOpen() && !this._opening) {
                     return this;
@@ -164,7 +164,7 @@
                 this._setTransition();
                 this._translateXTo(0);
                 this._opened = false;
-                setTimeout(function () {
+                setTimeout(function() {
                     html.className = html.className.replace(/ slideout-open/, '');
                     self.panel.style.transition = self.panel.style['-webkit-transition'] = self.panel.style[prefix + 'transform'] = self.panel.style.transform = '';
                     self.emit('close');
@@ -175,21 +175,21 @@
             /**
              * Toggles (open/close) slideout menu.
              */
-            Slideout.prototype.toggle = function () {
+            Slideout.prototype.toggle = function() {
                 return this.isOpen() ? this.close() : this.open();
             };
 
             /**
              * Returns true if the slideout is currently open, and false if it is closed.
              */
-            Slideout.prototype.isOpen = function () {
+            Slideout.prototype.isOpen = function() {
                 return this._opened;
             };
 
             /**
              * Translates panel and updates currentOffset with a given X point
              */
-            Slideout.prototype._translateXTo = function (translateX) {
+            Slideout.prototype._translateXTo = function(translateX) {
                 this._currentOffsetX = translateX;
                 this.panel.style[prefix + 'transform'] = this.panel.style.transform = 'translateX(' + translateX + 'px)';
                 return this;
@@ -198,7 +198,7 @@
             /**
              * Set transition properties
              */
-            Slideout.prototype._setTransition = function () {
+            Slideout.prototype._setTransition = function() {
                 this.panel.style[prefix + 'transition'] = this.panel.style.transition = prefix + 'transform ' + this._duration + 'ms ' + this._fx;
                 return this;
             };
@@ -206,17 +206,17 @@
             /**
              * Initializes touch event
              */
-            Slideout.prototype._initTouchEvents = function () {
+            Slideout.prototype._initTouchEvents = function() {
                 var self = this;
 
                 /**
                  * Decouple scroll event
                  */
-                this._onScrollFn = decouple(doc, 'scroll', function () {
+                this._onScrollFn = decouple(doc, 'scroll', function() {
                     if (!self._moved) {
                         clearTimeout(scrollTimeout);
                         scrolling = true;
-                        scrollTimeout = setTimeout(function () {
+                        scrollTimeout = setTimeout(function() {
                             scrolling = false;
                         }, 250);
                     }
@@ -225,7 +225,7 @@
                 /**
                  * Prevents touchmove event if slideout is moving
                  */
-                this._preventMove = function (eve) {
+                this._preventMove = function(eve) {
                     if (self._moved) {
                         eve.preventDefault();
                     }
@@ -236,7 +236,7 @@
                 /**
                  * Resets values on touchstart
                  */
-                this._resetTouchFn = function (eve) {
+                this._resetTouchFn = function(eve) {
                     if (typeof eve.touches === 'undefined') {
                         return;
                     }
@@ -252,7 +252,7 @@
                 /**
                  * Resets values on touchcancel
                  */
-                this._onTouchCancelFn = function () {
+                this._onTouchCancelFn = function() {
                     self._moved = false;
                     self._opening = false;
                 };
@@ -262,7 +262,7 @@
                 /**
                  * Toggles slideout on touchend
                  */
-                this._onTouchEndFn = function () {
+                this._onTouchEndFn = function() {
                     if (self._moved) {
                         (self._opening && Math.abs(self._currentOffsetX) > self._tolerance) ? self.open(): self.close();
                     }
@@ -274,7 +274,7 @@
                 /**
                  * Translates panel on touchmove
                  */
-                this._onTouchMoveFn = function (eve) {
+                this._onTouchMoveFn = function(eve) {
 
                     if (scrolling || self._preventOpen || typeof eve.touches === 'undefined') {
                         return;
@@ -321,7 +321,7 @@
             /**
              * Enable opening the slideout via touch events.
              */
-            Slideout.prototype.enableTouch = function () {
+            Slideout.prototype.enableTouch = function() {
                 this._touch = true;
                 return this;
             };
@@ -329,7 +329,7 @@
             /**
              * Disable opening the slideout via touch events.
              */
-            Slideout.prototype.disableTouch = function () {
+            Slideout.prototype.disableTouch = function() {
                 this._touch = false;
                 return this;
             };
@@ -337,7 +337,7 @@
             /**
              * Destroy an instance of slideout.
              */
-            Slideout.prototype.destroy = function () {
+            Slideout.prototype.destroy = function() {
                 // Close before clean
                 this.close();
 
@@ -350,7 +350,7 @@
                 doc.removeEventListener('scroll', this._onScrollFn);
 
                 // Remove methods
-                this.open = this.close = function () {};
+                this.open = this.close = function() {};
 
                 // Return the instance so it can be easily dereferenced
                 return this;
@@ -361,17 +361,17 @@
              */
             module.exports = Slideout;
 
-}, {
+        }, {
             "decouple": 2,
             "emitter": 3
         }],
-        2: [function (require, module, exports) {
+        2: [function(require, module, exports) {
             'use strict';
 
-            var requestAnimFrame = (function () {
+            var requestAnimFrame = (function() {
                 return window.requestAnimationFrame ||
                     window.webkitRequestAnimationFrame ||
-                    function (callback) {
+                    function(callback) {
                         window.setTimeout(callback, 1000 / 60);
                     };
             }());
@@ -407,11 +407,11 @@
              */
             module.exports = decouple;
 
-}, {}],
-        3: [function (require, module, exports) {
+        }, {}],
+        3: [function(require, module, exports) {
             "use strict";
 
-            var _classCallCheck = function (instance, Constructor) {
+            var _classCallCheck = function(instance, Constructor) {
                 if (!(instance instanceof Constructor)) {
                     throw new TypeError("Cannot call a class as a function");
                 }
@@ -429,7 +429,7 @@
              * var emitter = new Emitter();
              */
 
-            var Emitter = (function () {
+            var Emitter = (function() {
                 function Emitter() {
                     _classCallCheck(this, Emitter);
                 }
@@ -507,7 +507,7 @@
                         return this;
                     }
 
-                    listeners.forEach(function (fn, i) {
+                    listeners.forEach(function(fn, i) {
                         if (fn === listener || fn.listener === listener) {
                             // Removes the given listener.
                             listeners.splice(i, 1);
@@ -551,7 +551,7 @@
                     // Clone listeners
                     listeners = listeners.slice(0);
 
-                    listeners.forEach(function (fn) {
+                    listeners.forEach(function(fn) {
                         return fn.apply(_this, args);
                     });
 
@@ -566,6 +566,6 @@
              */
             exports["default"] = Emitter;
             module.exports = exports["default"];
-}, {}]
+        }, {}]
     }, {}, [1])(1)
 });
