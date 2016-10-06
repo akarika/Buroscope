@@ -1,0 +1,21 @@
+/*
+ Theme Name:   Singolo
+ Description:  Singolo : best of portable
+ Author:       Olivier Hyron
+ Author URI:   http://example.com
+ Template:     accesspress-parallax
+*/
+/*Pour Template, reprendre exactement le nom du dossier parent*/
+/*pour importer les regles de style d'origine (theme parent)*/
+@import url('../accesspress-parallax/style.css');
+#masthead {
+    border-bottom: 3px solid green;
+}
+.service-listing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service-list .service-image{
+    border: none;
+}
