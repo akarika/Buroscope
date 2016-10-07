@@ -1,0 +1,229 @@
+/* Voici une media query avec comme point de rupture 768px */
+@media screen and (min-width:769px){
+#menu_responsive{
+display:none;
+}
+}
+
+
+@media screen and (max-width:768px){
+body{
+overflow-x:hidden;
+}
+
+#menuTop{
+height:90px;
+position:fixed;
+top:0;
+left:0;
+z-index:99;
+width:100%;
+}
+
+#slider{
+margin-top:90px;
+}
+
+/*menu glissement horizontal*/
+/*#menu{
+flex-direction:column;
+position:absolute;
+top:90px;
+right:-200px;
+width:200px;
+z-index:100;
+background:gray;
+padding:10px;
+}
+
+#menu:target{
+right:0;
+transition:right 2s;
+}*/
+
+/*menu glissement vertical*/
+#menu{
+display:block;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:0;
+z-index:100;
+}
+#menu>a{
+display:block;
+height:inherit;
+cursor:default;
+}
+
+#menu ul{
+font-size:0;
+background:gray;
+position:absolute;
+left:10%;
+height:0;
+top:90px;
+width:80%;
+z-index:100;
+flex-direction:column;
+}
+
+#menu ul li:last-child{
+border:none;
+}
+
+#menu ul li a{
+padding:0;
+}
+
+#menu:target{
+height:100vh;
+}
+
+#menu:target ul li{
+padding:15px;
+border-bottom:1px dashed white;
+}
+#menu:target ul{
+height:auto;
+transition:all 1s ease-out;
+font-size:1.3em;
+}
+
+#menu_responsive{
+color:white;
+font-size:3em;
+position:fixed;
+right:5%;
+top:20px;
+z-index:49;
+}
+
+#slider{
+background:#eb5055;
+}
+
+#slider img{
+width:70vw;
+margin:auto;
+}
+
+#services article{
+width:45%;
+}
+
+#diapos a{
+width:50%;
+}
+/*on masque tous les enfants impairs*/
+#diapos a:nth-of-type(2n+1){
+display:none;
+}
+
+#choix{
+justify-content:space-between;
+padding:2vw 6px;
+}
+
+#choix a{
+width:25%;
+padding:10px 15px;
+font-size:1.4em;
+text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#choix a:last-child{
+margin:0;
+}
+
+#tete{
+flex-direction:column;
+}
+
+.tete{
+display:block;
+width:100%;
+font-size:1.4em;
+position:relative;
+padding-bottom:20px;
+}
+
+.tete > img{
+width:160px;
+margin-right:4%;
+float:left;
+}
+
+.tete h2{
+padding-top:30px;
+}
+
+.pictos{
+text-align:center;
+}
+
+.pictos img{
+width:40px;
+padding:2px;
+}
+
+#contact {
+    width:100%;
+	padding:20px 15%;
+	font-size:1.35em;
+}
+
+#contact input[type=submit]{
+margin:20px auto;
+padding:15px 25px;
+}
+
+}
+
+
+/***************************************************************************/
+/* Voici une media query avec comme point de rupture 480px */
+@media screen and (max-width:480px){
+#services article{
+width:100%;
+}
+#services img {
+    margin-right:20px;
+}
+
+#choix{
+flex-wrap:wrap;
+padding:25px 0 10px;
+}
+
+#choix a {
+    width:47%;
+	margin:4px;
+}
+#choix a:last-child {
+	margin:4px;
+	}
+	
+.tete > img {
+width:80%;
+margin:10px 10%;
+float:none;
+padding:0;
+border-radius:50%;
+}
+
+.tete h2 {
+padding-top:0;
+text-align:center;
+}
+.tete p {
+display:none;
+}
+#contact {
+padding: 20px 5%;
+}
+

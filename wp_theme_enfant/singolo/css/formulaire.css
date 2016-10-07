@@ -1,0 +1,98 @@
+#quote{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#quote h1, #quote p{
+width:100%;
+}
+
+#contact{
+	font-family:arial;	
+	width:48%;
+	margin-top:30px;
+}
+
+#contact input{
+	margin:0 0 8px;
+}
+
+#contact textarea{
+	height:150px;
+	min-width:100%;
+	/*pour empecher à l'internaute de 
+	rétrecir en largeur la zone de saisie*/
+	max-width:100%;
+	/*pour empecher à l'internaute d'agrandir 
+	en largeur la zone de saisie*/	
+}
+
+#contact input,#contact textarea{
+	background:#ca4549;
+	color:#fff;
+	border:none;
+	border-radius:5px;
+	display:block;
+	padding:7px 8px;
+	font-family:inherit;
+	font-size:inherit;	
+	width:100%;
+	outline:none;	
+}
+
+#contact input[type="submit"]{
+	width:auto;
+	margin:15px auto;
+}
+
+#contact img{
+	margin:10px auto;
+	display:block;
+}
+
+#contact input[name="captcha"]{
+	margin:auto;
+	width:140px;
+}
+
+#contact input:focus,#contact textarea:focus{
+background:#f17070;
+}
+
+label{
+position:absolute;
+right:10%;
+top:50%;
+display:block;
+background:brown;
+color:white;
+padding:8px;
+}
+
+.placeholder,
+::-webkit-input-placeholder{
+color:#fff;
+}
+:-o-placeholder{
+color:#fff;
+}
+
+::-ms-input-placeholder{
+color:#fff;
+}
+
+::-moz-placeholder{
+color:#fff;
+}
+
+#resume{
+	width:48%;
+	background:rgba(255,255,255,0.2);
+	border-radius:8px;
+	padding:2vw 5%;
+	margin:30px 0 55px;
+}
+
+
+

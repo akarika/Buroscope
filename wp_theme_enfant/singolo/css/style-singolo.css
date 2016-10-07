@@ -1,0 +1,254 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-size: 0.625rem;
+}
+
+/*******************************************************************/
+/*************************   BODY   ********************************/
+/*******************************************************************/
+body{
+	font-family: 'Lato', sans-serif;
+	max-width: 1020px;
+	margin: auto;
+	background: #f2f2f2;
+}
+
+h1{
+	font-size: 3em;
+	line-height: 3em;
+}
+
+h1 a{
+	color:#fff;
+	text-decoration:none;
+}
+
+h1 a:hover{
+	opacity:0.5;
+}
+
+p{
+	font-size: 1.3em;
+	line-height:1.8em;
+}
+
+/*******************************************************************/
+/************************   HEADER   *******************************/
+/*******************************************************************/
+#menuTop{
+	background: #303441;
+	border-bottom: solid 6px #373b4a;
+	padding: 2vw 4%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+#logo{
+	color: #fff;
+	font-size: 2.3em;
+	padding-right: 100px;
+	line-height: 2em;
+}
+
+#logo span{
+	color: #eb5055;
+}
+
+#menu ul{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	font-size: 1.8em;
+}
+
+#menu ul a{
+	text-decoration: none;
+	color: #fff;
+	padding:5px 10px;
+}
+
+#menu ul a:hover{
+	color: #eb5055;
+}
+
+#slider img{
+	width: 100%;
+	display: block;
+}
+
+
+/*******************************************************************/
+/********************   OUR SERVICES   *****************************/
+/*******************************************************************/
+#ourServices{
+	padding: 2vw 4%;
+	background: #f2f2f2;
+	color: #666d89;
+	border-top: solid 6px #ea676b;
+}
+
+#ourServices > p{
+	font-size: 1.3em;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+#services{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-top: 3vw;
+}
+
+#services article{
+	width: 30%;
+	display: flex;
+	padding-bottom: 3vw;
+}
+
+
+#services article h2{
+	font-size: 1.5em;
+}
+
+#services article p{
+	font-size: 1em;
+	line-height: 2em;
+}
+
+#services img{
+	height: 60px;
+	width: 60px;
+}
+
+.text{
+	padding-left: 1.5vw;
+	text-align: justify;
+}
+
+/*******************************************************************/
+/*********************   PORTFOLIO   *******************************/
+/*******************************************************************/
+#portfolio{
+	padding: 2vw 4%;
+	background: #303441;
+	color: #666d89;
+	border-top: solid 6px #fff;
+	border-bottom: solid 6px #373b4a;
+}
+
+
+#portfolio > p{
+	font-size: 1.3em;
+	line-height: 1.8em;
+}
+
+#choix{
+	display: flex;
+	font-size: 1.5em;
+	padding: 2vw 0;
+}
+
+#choix a{
+	text-decoration: none;
+	color: #666d89;
+	padding: 0.5vw 2vw;
+	border-radius:5px;
+	border: 2px solid #666d89;
+	margin-right: 2vw;
+	font-size:1.1em;
+}
+
+#choix a:hover,#choix .active{
+	color: #fff;
+	border-color: #fff;
+}
+
+#diapos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width:100%;
+}
+
+#diapos a{
+	padding:3px 6px;
+	width:25%;
+	display:block;
+	
+}
+
+#diapos img{
+width:100%;
+}
+
+/*******************************************************************/
+/**********************   ABOUT US   *******************************/
+/*******************************************************************/
+#about{
+	padding: 2vw 4%;
+	background: #f2f2f2;
+	color: #666d89;
+}
+
+#tete{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.tete{
+	width: 30%;
+}
+
+#tete p{
+	font-size: 1em;
+	line-height:1.5em;
+	padding-top: 1vw;
+}
+
+.tete > img{
+	padding: 3vw 0;
+width: 100%;
+}
+
+.pictos{
+	padding: 2vw 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************/
+/********************   GET A QUOTE   ******************************/
+/*******************************************************************/
+#quote{
+	color: #fff;
+	background: #eb5055;
+	border-top: solid 6px #fff;	
+	border-bottom: solid 6px #ea676b;
+	padding:2vw 4%;
+	position:relative;
+}
+
+
+/*******************************************************************/
+/********************   CONTACT   ******************************/

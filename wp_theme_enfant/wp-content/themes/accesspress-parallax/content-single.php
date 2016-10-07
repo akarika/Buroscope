@@ -12,10 +12,10 @@ $post_date_class = ((!empty($post_date) && $post_date == ' ') || has_post_thumbn
 		<?php if(has_post_thumbnail()) : ?>
 		<div class="entry-thumb">
 			<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'blog-header' ); ?>
-			<img src="<?php echo esc_url($image[0]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"> 
+			<img src="<?php echo esc_url($image[0]); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
 		</div>
 		<?php endif; ?>
-		
+
 		<h1 class="entry-title<?php echo esc_attr($post_date_class); ?>"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
