@@ -1,7 +1,16 @@
-$ cat .gitignore
+$ cat .gitignore 
+
 *.psd
+
 /PSD
+
 /.idea
+
 *.xml
+
 *.mp4
-/.video/wordpress/node_modules
+
+/.video
+/wordpress
+/node_modules
+/wp_theme_enfant
