@@ -1,10 +1,11 @@
 (function ($, root, undefined) {
 	
-	$(function () {
-		
-		'use strict';
-		
-		// DOM ready, take it away
+	$('#slider').slick( {
+		dots:false,
+		infinite:true,
+		speed: 300,
+		slideToshow: 1,
+		adaptiveHeight:true
 		
 	});
 	

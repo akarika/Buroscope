@@ -119,13 +119,12 @@ function html5blank_styles()
 {
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
-
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('html5blank'); // Enqueue it!
     wp_register_style('slick-theme', get_template_directory_uri() . '/js/lib/slick/slick-theme.css', array(), '1.0', 'all');
     wp_enqueue_style('slick-theme'); // Enqueue it!
     wp_register_style('slick', get_template_directory_uri() . '/js/lib/slick/slick.css', array(), '1.0', 'all');
     wp_enqueue_style('slick'); // Enqueue it!
+    wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
+    wp_enqueue_style('html5blank'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

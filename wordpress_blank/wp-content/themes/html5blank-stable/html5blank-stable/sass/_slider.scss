@@ -1,0 +1,19 @@
+#slider {
+  h2 {
+    font-size: 5vw;
+    color: white;
+    position: absolute;
+    z-index: auto;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.slide {
+  position: relative;
+}
+
+ .slick-slide img{
+  width: 100%;
+}
