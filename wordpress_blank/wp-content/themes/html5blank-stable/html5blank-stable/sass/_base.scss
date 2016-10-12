@@ -68,7 +68,10 @@ input:focus {
   outline:0;
   border:1px solid #04A4CC;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -302,6 +305,9 @@ a img.aligncenter {
 body{
   background: url("../img/background.png") no-repeat center center /cover;
   font-family:'Ubuntu Condensed', sans-serif;
+  box-sizing: border-box;
+  outline: none;
 }
+
 /*SLIDER*******************************************************************/
 

@@ -78,6 +78,11 @@ input:focus {
   border: 1px solid #04A4CC;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -274,6 +279,8 @@ a img.aligncenter {
 body {
   background: url("../img/background.png") no-repeat center center/cover;
   font-family: 'Ubuntu Condensed', sans-serif;
+  box-sizing: border-box;
+  outline: none;
 }
 
 /*SLIDER*******************************************************************/
@@ -303,20 +310,81 @@ header .nav a {
   font-size: 1.2em;
 }
 
-#slider h2 {
-  font-size: 5vw;
-  color: white;
+.text_slide {
   position: absolute;
-  z-index: auto;
-  top: 20%;
+  font-size: 4vw;
+  color: white;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.slide {
-  position: relative;
+  text-shadow: 4px 4px 2px #939393;
 }
 
 .slick-slide img {
   width: 100%;
+}
+
+#slider_content {
+  position: relative;
+}
+
+#slide_nav {
+  z-index: 10;
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+}
+#slide_nav img {
+  margin-right: 1rem;
+  border: 2px solid white;
+  min-width: 12rem;
+  width: 24rem !important;
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+#bestseller {
+  display: flex;
+}
+
+.bestseller_g {
+  width: 50%;
+}
+
+.bestseller_d {
+  width: 50%;
+  background: url(../img/sale.png) no-repeat top right #e6ddda;
+  padding: 2vw 3vw 1vw;
+  position: relative;
+}
+.bestseller_d:before {
+  position: absolute;
+  top: 30%;
+  left: -20px;
+  z-index: 1;
+  content: url(../img/fleche.png);
+}
+.bestseller_d h2 {
+  font-size: 3.5vw;
+  line-height: 2rem;
+  font-weight: normal;
+}
+
+.designer {
+  font-size: 1rem;
+  font-style: italic;
+  color: #987f77;
+}
+
+.price {
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
 }
