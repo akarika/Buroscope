@@ -125,6 +125,11 @@ function html5blank_styles()
     wp_enqueue_style('slick'); // Enqueue it!
     wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+    wp_register_style('html5blank-menu', get_template_directory_uri() . '/css/menu.css', array(), '1.0', 'all');
+    wp_enqueue_style('html5blank-menu'); // Enqueue it!
+    //attention le premier paramétres dela function doit IMPERATIVEMENT etre dashicons
+    wp_register_style('dashicons', get_template_directory_uri() . '/css/dashicons.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('dashicons'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -354,6 +359,7 @@ add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
+
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
 remove_action('wp_head', 'feed_links', 2); // Display the links to the general feeds: Post and Comment Feed
@@ -453,5 +459,57 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+//fonction d'affichage d'un produit en zone bestseller
+function affiche_bestseller($bestseller, $best){
 
+//on initialise la variable global $post
+    $bestseller->the_post();
+
+    $produit="<article id=\"bestseller\">\n";
+    if(isset($best))
+    {
+        $best=" best";
+    }
+    $produit.="<div class=\"bestseller_g" . $best . "\">\n";
+    $produit.=get_the_post_thumbnail($bestseller->ID, 'medium');
+    $produit.="</div>\n";
+
+    $produit.="<div class=\"bestseller_d\">\n";
+    $produit.="<h2>" . get_the_title() . "</h2>\n";
+    $produit.="<p class=\"designer\">" . get_field("designer") . "</p>\n";
+    $produit.="<p class=\"prix\">" . get_field("prix") . " €</p>\n";
+    $produit.="<p class=\"rating\">Rating: ";
+
+    for($i=0;$i<get_field("notation");$i++)
+    {
+        $produit.="<span class=\"dashicons dashicons-star-filled\"></span>\n";
+    }
+
+    $produit.="</p>\n";
+    $produit.="<a href=\"" . get_the_permalink(23) . "\">Ask the Customer a Question</a>\n";
+    $produit.="</div>\n";
+
+    $produit.="</article>\n";
+
+    return $produit;
+}
+//shortcode maison
+
+add_shortcode('bt','fabrique_bouton');
+
+/**
+ * @param $atts intitulé du shortcode
+ * @param null $content contenu
+ */
+function fabrique_bouton($atts, $content = null){
+    return "<div class=\"bt\"><a href='#'>".do_shortcode($content)."</a></div>";
+}
+function extrait($chaine,$nb_mots){
+    $chaine = explode(" ", $chaine);
+    if (sizeof($chaine)<$nb_mots){
+        $nb_mots = sizeof($chaine);
+    }
+ $chaine = join(" ",array_slice($chaine,0,$nb_mots));
+    return $chaine;
+}
 ?>

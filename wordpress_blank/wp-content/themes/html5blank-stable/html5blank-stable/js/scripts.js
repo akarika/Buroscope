@@ -6,10 +6,10 @@
 		speed: 300,
 		slideToshow: 1,
 		adaptiveHeight:true,
-		asNavFor: '#slide_nav',
+		asNavFor: '#slider_nav',
 		arrows:false,
 	});
-	$('#slide_nav').slick({
+	$('#slider_nav').slick({
 		slidesToShow : 3,
 		slidesToScroll : 1,
 		asNavFor: '#slider',
@@ -17,5 +17,14 @@
 		centerMode: true,
 		focusOnSelect:true
 
-	})
+	});
+
+	/***CARROUSEL**********************************************/
+	$('#carrousel').slick({
+		slidesToShow : 3.5,
+		slidesToScroll : 1,
+		autoplay: true,
+		autoplaySpeed:2000,
+		arrows: false
+	});
 })(jQuery, this);
