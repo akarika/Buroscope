@@ -459,57 +459,63 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
 //fonction d'affichage d'un produit en zone bestseller
-function affiche_bestseller($bestseller, $best){
+function affiche_bestseller($bestseller, $best)
+{
 
 //on initialise la variable global $post
     $bestseller->the_post();
 
-    $produit="<article id=\"bestseller\">\n";
-    if(isset($best))
-    {
-        $best=" best";
+    $produit = "<article id=\"bestseller\">\n";
+    if (isset($best)) {
+        $best = " best";
     }
-    $produit.="<div class=\"bestseller_g" . $best . "\">\n";
-    $produit.=get_the_post_thumbnail($bestseller->ID, 'medium');
-    $produit.="</div>\n";
+    $produit .= "<div class=\"bestseller_g" . $best . "\">\n";
+    $produit .= get_the_post_thumbnail($bestseller->ID, 'medium');
+    $produit .= "</div>\n";
 
-    $produit.="<div class=\"bestseller_d\">\n";
-    $produit.="<h2>" . get_the_title() . "</h2>\n";
-    $produit.="<p class=\"designer\">" . get_field("designer") . "</p>\n";
-    $produit.="<p class=\"prix\">" . get_field("prix") . " €</p>\n";
-    $produit.="<p class=\"rating\">Rating: ";
+    $produit .= "<div class=\"bestseller_d\">\n";
+    $produit .= "<h2>" . get_the_title() . "</h2>\n";
+    $produit .= "<p class=\"designer\">" . get_field("designer") . "</p>\n";
+    $produit .= "<p class=\"prix\">" . get_field("prix") . " €</p>\n";
+    $produit .= "<p class=\"rating\">Rating: ";
 
-    for($i=0;$i<get_field("notation");$i++)
-    {
-        $produit.="<span class=\"dashicons dashicons-star-filled\"></span>\n";
+    for ($i = 0; $i < get_field("notation"); $i++) {
+        $produit .= "<span class=\"dashicons dashicons-star-filled\"></span>\n";
     }
 
-    $produit.="</p>\n";
-    $produit.="<a href=\"" . get_the_permalink(23) . "\">Ask the Customer a Question</a>\n";
-    $produit.="</div>\n";
+    $produit .= "</p>\n";
+    $produit .= "<a href=\"" . get_the_permalink(23) . "\">Ask the Customer a Question</a>\n";
+    $produit .= "</div>\n";
 
-    $produit.="</article>\n";
+    $produit .= "</article>\n";
 
     return $produit;
 }
+
 //shortcode maison
 
-add_shortcode('bt','fabrique_bouton');
+add_shortcode('bt', 'fabrique_bouton');
 
 /**
  * @param $atts intitulé du shortcode
  * @param null $content contenu
  */
-function fabrique_bouton($atts, $content = null){
-    return "<div class=\"bt\"><a href='#'>".do_shortcode($content)."</a></div>";
+function fabrique_bouton($atts, $content = null)
+{
+    return "<div class=\"bt\"><a href='#'>" . do_shortcode($content) . "</a></div>";
 }
-function extrait($chaine,$nb_mots){
+
+function extrait($chaine, $nb_mots)
+{
     $chaine = explode(" ", $chaine);
-    if (sizeof($chaine)<$nb_mots){
+    if (sizeof($chaine) < $nb_mots) {
         $nb_mots = sizeof($chaine);
     }
- $chaine = join(" ",array_slice($chaine,0,$nb_mots));
+    $chaine = join(" ", array_slice($chaine, 0, $nb_mots));
     return $chaine;
 }
+
+
 ?>

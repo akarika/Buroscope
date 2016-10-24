@@ -37,6 +37,7 @@ if($slide->have_posts()){
         $mon_slider.= get_the_post_thumbnail($slide->ID,'large'); //large/medium/thumbnail
         $mon_slider.='</div>';
     }
+
     $slider_nav.='</div>';
     $mon_slider.='</div>';
 
@@ -94,7 +95,9 @@ if($carrousel->have_posts())
     }
     $zone_carrousel.="</div>\n";
 }
+
 echo $zone_carrousel;
+
 //pour cloturer proprement les requetes (a chaque fin de requete)
 wp_reset_query();
 
