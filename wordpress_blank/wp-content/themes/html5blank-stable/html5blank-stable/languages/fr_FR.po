@@ -194,5 +194,7 @@ msgstr "Cet article a été écrit par "
 msgid "Tag Archive: "
 msgstr "Archives de tags : "
 
+msgid "bike: "
+msgstr "vélo : "
 #~ msgid "%s results for "
 #~ msgstr "%s résultats pour "

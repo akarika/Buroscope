@@ -504,8 +504,29 @@ add_shortcode('bt', 'fabrique_bouton');
  */
 function fabrique_bouton($atts, $content = null)
 {
-    return "<div class=\"bt\"><a href='#'>" . do_shortcode($content) . "</a></div>";
+    return "<div class=\"bt\"><a href='#'>" . $content . "</a></div>";
 }
+
+//[bt][/bt]
+add_shortcode('article', 'article_short');
+function article_short($id)
+{
+    $out = "<a href=\"" . get_permalink($id) . "\">" . get_the_title($id) . "</a>";
+    return $out;
+}
+
+//[article id=3]
+/*add_shortcode('column', 'short_column');
+function short_column($atts, $content)
+{
+    $out = '<div class="column">';
+    $out .= do_shortcode($content);
+    $out .= '</div>';
+    return $out;
+}*/
+
+//[column][/column]
+
 
 function extrait($chaine, $nb_mots)
 {
@@ -517,5 +538,41 @@ function extrait($chaine, $nb_mots)
     return $chaine;
 }
 
-
+//
+add_action('init', 'velo');
+function velo(){
+    register_post_type('vélo',
+        array(
+            'labels' => array(
+                'name' => __('Vélo', 'html5blank'), // Rename these to suit
+                'singular_name' => __('Vélo', 'html5blank'),
+                'add_new' => __('Add New bike', 'html5blank'),
+                'add_new_item' => __('Add New by bike', 'html5blank'),
+                'edit' => __('Edit', 'html5blank'),
+                'edit_item' => __('Edit new bike', 'html5blank'),
+                'new_item' => __('New bike', 'html5blank'),
+                'view' => __('View bike', 'html5blank'),
+                'view_item' => __('View item bike', 'html5blank'),
+                'search_items' => __('Search bike', 'html5blank'),
+                'not_found' => __('No bike found', 'html5blank'),
+                'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            ),
+            'public' => true,
+            'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'excerpt',
+                'thumbnail'
+            ), // Go to Dashboard Custom HTML5 Blank post for supports
+            'can_export' => true, // Allows export in Tools > Export
+            'taxonomies' => array(
+                'post_tag',
+                'category'
+            ) // Add Category and Post Tags support
+        ));
+    register_taxonomy_for_object_type('category', 'vélo'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'vélo');
+}
 ?>
