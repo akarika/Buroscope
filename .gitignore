@@ -8,3 +8,4 @@ $ cat .gitignore
 /wordpress
 /node_modules
 /wp_theme_enfant
+/wordpress_bikes_v2
